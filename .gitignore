@@ -1,0 +1,364 @@
+# ========================================================================
+# .gitignore para Repositório de Doutorado
+# Última atualização: 2026-01-31
+# ========================================================================
+
+# ========================================================================
+# ARQUIVOS GRANDES E BINÁRIOS
+# ========================================================================
+
+# PDFs (artigos, livros, trabalhos)
+# Exceções: manter templates e alguns documentos específicos
+*.pdf
+!*-template.pdf
+
+# Apresentações
+*.pptx
+*.ppt
+*.odp
+*.key
+
+# Vídeos e áudio
+*.mp4
+*.avi
+*.mov
+*.wmv
+*.flv
+*.mp3
+*.wav
+*.m4a
+
+# Imagens de alta resolução (manter apenas versões web)
+*.tiff
+*.tif
+*.psd
+*.ai
+*.eps
+*.raw
+
+# Bancos de dados
+*.sql
+*.sqlite
+*.db
+*.mdb
+
+# ========================================================================
+# ARQUIVOS TEMPORÁRIOS DO LATEX
+# ========================================================================
+
+# LaTeX principais
+*.aux
+*.log
+*.out
+*.toc
+*.lof
+*.lot
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.synctex(busy)
+*.blg
+*.bbl
+*.bcf
+*.run.xml
+*.nav
+*.snm
+*.vrb
+
+# BibTeX
+*.bib.bak
+*.bib.sav
+
+# Glossários e acrônimos
+*.acn
+*.acr
+*.alg
+*.glg
+*.glo
+*.gls
+*.glsdefs
+*.ist
+
+# Hyperref
+*.xdy
+
+# Nomenclatura
+*.nlo
+*.nls
+
+# Makeindex
+*.idx
+*.ilg
+*.ind
+
+# ========================================================================
+# ARQUIVOS TEMPORÁRIOS DE EDITORES
+# ========================================================================
+
+# Microsoft Office
+~$*
+*.tmp
+*.bak
+*.swp
+*~.docx
+*~.xlsx
+
+# LibreOffice
+.~lock.*
+
+# Vim
+*.swp
+*.swo
+*~
+
+# Emacs
+\#*\#
+.\#*
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# JetBrains (PyCharm, IntelliJ)
+.idea/
+*.iml
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Notepad++
+*.bak
+
+# ========================================================================
+# ARQUIVOS PYTHON
+# ========================================================================
+
+# Byte-compiled / optimized
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv/
+.virtualenv/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# PyCharm
+.idea/
+
+# Pylint
+.pylint.d/
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+*.egg
+
+# ========================================================================
+# ARQUIVOS R E ANÁLISE DE DADOS
+# ========================================================================
+
+# R History
+.Rhistory
+.RData
+.Rproj.user/
+
+# RStudio
+*.Rproj
+
+# STATA
+*.dta.bak
+
+# SPSS
+*.sav.bak
+
+# ========================================================================
+# DADOS SENSÍVEIS E PESSOAIS
+# ========================================================================
+
+# Dados brutos (podem conter informações sensíveis)
+dados-brutos/
+raw-data/
+
+# Credenciais
+.env
+.env.local
+.env.*.local
+credentials.json
+secrets.json
+*.key
+*.pem
+*.p12
+
+# Informações pessoais
+documentos-pessoais/
+cpf/
+rg/
+
+# Entrevistas com identificação
+entrevistas-nao-anonimizadas/
+
+# ========================================================================
+# BACKUPS
+# ========================================================================
+
+# Backups gerais
+*.backup
+*-backup.*
+*-old.*
+*-OLD.*
+*.bkp
+
+# Pastas de backup
+backup/
+backups/
+old/
+
+# Versões antigas
+versoes-antigas/
+v0/
+draft/
+
+# ========================================================================
+# ARQUIVOS DE SISTEMA
+# ========================================================================
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+.directory
+.Trash-*
+
+# ========================================================================
+# COMPILAÇÕES E BUILDS
+# ========================================================================
+
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Build outputs
+out/
+output/
+*.o
+*.class
+
+# ========================================================================
+# ARQUIVOS TEMPORÁRIOS DE REFERÊNCIAS
+# ========================================================================
+
+# Zotero
+storage/
+zotero.sqlite
+zotero.sqlite-journal
+
+# Mendeley
+*.mendeley/
+
+# Endnote
+*.enl.Data/
+
+# ========================================================================
+# ARQUIVOS QUE DEVEM SER MANTIDOS (EXCEÇÕES)
+# ========================================================================
+# Forçar inclusão de arquivos específicos importantes
+
+# Manter READMEs
+!README.md
+!*/README.md
+
+# Manter templates
+!*-template.md
+!templates/*.md
+
+# Manter arquivo BibTeX central
+!bibliografia.bib
+!03-referencias/bibliografia.bib
+
+# Manter .gitkeep (para preservar estrutura de pastas vazias)
+!.gitkeep
+
+# Manter alguns PDFs específicos de template/exemplo
+!exemplo-*.pdf
+!template-*.pdf
+
+# Manter documentos markdown
+!*.md
+
+# Manter imagens pequenas para documentação
+!*.png
+!*.jpg
+!*.jpeg
+!*.gif
+!*.svg
+
+# ========================================================================
+# PASTAS ESPECÍFICAS DO PROJETO
+# ========================================================================
+
+# Dados temporários de análise
+analises-temporarias/
+
+# Testes e experimentos
+testes/
+experimentos/
+
+# Cache de processamento
+.cache/
+cache/
+
+# Logs
+logs/
+*.log
+
+# Outputs temporários
+temp/
+tmp/
+
+# ========================================================================
+# NOTAS IMPORTANTES
+# ========================================================================
+#
+# 1. PDFs são ignorados por padrão para economizar espaço
+#    - Mantenha PDFs em serviços de nuvem (Google Drive, Dropbox)
+#    - Referencie-os no arquivo bibliografia.bib com campo {file}
+#
+# 2. Dados sensíveis NUNCA devem ir para repositório
+#    - Use dados anonimizados quando necessário versionar
+#    - Mantenha dados originais em local seguro offline
+#
+# 3. Backups são importantes mas não vão para o Git
+#    - Use sistema de backup separado (Time Machine, cloud, etc.)
+#    - Git não é ferramenta de backup
+#
+# 4. Arquivos .gitkeep preservam estrutura de pastas vazias
+#    - São commitados mesmo quando pasta não tem outros arquivos
+#
+# 5. Se precisar commitar um PDF específico importante:
+#    git add -f caminho/para/arquivo.pdf
+#
+# ========================================================================
