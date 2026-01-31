@@ -2,9 +2,13 @@
 
 **Repositório:** [github.com/henrique-m-ribeiro/tocantins-integrado](https://github.com/henrique-m-ribeiro/tocantins-integrado)
 
-**Versão atual:** 4.0 (Final do Ciclo 4)
+**Versão atual:** Em pausa - Camada 1 (90%), Camada 2 (0%)
 
-**Status:** Em desenvolvimento através de pesquisa-ação
+**Status:** 🟡 PAUSADO - Pivot emergencial para produção manual dos cadernos
+
+**Ciclo de Pesquisa-Ação:** Ciclo 2 (Reinício Programado - Jan 2026)
+
+**Contexto:** Reinício programado após aprendizados do framework-v6-mvp (Ciclo 1), usando GitHub para continuidade e múltiplos modelos de IA
 
 ---
 
@@ -52,12 +56,29 @@ Viabilizar gestão pública baseada em evidências através de análise territor
 
 ## 🏗️ Arquitetura do Sistema
 
-### Camadas do Sistema
+### Arquitetura em Dupla Camada de Orquestração
+
+O sistema foi concebido com uma arquitetura inovadora de dupla camada:
+
+**CAMADA 1 (Dashboard + IA de Exploração):** 🟡 90% Implementada
+- Dashboard com dados pré-computados e visualizações
+- IA assistente para facilitar exploração dos dados (linha de frente)
+- Consultas rápidas e análises padronizadas
+- **Status:** Implementada, falta apenas upload final de dados
+
+**CAMADA 2 (Sistema Multiagentes):** 🔴 0% Implementada
+- Equipe de especialistas multidimensionais (multiagentes)
+- Análises sob demanda mais profundas
+- Orquestração inteligente de agentes especializados
+- **Status:** Não implementada devido ao pivot emergencial
+
+### Arquitetura Técnica (Camada 1)
 
 ```
 ┌─────────────────────────────────────────────────────┐
 │          CAMADA DE APRESENTAÇÃO                     │
 │  Interface Web │ Dashboards │ Relatórios │ API     │
+│  + IA Assistente para Exploração (Claude)          │
 └────────────────────┬────────────────────────────────┘
                      │
 ┌────────────────────┴────────────────────────────────┐
@@ -204,86 +225,74 @@ Viabilizar gestão pública baseada em evidências através de análise territor
 
 ## 🔄 Desenvolvimento através de Pesquisa-Ação
 
-### Ciclo 1: Diagnóstico e Planejamento (2025.2)
+**IMPORTANTE:** Este repositório representa especificamente o **Ciclo 2** da pesquisa-ação completa. Ver `cronologia-real-repositorios.md` para o contexto completo dos 5 ciclos (0-4).
 
-**Período:** Julho - Dezembro 2025
+### Contexto Histórico: Ciclo 0-1 (framework-v6-mvp)
 
-**Objetivos:**
-- Mapear necessidades de gestores públicos
-- Definir escopo e prioridades
-- Estabelecer fontes de dados
-- Criar protótipo inicial
+**Período:** Pré-GitHub até Dez 2025
 
-**Entregas:**
-- v1.0: Protótipo com 1 dimensão (Saúde)
-- Infraestrutura de coleta de dados
-- Primeiras visualizações
+**Situação:**
+- Demanda inicial de criação dos cadernos Tocantins surgiu primeiro (Ciclo 0)
+- Primeira tentativa de estruturação formal no framework-v6-mvp (Ciclo 1)
+- Problema identificado: metodologia e código misturados
 
-**Aprendizados:**
-- Desafios de integração de dados governamentais
-- Importância de envolvimento de stakeholders desde o início
-- Necessidade de contexto local para interpretação
+**Aprendizados do Ciclo 1:**
+- Necessidade de separar metodologia de artefatos técnicos
+- GitHub como ferramenta para continuidade entre sessões
+- Benefício de usar múltiplos modelos de IA (não apenas Manus)
+- Valor dos registros de diário de pesquisa-ação
 
-### Ciclo 2: Implementação Inicial (2026.1)
+Ver: `framework-v6-mvp.md` para análise detalhada
 
-**Período:** Janeiro - Junho 2026
+---
 
-**Objetivos:**
-- Expandir para 4 dimensões
-- Desenvolver análises multidimensionais
-- Implementar módulo de IA
-- Validar com usuários reais
+### Ciclo 2: Reinício Programado - Tocantins Integrado (Jan 2026)
 
-**Entregas:**
-- v2.0: Sistema com 4 dimensões integradas
-- Análises de correlação entre dimensões
-- Primeiras recomendações automatizadas
+**Período:** Janeiro 2026 - PRESENTE (PAUSADO)
 
-**Aprendizados:**
-- Padrões de uso pelos gestores
-- Necessidade de explicabilidade da IA
-- Importância de visualizações intuitivas
-
-### Ciclo 3: Refinamento e Expansão (2026.2)
-
-**Período:** Julho - Dezembro 2026
+**Motivação:**
+Reiniciar o projeto usando conhecimentos e aprendizados do framework-v6-mvp, separando claramente:
+- Sistema técnico → tocantins-integrado (este repositório)
+- Metodologia de colaboração → ia-collab-os (emergiu da prática)
+- Produto final → caderno-tocantins-2026 (retomado após pivot)
 
 **Objetivos:**
-- Refinar algoritmos com base em feedback
-- Expandir capacidades analíticas
-- Melhorar usabilidade
-- Documentar padrões de colaboração humano-IA
+- Implementar sistema com dupla camada de orquestração
+- Usar GitHub para continuidade entre sessões
+- Trabalhar com múltiplos modelos de IA
+- Integrar 4 dimensões de análise territorial
 
-**Entregas:**
-- v3.0: Sistema refinado e expandido
-- Framework de colaboração documentado
-- Casos de uso demonstrativos
+**Entregas Realizadas:**
+- ✅ Arquitetura do sistema definida
+- ✅ Camada 1 (Dashboard + IA): 90% implementada
+  - Estrutura de dados implementada
+  - Pipeline de ETL desenvolvido
+  - Dashboards básicos criados
+  - Falta: Upload final dos dados
+- ❌ Camada 2 (Multiagentes): 0% implementada
 
-**Aprendizados:**
-- Evolução da confiança dos usuários na IA
-- Padrões emergentes de divisão de trabalho
-- Desafios éticos e de governança
+**Complicações Encontradas:**
+- Complexidade da implementação maior que previsto
+- Problemas de integração de dados de múltiplas fontes
+- Dificuldades técnicas com a arquitetura multiagentes
+- Prazo apertado para entrega dos cadernos (campanha eleitoral)
 
-### Ciclo 4: Consolidação e Validação (2027.1)
+**Decisão Estratégica - Pivot Emergencial (Jan 2026):**
+- **PAUSOU** implementação do sistema
+- **RETOMOU** produção manual dos cadernos usando ia-collab-os
+- **DOCUMENTOU** aprendizados para pesquisa-ação (Ciclo 3)
 
-**Período:** Janeiro - Junho 2027
+**Status Atual:** 🟡 PAUSADO
+- Sistema funcional mas incompleto
+- Camada 1 quase pronta (falta dados)
+- Camada 2 não iniciada
+- Pode ser retomado após entrega dos cadernos
 
-**Objetivos:**
-- Validar impacto em decisões reais
-- Avaliar escalabilidade
-- Documentar modelo de implementação
-- Preparar transferibilidade
-
-**Entregas:**
-- v4.0: Sistema consolidado e validado
-- Evidências de impacto na gestão pública
-- Modelo de implementação documentado
-- Recomendações para replicação
-
-**Aprendizados:**
-- Condições para sucesso da implementação
-- Facilitadores e barreiras para adoção
-- Sustentabilidade do sistema
+**Aprendizados para os Ciclos Seguintes:**
+- Importância de MVP mínimo viável antes de funcionalidades avançadas
+- Equilíbrio entre inovação técnica e prazos de entrega
+- Valor de ter metodologia separada (ia-collab-os) que funciona independente do sistema
+- Framework metodológico emergiu DA PRÁTICA deste desenvolvimento
 
 ---
 
@@ -306,28 +315,23 @@ Viabilizar gestão pública baseada em evidências através de análise territor
 
 ### Métricas de Desenvolvimento
 
-**Ciclo 1:**
-- Commits: [X]
-- Issues: [Y]
-- Pull requests: [Z]
-- Contribuidores: [N]
+**NOTA:** Este repositório representa apenas o Ciclo 2. Para métricas do Ciclo 0-1, ver framework-v6-mvp.
 
-**Ciclo 2:**
-- Commits: [X]
-- Issues: [Y]
-- Pull requests: [Z]
-- Linhas de código adicionadas: [+X]
+**Ciclo 2 (tocantins-integrado) - Jan 2026:**
+- Status: 🟡 PAUSADO
+- Commits: [X - preencher com `git log --oneline | wc -l`]
+- Issues abertas/fechadas: [Y/Z - preencher com `gh issue list`]
+- Pull requests: [N]
+- Contribuidores: Humanos [1], Agentes IA [múltiplos modelos]
+- Linhas de código: [X]
+- Camada 1: 90% completa
+- Camada 2: 0% completa
+- Data de pausa: Jan 2026 (pivot emergencial)
 
-**Ciclo 3:**
-- Commits: [X]
-- Issues: [Y]
-- Refatorações: [Z]
-- Testes: [N testes, X% cobertura]
-
-**Ciclo 4:**
-- Commits: [X]
-- Documentação: [Y páginas]
-- Casos de uso: [N]
+**Próximos Ciclos (Planejados):**
+- **Ciclo 3:** Emergência do ia-collab-os da prática
+- **Ciclo 4:** Produção dos cadernos usando ia-collab-os
+- **Ciclo 5+:** Possível retomada do tocantins-integrado no futuro
 
 ### Métricas de Impacto
 
@@ -406,8 +410,9 @@ Viabilizar gestão pública baseada em evidências através de análise territor
 - **Referências:** Ciclos de desenvolvimento, commits por ciclo
 
 ### Capítulo 4: Ciclos de Pesquisa-Ação
-- **Uso:** Análise detalhada de cada versão do sistema
-- **Referências:** Releases v1.0, v2.0, v3.0, v4.0; issues e PRs relevantes
+- **Uso:** Este sistema representa o Ciclo 2 (Reinício Programado)
+- **Referências:** Commits do reinício, issues de desenvolvimento, decisão de pausa
+- **Contexto:** Relacionar com Ciclo 1 (framework-v6-mvp) e Ciclo 4 (pivot para cadernos)
 
 ### Capítulo 5: Análise Integrada
 - **Uso:** Capacidades do sistema como evidência de transformação
@@ -430,11 +435,17 @@ Viabilizar gestão pública baseada em evidências através de análise territor
 - **Documentação:** https://github.com/henrique-m-ribeiro/tocantins-integrado/wiki
 - **Issues:** https://github.com/henrique-m-ribeiro/tocantins-integrado/issues
 
-### Releases Importantes
-- **v1.0-ciclo1:** https://github.com/henrique-m-ribeiro/tocantins-integrado/releases/tag/v1.0
-- **v2.0-ciclo2:** https://github.com/henrique-m-ribeiro/tocantins-integrado/releases/tag/v2.0
-- **v3.0-ciclo3:** https://github.com/henrique-m-ribeiro/tocantins-integrado/releases/tag/v3.0
-- **v4.0-ciclo4:** https://github.com/henrique-m-ribeiro/tocantins-integrado/releases/tag/v4.0
+### Releases e Marcos Importantes
+
+**Status Atual:** Sistema em estado pausado (Ciclo 2)
+
+**Possíveis Tags Futuras:**
+- **v0.9-paused-state:** Estado atual pausado (Camada 1: 90%, Camada 2: 0%)
+- **v1.0-layer1-complete:** Quando Camada 1 for finalizada (com dados)
+- **v2.0-layer2-complete:** Se/quando Camada 2 for implementada
+
+**Contexto Histórico:**
+- **framework-v6-mvp (Ciclo 1):** Ver repositório histórico separado
 
 ### Análises Demonstrativas
 - Ver repositório: https://github.com/henrique-m-ribeiro/caderno-tocantins-2026
@@ -447,17 +458,18 @@ Viabilizar gestão pública baseada em evidências através de análise territor
 
 ```
 RIBEIRO, Henrique M. Tocantins Integrado: Sistema de Superinteligência
-Territorial para o Estado do Tocantins. Versão 4.0. GitHub, 2027.
-Disponível em: https://github.com/henrique-m-ribeiro/tocantins-integrado.
+Territorial para o Estado do Tocantins. Estado pausado (Ciclo 2 -
+Pesquisa-Ação). GitHub, 2026. Disponível em:
+https://github.com/henrique-m-ribeiro/tocantins-integrado.
 Acesso em: [data].
 ```
 
-### Citação de Versão Específica
+### Citação de Estado Específico
 
 ```
-RIBEIRO, Henrique M. Tocantins Integrado. Versão 2.0 (Ciclo 2).
-GitHub, 2026. DOI: [se aplicável]. Disponível em:
-https://github.com/henrique-m-ribeiro/tocantins-integrado/releases/tag/v2.0.
+RIBEIRO, Henrique M. Tocantins Integrado: Camada 1 - Dashboard com IA
+de Exploração (90% implementada). Ciclo 2 de Pesquisa-Ação. GitHub, 2026.
+Disponível em: https://github.com/henrique-m-ribeiro/tocantins-integrado.
 Acesso em: [data].
 ```
 

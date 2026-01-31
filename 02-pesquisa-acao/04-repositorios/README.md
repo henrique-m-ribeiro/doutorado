@@ -1,12 +1,32 @@
 # 04 - Repositórios Relacionados
 
-Esta pasta documenta a integração entre o repositório de doutorado e os três repositórios técnicos que constituem os **artefatos práticos** da pesquisa-ação.
+Esta pasta documenta a integração entre o repositório de doutorado e os repositórios técnicos relacionados à pesquisa-ação: **3 repositórios ativos** que constituem os artefatos práticos atuais, e **1 repositório histórico** que documenta o contexto evolutivo do projeto.
 
 ---
 
-## 🔗 Os Três Repositórios Técnicos
+## 🔗 Os Repositórios do Projeto
 
-### 1. [tocantins-integrado](https://github.com/henrique-m-ribeiro/tocantins-integrado)
+### 0. [framework-v6-mvp](https://github.com/henrique-m-ribeiro/framework-v6-mvp) 🟠 HISTÓRICO
+**Framework V6 MVP - Versão Monolítica (Supersedida)**
+
+**Natureza:** Contexto histórico - Ciclo 1 de pesquisa-ação
+
+**Descrição:**
+Primeira tentativa de estruturação formal do projeto (Nov-Dez 2025), onde metodologia de colaboração humano-IA e código do sistema Tocantins Integrado estavam misturados no mesmo repositório. Representou um aprendizado fundamental sobre a importância de separar metodologia de artefatos técnicos.
+
+**Papel na Pesquisa:**
+- **Ciclo 1** de pesquisa-ação (ação-reflexão-aprendizado)
+- **Problema identificado:** Confusão entre metodologia e sistema técnico
+- **Aprendizados:** Separação de preocupações, GitHub para continuidade entre sessões, uso de múltiplos modelos de IA
+- **Legado:** Evoluiu para 3 repositórios separados (tocantins-integrado, ia-collab-os, caderno-tocantins-2026)
+
+**Status:** ✅ CONCLUÍDO E SUPERSEDIDO (mantido apenas como contexto histórico)
+
+**Documentação:** Ver `framework-v6-mvp.md` nesta pasta para análise detalhada
+
+---
+
+### 1. [tocantins-integrado](https://github.com/henrique-m-ribeiro/tocantins-integrado) 🟡 PAUSADO
 **Sistema de Superinteligência Territorial para o Estado do Tocantins**
 
 **Natureza:** Sistema técnico principal - objeto central da pesquisa-ação
@@ -14,45 +34,64 @@ Esta pasta documenta a integração entre o repositório de doutorado e os três
 **Descrição:**
 Sistema de análise multidimensional dos 139 municípios e 8 microrregiões do Tocantins, integrando dados de saúde, educação, infraestrutura, economia e indicadores sociais para subsidiar formulação de políticas públicas baseadas em evidências.
 
+**Arquitetura em Dupla Camada:**
+- **Camada 1 (Dashboard):** 90% implementado - falta apenas upload de dados
+- **Camada 2 (Multiagentes):** 0% implementado - análises sob demanda
+
 **Papel na Pesquisa:**
 - **Artefato** produzido pela pesquisa-ação
 - **Campo** onde as transformações ocorrem
 - **Evidência** das capacidades de IA em gestão pública
 
-### 2. [ia-collab-os](https://github.com/henrique-m-ribeiro/ia-collab-os)
-**Framework Metodológico para Coordenação de Equipes Humano-IA**
+**Status:** 🟡 PAUSADO (pivot emergencial para produção manual dos cadernos devido a prazos eleitorais)
+
+### 2. [ia-collab-os](https://github.com/henrique-m-ribeiro/ia-collab-os) 🟢 ATIVO E PUBLICADO
+**Framework Metodológico para Coordenação de Equipes Humano-IA-IA**
 
 **Natureza:** Framework genérico - contribuição metodológica
 
 **Descrição:**
-Metodologia de orquestração de equipes mistas (humanos + agentes de IA) para desenvolvimento colaborativo de sistemas complexos, extraída e generalizada a partir da experiência do Tocantins Integrado.
+Metodologia de orquestração de equipes mistas (humanos + múltiplos agentes de IA) para desenvolvimento colaborativo de sistemas complexos, extraída e generalizada a partir da experiência do Tocantins Integrado. Separa claramente metodologia de colaboração dos artefatos técnicos produzidos.
 
 **Papel na Pesquisa:**
-- **Abstração** da metodologia de colaboração humano-IA
+- **Abstração** da metodologia de colaboração humano-IA-IA
 - **Contribuição teórica** para literatura de HCI e desenvolvimento de sistemas
 - **Framework transferível** para outros contextos
+- **Metodologia emergente** da prática (surgiu DO desenvolvimento do tocantins-integrado)
 
-### 3. [caderno-tocantins-2026](https://github.com/henrique-m-ribeiro/caderno-tocantins-2026)
+**Status:** 🟢 ATIVO - usado atualmente para produção dos cadernos e continuidade entre sessões
+
+### 3. [caderno-tocantins-2026](https://github.com/henrique-m-ribeiro/caderno-tocantins-2026) 🟢 ATIVO
 **Compilação de Dados Territoriais do Tocantins**
 
 **Natureza:** Notebook de análise de dados - contexto empírico
 
 **Descrição:**
-Análises territoriais detalhadas do Estado do Tocantins para subsidiar estratégias eleitorais 2026, servindo como caso de uso e validação do sistema Tocantins Integrado.
+Análises territoriais detalhadas do Estado do Tocantins para subsidiar estratégias eleitorais 2026. Originalmente era a primeira demanda (pré-GitHub), foi pausado para desenvolvimento do sistema, e retomado manualmente após pivot emergencial. Agora é produzido usando a metodologia ia-collab-os.
+
+**Evolução:**
+- **Fase Inicial (Pré-Nov 2025):** Produção manual com framework incipiente, apenas modelo Manus
+- **Fase Atual (Jan 2026):** Produção manual usando ia-collab-os com múltiplos modelos e GitHub
 
 **Papel na Pesquisa:**
+- **Demanda original** que motivou o projeto
 - **Contexto** empírico da pesquisa
-- **Validação prática** do sistema em uso real
-- **Fonte de dados** para análises territoriais
+- **Validação prática** das metodologias de colaboração humano-IA
+- **Produto final** para entrega ao cliente (campanha eleitoral)
+
+**Status:** 🟢 ATIVO - Volume 1 concluído, trabalho contínuo em andamento
 
 ---
 
 ## 🔄 Fluxo de Dados e Integração
 
+**Nota:** O diagrama abaixo mostra apenas os 3 repositórios ativos. O framework-v6-mvp (histórico) é documentado separadamente como Ciclo 1 de pesquisa-ação.
+
 ```
 ┌─────────────────────────────────────────────────────────────┐
 │                    DOUTORADO (Este Repo)                    │
 │  Documentação acadêmica, fundamentação teórica, análise     │
+│         + framework-v6-mvp (contexto histórico)             │
 └────────────────────────┬────────────────────────────────────┘
                          │
         ┌────────────────┼────────────────┐
@@ -62,8 +101,9 @@ Análises territoriais detalhadas do Estado do Tocantins para subsidiar estraté
 │  TOCANTINS    │ │  IA-COLLAB   │ │   CADERNO      │
 │  INTEGRADO    │ │  OS          │ │   TOCANTINS    │
 │               │ │              │ │   2026         │
+│ 🟡 PAUSADO    │ │ 🟢 ATIVO     │ │ 🟢 ATIVO       │
 │ Sistema de IA │ │ Framework    │ │ Análises       │
-│ em produção   │ │ metodológico │ │ territoriais   │
+│ (Camada 1:90%)│ │ metodológico │ │ territoriais   │
 └───────┬───────┘ └──────┬───────┘ └───────┬────────┘
         │                │                 │
         │                │                 │
@@ -71,29 +111,38 @@ Análises territoriais detalhadas do Estado do Tocantins para subsidiar estraté
                          │
                          ▼
               TESE DE DOUTORADO
-        (Análise integrada dos 3 artefatos)
+        (Análise integrada dos 4 repositórios)
 ```
 
-### Fluxo de Trabalho
+### Fluxo de Trabalho (Cronológico)
 
-1. **Desenvolvimento** → `tocantins-integrado`
-   - Implementação técnica do sistema
-   - Commits documentam ciclos de pesquisa-ação
-   - Issues registram decisões de design
+**OBSERVAÇÃO IMPORTANTE:** A cronologia REAL do projeto difere da ordem dos commits no GitHub. Ver `cronologia-real-repositorios.md` para detalhes.
 
-2. **Uso Prático** → `caderno-tocantins-2026`
-   - Aplicação do sistema em análises reais
-   - Validação das capacidades analíticas
-   - Feedback para refinamento
+0. **Contexto Histórico** → `framework-v6-mvp` (Nov-Dez 2025)
+   - Primeira estruturação formal (tudo misturado)
+   - Identificação do problema: metodologia + código juntos
+   - Aprendizado fundamental: separar preocupações
 
-3. **Generalização** → `ia-collab-os`
-   - Extração de padrões de colaboração
-   - Abstração da metodologia
-   - Framework transferível
+1. **Desenvolvimento do Sistema** → `tocantins-integrado` (Jan 2026)
+   - Reinício programado usando aprendizados do Ciclo 1
+   - Implementação técnica da Camada 1 (90%)
+   - GitHub para continuidade entre sessões
+   - Múltiplos modelos de IA
 
-4. **Análise Acadêmica** → `doutorado`
-   - Interpretação teórica dos artefatos
-   - Sistematização de aprendizados
+2. **Metodologia Emergente** → `ia-collab-os` (Jan 2026)
+   - Surgiu DA PRÁTICA de desenvolver tocantins-integrado
+   - Extração de padrões de colaboração humano-IA-IA
+   - Abstração da metodologia em framework transferível
+
+3. **Pivot Emergencial** → `caderno-tocantins-2026` (Jan 2026)
+   - Demanda original retomada manualmente
+   - Uso do ia-collab-os para produção
+   - Validação prática da metodologia
+   - Produto final para entrega
+
+4. **Consolidação Acadêmica** → `doutorado` (Jan 31, 2026)
+   - Interpretação teórica dos 4 repositórios
+   - Sistematização de aprendizados dos 5 ciclos
    - Produção de conhecimento científico
 
 ---
@@ -119,9 +168,11 @@ Análises territoriais detalhadas do Estado do Tocantins para subsidiar estraté
 - Contexto do `caderno-tocantins-2026`
 
 ### Capítulo 4: Ciclos de Pesquisa-Ação
-**Repositórios utilizados:** Principalmente `tocantins-integrado`
-- Análise de commits por ciclo
-- Issues como evidência de desafios e decisões
+**Repositórios utilizados:** Todos os 4 (incluindo framework-v6-mvp)
+- **Ciclo 0-1:** Contexto histórico do `framework-v6-mvp`
+- **Ciclo 2:** Desenvolvimento do `tocantins-integrado` (commits, issues)
+- **Ciclo 3:** Emergência do `ia-collab-os` da prática
+- **Ciclo 4:** Pivot para `caderno-tocantins-2026`
 - Releases como marcos dos ciclos
 
 ### Capítulo 5: Análise Integrada
@@ -137,8 +188,9 @@ Análises territoriais detalhadas do Estado do Tocantins para subsidiar estraté
 - Limitações dos artefatos
 
 ### Capítulo 7: Conclusões
-**Repositórios utilizados:** Todos
-- Síntese das contribuições dos 3 repositórios
+**Repositórios utilizados:** Todos os 4
+- Síntese das contribuições dos 4 repositórios
+- Trajetória evolutiva desde framework-v6-mvp até consolidação atual
 - Modelo integrado de superinteligência territorial
 
 ---
@@ -215,11 +267,13 @@ evidenciou a necessidade de...
 
 ### Documentos de Integração
 
+- [x] **framework-v6-mvp.md** - Contexto histórico e análise do Ciclo 1 (supersedido)
+- [x] **cronologia-real-repositorios.md** - Cronologia real vs. commits GitHub
 - [ ] **tocantins-integrado.md** - Descrição detalhada do sistema principal
 - [ ] **ia-collab-os.md** - Documentação do framework metodológico
 - [ ] **caderno-tocantins.md** - Descrição das análises territoriais
-- [ ] **mapeamento-commits-ciclos.md** - Mapeamento de commits para ciclos de pesquisa-ação
-- [ ] **analise-colaboracao.md** - Análise quantitativa da colaboração humano-IA
+- [ ] **mapeamento-commits-ciclos.md** - Mapeamento de commits para os 5 ciclos de pesquisa-ação
+- [ ] **analise-colaboracao.md** - Análise quantitativa da colaboração humano-IA-IA
 - [ ] **metricas-sistema.md** - Métricas de evolução do sistema
 
 ### Diagramas e Visualizações
@@ -235,19 +289,28 @@ evidenciou a necessidade de...
 
 ### Métricas Quantitativas
 
+**Framework V6 MVP (Histórico):**
+- Status: ✅ Concluído e supersedido
+- Ciclo: Ciclo 1 (Nov-Dez 2025)
+- Aprendizados documentados: [X]
+- Problema identificado: Metodologia + código misturados
+
 **Tocantins Integrado:**
+- Status: 🟡 Pausado (Camada 1: 90%, Camada 2: 0%)
 - Total de commits: [X]
-- Commits por ciclo: C1 [X], C2 [X], C3 [X], C4 [X]
+- Commits por ciclo: C2 [X], C3 [X], C4 [X]
 - Issues abertas/fechadas: [X/Y]
 - Contribuidores: Humanos [X], Agentes IA [Y]
 - Linhas de código: [X]
 
 **IA Collab OS:**
+- Status: 🟢 Ativo e publicado
 - Versões do framework: [X]
 - Padrões de colaboração documentados: [X]
 - Casos de uso: [X]
 
 **Caderno Tocantins 2026:**
+- Status: 🟢 Ativo (Volume 1 concluído)
 - Análises territoriais realizadas: [X]
 - Municípios analisados: 139
 - Microrregiões analisadas: 8
@@ -312,19 +375,24 @@ evidenciou a necessidade de...
 
 ### Tags Importantes
 
+**Framework V6 MVP (Histórico):**
+- `final-state`: Estado final antes da separação em 3 repositórios
+- Representa Ciclo 0-1 de pesquisa-ação
+
 **Tocantins Integrado:**
-- `v1.0-ciclo1`: Final do primeiro ciclo de pesquisa-ação
-- `v2.0-ciclo2`: Final do segundo ciclo
-- `v3.0-ciclo3`: Final do terceiro ciclo
-- `v4.0-ciclo4`: Final do quarto ciclo - versão para defesa
+- `v1.0-ciclo2`: Reinício programado - primeira versão separada
+- `v2.0-ciclo3`: Emergência do ia-collab-os
+- `v3.0-ciclo4`: Antes do pivot emergencial
+- `v4.0-paused`: Estado atual pausado (Camada 1: 90%)
 
 **IA Collab OS:**
-- `v1.0-framework-inicial`: Framework extraído da experiência
-- `v2.0-framework-refinado`: Versão refinada e validada
+- `v1.0-framework-inicial`: Framework extraído da experiência (Ciclo 3)
+- `v2.0-framework-publicado`: Versão refinada e publicada
 
 **Caderno Tocantins:**
-- `v1.0-analise-inicial`: Primeira rodada de análises
-- `v2.0-analise-completa`: Análise completa dos 139 municípios
+- `v0.0-pre-github`: Versão inicial manual (Ciclo 0)
+- `v1.0-volume-1`: Volume 1 completo usando ia-collab-os (Ciclo 4)
+- `v2.0-volume-2`: [Planejado] Segundo volume
 
 ---
 
@@ -344,5 +412,9 @@ evidenciou a necessidade de...
 ---
 
 **Responsável pela integração:** Henrique M. Ribeiro
-**Última sincronização:** 2026-01-31
+**Última atualização:** 2026-01-31
 **Próxima revisão:** [Data da próxima revisão dos repositórios]
+
+---
+
+**Nota sobre cronologia:** Este documento foi atualizado para refletir a cronologia REAL do desenvolvimento, que difere da sequência de commits no GitHub. Ver `cronologia-real-repositorios.md` para detalhes completos sobre as 5 fases do projeto.
