@@ -25,65 +25,130 @@ Atualizar o projeto de doutorado para refletir:
 
 ### Trabalho Realizado até Agora
 
-#### 1. Repositório **tocantins-integrado**
-**Status:** 🟢 Em desenvolvimento ativo
+**IMPORTANTE:** Ver documentação detalhada da cronologia real em `cronologia-real-repositorios.md`
 
-**Realizado:**
-- ✅ Concepção do sistema de superinteligência territorial
-- ✅ Arquitetura técnica definida
-- ✅ Integração de dados de múltiplas fontes (IBGE, DATASUS, INEP, etc.)
-- ✅ Análise dos 139 municípios do Tocantins
-- ✅ 4 dimensões implementadas: Saúde, Educação, Infraestrutura, Economia
-- ✅ Primeiras versões do sistema em funcionamento
-- 🔄 Refinamento contínuo baseado em feedback
+#### 0. **framework-v6-mvp** (Contexto Histórico - Ciclo 1)
+**Repositório:** https://github.com/henrique-m-ribeiro/framework-v6-mvp
+**Status:** 🟠 Versão superada - Contexto histórico
+**Período:** Novembro - Dezembro 2025
 
-**Evidências para o projeto:**
-- Commits documentando desenvolvimento
-- Issues registrando decisões de design
-- Código implementado e testado
-- Documentação técnica
+**Natureza:**
+- Sistema técnico completo + metodologia MISTURADOS
+- Primeira tentativa de sistematização após trabalho manual inicial
+- 183 commits documentando evolução
 
-**Enquadramento no projeto:**
-- **Ciclo 1 da pesquisa-ação:** PARCIALMENTE CONCLUÍDO
-- **Ciclo 2 da pesquisa-ação:** EM ANDAMENTO
+**Problema Identificado:**
+- ❌ Confundia metodologia de colaboração H-IA com artefatos técnicos
+- ❌ Difícil de manter e replicar
 
-#### 2. Repositório **ia-collab-os**
-**Status:** 🟡 Framework em consolidação
+**Aprendizados (Ciclo 1):**
+- ✅ Necessidade de separar metodologia de artefatos
+- ✅ Valor de usar GitHub para continuidade entre sessões
+- ✅ Importância de múltiplos modelos de IA (não só Manus)
 
-**Realizado:**
-- ✅ Documentação da metodologia de colaboração humano-IA
-- ✅ Identificação de padrões de orquestração de equipes
-- ✅ Extração de framework genérico a partir da experiência
-- 🔄 Validação do framework em contexto real
-
-**Evidências para o projeto:**
-- Framework metodológico documentado
-- Casos de uso da colaboração
-- Padrões identificados e catalogados
+**Evoluiu para:**
+- tocantins-integrado (parte técnica separada)
+- ia-collab-os (parte metodológica separada)
+- Ver documento completo: `framework-v6-mvp.md`
 
 **Enquadramento no projeto:**
-- **Contribuição metodológica:** EM DESENVOLVIMENTO
-- **Objetivo Específico 3 (Padrões de colaboração H-IA):** EM ANDAMENTO
+- **Ciclo 1 da pesquisa-ação:** CONCLUÍDO (Nov-Dez 2025)
+- **Valor:** Evidências de aprendizado e evolução
 
-#### 3. Repositório **caderno-tocantins-2026**
-**Status:** 🟢 Análises sendo realizadas
+---
+
+#### 1. Repositório **tocantins-integrado** (Ciclo 2 - Reinício)
+**Status:** 🟡 PAUSADO temporariamente
+**Período:** Janeiro 2026
 
 **Realizado:**
-- ✅ Compilação de dados territoriais do Tocantins
-- ✅ Análises multidimensionais aplicadas
-- ✅ Validação prática do sistema Tocantins Integrado
-- ✅ Geração de insights para políticas públicas
-- ✅ Demonstração de aplicação real (contexto eleitoral 2026)
+- ✅ Reinício programado separando sistema de metodologia
+- ✅ Arquitetura de dupla camada definida
+- ✅ Camada 1 (Dashboard): 90% implementada
+- ⏸️ Camada 2 (Multiagentes): Não implementada ainda
+
+**Complicações:**
+- ⚠️ Implementação mais complexa que previsto
+- ⚠️ Não ficou pronto a tempo para gerar cadernos
+
+**Status Atual das Camadas:**
+- **Camada 1 (Dashboard):** 🟡 Quase funcional - Falta upload de dados e análises
+- **Camada 2 (Multiagentes):** 🔴 Não implementada
+
+**Papel dos Cadernos Manuais:**
+- 📥 Cadernos vão alimentar dados na Camada 1
+- 🎯 Cadernos vão ser benchmark de qualidade para Camada 2
 
 **Evidências para o projeto:**
-- Notebooks Jupyter com análises completas
-- Visualizações de dados territoriais
-- Relatórios de análise dos municípios
+- 113 commits (janeiro 2026)
+- Issues registrando decisões de design e complicações
+- Documentação técnica da arquitetura
 
 **Enquadramento no projeto:**
-- **Contexto empírico:** ESTABELECIDO
-- **Validação do sistema:** EM CURSO
-- **Objetivo Específico 2 (Transformação da gestão):** EVIDÊNCIAS SENDO COLETADAS
+- **Ciclo 2 da pesquisa-ação:** PARCIALMENTE CONCLUÍDO (pausado)
+- **Retomada prevista:** Após finalização dos cadernos (2026.2)
+
+---
+
+#### 2. Repositório **ia-collab-os** (Ciclo 2 - Metodologia Extraída)
+**Status:** 🟢 Publicado e ativo
+**Período:** Janeiro 2026
+
+**Realizado:**
+- ✅ Framework metodológico separado do código técnico
+- ✅ Documentação de padrões de colaboração humano-IA-IA
+- ✅ Templates e workflows genéricos
+- ✅ Aplicável a diferentes projetos (não só Tocantins)
+
+**Origem:**
+- Emergiu DA PRÁTICA de desenvolver tocantins-integrado
+- Extração e generalização da metodologia observada
+- Correção do problema do framework-v6-mvp (separação!)
+
+**Evidências para o projeto:**
+- 9 commits (framework conciso e focado)
+- Documentação metodológica completa
+- Case study: Tocantins Integrado
+
+**Enquadramento no projeto:**
+- **Ciclo 2 da pesquisa-ação:** CONCLUÍDO
+- **Contribuição metodológica:** ESTABELECIDA
+- **Objetivo Específico 1 (Metodologia PA em IA):** ATENDIDO
+
+---
+
+#### 3. Repositório **caderno-tocantins-2026** (Ciclo 3 - Pivot Emergencial)
+**Status:** 🟢 Volume 1 concluído
+**Período:** Janeiro 2026 (mas iniciou PRÉ-GitHub)
+
+**Contexto do Pivot:**
+- ⏰ Demanda ORIGINAL do projeto (anterior ao framework-v6-mvp)
+- ⚠️ Complicações no tocantins-integrado
+- 📅 Pressão de prazo (início de entrevistas de campanha)
+- 🔄 PAUSOU sistema, VOLTOU aos cadernos manualmente
+
+**Modo de Produção:**
+- 👤 Humano + 🤖 IA usando framework ia-collab-os
+- Produção MANUAL (não automatizada pelo sistema)
+- Múltiplos modelos de IA (não apenas Manus)
+
+**Realizado:**
+- ✅ Volume 1: 139 municípios analisados (~6.965 linhas)
+- ✅ 9 dimensões de análise territorial
+- ✅ 8 microrregiões documentadas
+- ✅ Dados de fontes oficiais (IBGE, DATASUS, INEP, etc.)
+- ✅ Aplicação prática do framework ia-collab-os
+
+**Evidências para o projeto:**
+- 82 commits (20-31 janeiro 2026)
+- Notebooks completos com análises
+- Demonstração de aplicação REAL do framework
+
+**Enquadramento no projeto:**
+- **Ciclo 3 da pesquisa-ação:** CONCLUÍDO
+- **Artefato produzido:** Validação da metodologia ia-collab-os
+- **Objetivo Específico 2 (Transformação da gestão):** EVIDÊNCIAS COLETADAS
+- **Objetivo Específico 3 (Colaboração H-IA):** PADRÕES APLICADOS
 
 ---
 
@@ -564,35 +629,90 @@ Analisar condições, facilitadores e barreiras para a transferência e escalabi
 - Que novos insights emergem do debate público?
 - Como ajustar o sistema Tocantins Integrado com base em feedback?
 
-### Ciclos de Pesquisa-Ação Atualizados
+### Ciclos de Pesquisa-Ação Atualizados (CRONOLOGIA CORRIGIDA)
 
-**Ciclo 1: Diagnóstico e Concepção (2025.1 - 2026.1)**
-- **Status:** 🔄 PARCIALMENTE CONCLUÍDO
-- **Ações:** Diagnóstico, concepção do sistema, primeiras implementações
-- **Reflexão:** Desafios de integração de dados, decisões de arquitetura
-- **Aprendizados:** Necessidade de IT holística, importância de contexto local
-- **Evidências:** Repositório tocantins-integrado (commits iniciais)
+**Ver documentação completa:** `cronologia-real-repositorios.md`
 
-**Ciclo 2: Implementação e Validação (2026.1 - 2026.2)**
-- **Status:** 🔄 EM ANDAMENTO
-- **Ações:** Implementação das 4 dimensões, testes, validação com análises reais
-- **Reflexão:** Padrões de colaboração H-IA, usabilidade do sistema
-- **Aprendizados:** [A documentar]
-- **Evidências:** Repositórios tocantins-integrado + caderno-tocantins-2026
+**Ciclo 0: Demanda Inicial e Framework Incipiente (Pré-Nov 2025)**
+- **Status:** ✅ CONCLUÍDO (contexto pré-formal)
+- **Ações:** Criação manual inicial dos cadernos Tocantins
+- **Problema:** Sem framework estruturado, apenas modelo Manus
+- **Reflexão:** Framework incipiente insuficiente para sistematização
+- **Aprendizados:** Necessidade de framework mais robusto
+- **Evidências:** Trabalho inicial (não versionado no GitHub)
 
-**Ciclo 3: Refinamento e Ampliação (2026.2 - 2027.1)**
+**Ciclo 1: Framework V6 MVP - Sistema Monolítico (Nov-Dez 2025)**
+- **Status:** ✅ CONCLUÍDO
+- **Ações:** Desenvolver sistema técnico completo com metodologia embutida
+- **Problema:** Metodologia misturada com código (confusão entre processo e produto)
+- **Reflexão:** Dificulta manutenção, replicação e transferência de conhecimento
+- **Aprendizados:**
+  - ✅ Separar metodologia de artefatos técnicos
+  - ✅ Usar GitHub para continuidade entre sessões
+  - ✅ Valor de múltiplos modelos de IA
+- **Evidências:** Repositório framework-v6-mvp (183 commits)
+
+**Ciclo 2: Reinício e Separação de Conceitos (Jan 2026 - 1ª quinzena)**
+- **Status:** 🟡 PARCIALMENTE CONCLUÍDO (pausado)
+- **Ações:**
+  - Refatorar em 2 repositórios separados (tocantins-integrado + ia-collab-os)
+  - Implementar dupla camada do sistema
+- **Problema:** Implementação mais complexa que previsto, não ficou pronto a tempo
+- **Reflexão:** Sistema não completado antes do prazo dos cadernos
+- **Aprendizados:**
+  - ✅ Separação metodologia/artefato funcionou
+  - ✅ Framework ia-collab-os é aplicável
+  - ⚠️ Necessidade de flexibilidade (pivot)
+- **Evidências:**
+  - tocantins-integrado (113 commits)
+  - ia-collab-os (9 commits)
+
+**Ciclo 3: Pivot Emergencial - Produção Manual com Metodologia (Jan 2026 - 2ª quinzena)**
+- **Status:** ✅ CONCLUÍDO
+- **Ações:**
+  - PAUSAR implementação do sistema
+  - Produzir cadernos manualmente usando ia-collab-os
+  - Aplicar framework de colaboração humano-IA-IA
+- **Problema:** Prazo de entrega não espera conclusão do sistema
+- **Reflexão:** Framework ia-collab-os funciona bem para produção manual
+- **Aprendizados:**
+  - ✅ Metodologia é robusta e aplicável
+  - ✅ Cadernos manuais podem alimentar sistema futuro
+  - ✅ Pivot foi necessário e bem-sucedido
+- **Evidências:**
+  - caderno-tocantins-2026 (82 commits, Volume 1 completo)
+  - Aplicação prática do ia-collab-os
+
+**Ciclo 4: Retomada do Sistema e Audiências Públicas (2026.2 - 2027.1) PLANEJADO**
 - **Status:** ⏳ PLANEJADO
-- **Ações:** Refinamento baseado em feedback, audiências públicas, engajamento de stakeholders
-- **Reflexão:** Participação democrática, legitimação social de IT
+- **Ações:**
+  - Retomar tocantins-integrado com dados dos cadernos
+  - Completar Camada 1 (alimentar com dados)
+  - Implementar Camada 2 (multiagentes)
+  - Realizar audiências públicas no Senado
+  - Engajamento de stakeholders
+- **Reflexão:** [A realizar]
 - **Aprendizados:** [A documentar]
-- **Evidências:** Audiências, entrevistas, documentos
+- **Evidências:** [A coletar]
+  - Sistema completo funcionando
+  - Audiências públicas
+  - Entrevistas com gestores
 
-**Ciclo 4: Consolidação e Escalabilidade (2027.2 - 2028.1)**
+**Ciclo 5: Consolidação, Escalabilidade e Defesa (2027.2 - 2028.2) PLANEJADO**
 - **Status:** ⏳ PLANEJADO
-- **Ações:** Consolidação do sistema, análise de escalabilidade, disseminação
-- **Reflexão:** Condições para transferibilidade, lições aprendidas
+- **Ações:**
+  - Análise integrada dos 4 ciclos anteriores
+  - Validação de qualidade (cadernos manual vs. sistema)
+  - Análise de escalabilidade
+  - Escrita da tese
+  - Qualificação e defesa
+- **Reflexão:** [A realizar]
 - **Aprendizados:** [A documentar]
-- **Evidências:** Sistema final, documentação de transferibilidade, policy briefs
+- **Evidências:** [A coletar]
+  - Tese completa
+  - Sistema validado
+  - Policy briefs
+  - Publicações acadêmicas
 
 ---
 
