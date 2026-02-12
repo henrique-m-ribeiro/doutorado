@@ -30,9 +30,11 @@ Tema: Inteligencia Territorial e IA na Gestao Publica.
 ### Documentos de referencia:
 - Projeto de doutorado: `02-pesquisa-acao/00-projeto/projeto-doutorado-v2.0.md`
 - Objetivos e questoes: `02-pesquisa-acao/00-projeto/objetivos-questoes.md`
+- Matriz produto-tese: `02-pesquisa-acao/00-projeto/MATRIZ-PRODUTO-TESE.md`
 - Mapeamento ciclos-evidencias: `02-pesquisa-acao/01-ciclos/MAPEAMENTO-CICLOS-EVIDENCIAS.md`
 - Ciclo 4 (planejado): `02-pesquisa-acao/01-ciclos/CICLO-04-PLANO.md`
 - Ciclo 5 (planejado): `02-pesquisa-acao/01-ciclos/CICLO-05-PLANO.md`
+- Analise transversal dos repositorios: `02-pesquisa-acao/04-repositorios/ANALISE-TRANSVERSAL-REPOSITORIOS.md`
 - Cronologia dos repositorios: `02-pesquisa-acao/04-repositorios/cronologia-real-repositorios.md`
 
 ### Repositorios relacionados:

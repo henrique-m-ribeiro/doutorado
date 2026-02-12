@@ -533,23 +533,27 @@ FASE 5: Consolidação Acadêmica (31 Jan 2026)
 ## 📋 Diários de Pesquisa-Ação
 
 ### **Situação Atual (atualizado 2026-02-12):**
-- ✅ 4 diários centralizados em `doutorado/02-pesquisa-acao/03-dados/diarios-sessoes/`
+- ✅ **23 diários únicos** identificados cobrindo Ciclos 0-3.5
+  - 14 diários referenciados (Ciclos 0-1, em tocantins-integrado como versão canônica)
+  - 9 diários centralizados fisicamente em doutorado (Ciclos 2-3.5)
 - ✅ Template padronizado criado (`TEMPLATE-DIARIO.md`)
-- ✅ 7 handoffs centralizados em `doutorado/02-pesquisa-acao/03-dados/handoffs/`
+- ✅ 15+ handoffs centralizados em `doutorado/02-pesquisa-acao/03-dados/handoffs/`
 - ✅ 1 relatório de orquestração em `doutorado/02-pesquisa-acao/03-dados/relatorios-orquestracao/`
+- ✅ 5 ADRs centralizados em `doutorado/02-pesquisa-acao/03-dados/adrs/`
+- ✅ Governança (METHODOLOGY, ROLES, Piloto Palmas) em `doutorado/02-pesquisa-acao/03-dados/governanca/`
 - ✅ Originais preservados nos repositórios de origem
 
-### **Diários Centralizados:**
+### **Diários — Índice Completo:**
 
-| # | Data | Arquivo | Ciclo PA |
-|---|------|---------|----------|
-| 001 | 2026-01-23 | `2026-01-23-sessao-001.md` | Ciclo 3 |
-| 002 | 2026-01-27 | `2026-01-27-sessao-002.md` | Ciclo 3 |
-| 003 | 2026-02-08 | `2026-02-08-sessao-003.md` | Ciclo 3 |
-| 003c | 2026-02-08 | `2026-02-08-sessao-003-continuacao.md` | Ciclo 3→3.5 |
+Ver índice detalhado em `03-dados/diarios-sessoes/README.md` (23 diários, 3 partes).
+
+**Resumo:**
+- **Parte A (Ciclos 0-1):** 14 diários em tocantins-integrado (versão canônica), originais em framework-v6-mvp
+- **Parte B (Ciclo 2):** 4 diários centralizados (sessões 016-019)
+- **Parte C (Ciclos 3-3.5):** 5 diários centralizados (sessões 020-023c)
 
 ### **Importância:**
-- Evidências do processo de pesquisa-ação
+- Evidências do processo de pesquisa-ação cobrindo **todo** o projeto (Nov 2025 — Fev 2026)
 - Reflexões sobre decisões tomadas
 - Aprendizados ao longo do tempo
 - Material primário para análise na tese
@@ -597,20 +601,23 @@ FASE 5: Consolidação Acadêmica (31 Jan 2026)
 4. ✅ Handoffs e relatórios centralizados — 12 Fev 2026
 5. ✅ Índice cronológico atualizado — 12 Fev 2026
 
-### **Em Andamento (Etapas 2-6 do Plano):**
-1. Formalizar ciclos PA retroativamente (Ciclos 0-3) — Etapa 2
-2. Formalizar Ciclos 4-5 com hipóteses e critérios — Etapa 2
-3. Planejar integração de vozes territoriais — Etapa 3
-4. Fortalecer framework IA-Collab-OS — Etapa 4
-5. Resolver tensão produto-tese — Etapa 5
-6. Preparar retomada de produção — Etapa 6
+### **Concluído (Etapas 2, 5, 6 do Plano — 12 Fev 2026):**
+1. ✅ Formalizar ciclos PA retroativamente (Ciclos 0-3) — `MAPEAMENTO-CICLOS-EVIDENCIAS.md` v2.0
+2. ✅ Formalizar Ciclos 4-5 com hipóteses e critérios — `CICLO-04-PLANO.md` + `CICLO-05-PLANO.md`
+3. ✅ Resolver tensão produto-tese — `MATRIZ-PRODUTO-TESE.md` v2.0
+4. ✅ Preparar retomada de produção — `CLAUDE.md` + `PROTOCOLO-REGISTRO-SESSAO.md`
+5. ✅ Análise transversal dos 5 repositórios — `ANALISE-TRANSVERSAL-REPOSITORIOS.md`
+
+### **Pendente:**
+1. ⏳ Planejar integração de vozes territoriais — Etapa 3 (requer campo)
+2. ⏳ Fortalecer framework IA-Collab-OS — Etapa 4 (métricas, modos de falha)
 
 ### **Referência:**
 - Plano completo: `caderno-tocantins-2026/docs/PLANO-FORTALECIMENTO-METODOLOGICO-2026-02-08.md`
 
 ---
 
-**Versão:** 2.0 (Cronologia Corrigida + Diários Centralizados)
+**Versão:** 2.1 (Cronologia Corrigida + Diários Centralizados + Análise Transversal)
 **Data:** 12 de Fevereiro de 2026
-**Status:** ✅ Etapa 1 do Plano de Fortalecimento concluída
-**Próxima revisão:** Após conclusão da Etapa 2 (Formalização dos Ciclos PA)
+**Status:** ✅ Etapas 1, 2, 5, 6 do Plano de Fortalecimento concluídas
+**Próxima revisão:** Após conclusão das Etapas 3-4 (vozes territoriais e fortalecimento IA-Collab-OS)
