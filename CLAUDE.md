@@ -52,7 +52,7 @@ Status das 6 etapas (atualizado 2026-02-12):
 | 1. Centralizacao documental | ✅ Concluida |
 | 2. Formalizacao ciclos PA | ✅ Concluida |
 | 3. Vozes territoriais | ⏳ Requer trabalho de campo do pesquisador |
-| 4. Fortalecimento IA-Collab-OS | ⏳ Pendente |
+| 4. Fortalecimento IA-Collab-OS | 📋 Sessao planejada (ver `02-pesquisa-acao/03-dados/handoffs/INSTRUCAO-SESSAO-ETAPA4-IA-COLLAB-OS.md`) |
 | 5. Tensao produto-tese | ✅ Concluida (matriz criada) |
 | 6. Retomada de producao | ✅ CLAUDE.md e checklist criados |
 
