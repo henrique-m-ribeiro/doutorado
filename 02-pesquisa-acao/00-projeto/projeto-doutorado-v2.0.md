@@ -4,8 +4,8 @@
 **Instituição:** [Nome da Instituição]
 **Doutorando:** Henrique Marques Ribeiro
 **Orientador:** Professor Fernando Filgueiras
-**Versão:** 2.0 (Atualizada em 31 de Janeiro de 2026)
-**Versão Anterior:** 1.0 (30 de Janeiro de 2026)
+**Versão:** 2.1 (Atualizada em 12 de Fevereiro de 2026)
+**Versão Anterior:** 2.0 (31 de Janeiro de 2026), 1.0 (30 de Janeiro de 2026)
 
 ---
 
@@ -55,15 +55,22 @@ Framework metodológico para colaboração humano-IA-IA extraído DA PRÁTICA de
 - 9 commits (framework conciso e focado)
 - Usado atualmente para produção dos cadernos
 
-**3. caderno-tocantins-2026** (Ciclo 3-4 - Jan 2026) - 🟢 ATIVO
+**3. caderno-tocantins-2026** (Ciclo 3 - Jan-Fev 2026) - 🟢 ATIVO
 Análises territoriais dos 139 municípios do Tocantins. Demanda ORIGINAL que motivou o projeto (pré-GitHub). Retomado manualmente usando ia-collab-os após pivot emergencial.
-- Volume 1 concluído: 139 municípios, 8 microrregiões, ~6.965 linhas
-- 82 commits (20-31 janeiro 2026)
-- Demonstração prática da metodologia ia-collab-os
+- 9 volumes concluídos: Volume 1 estadual (v2.0, 579 KB, 12.572 linhas) + Volumes 2-9 regionais (~905 páginas)
+- ~177 commits (20 janeiro - fevereiro 2026)
+- 213 agentes IA orquestrados em sessão única (8 fev 2026)
+- Descoberta da *split strategy* (separação produção analítica vs. mecânica)
+- Demonstração prática em escala da metodologia ia-collab-os
 
-**Documentação completa:** `cronologia-real-repositorios.md` e `framework-v6-mvp.md` no repositório doutorado.
+**4. doutorado** (Ciclo 3.5 - Fev 2026) - 🟢 ATIVO
+Repositório acadêmico central. Após a produção em escala do Ciclo 3, um ciclo de reflexão e organização metodológica (Ciclo 3.5) identificou 6 lacunas e produziu: análise transversal dos 5 repositórios, matriz de dupla leitura produto-tese, mapeamento retroativo ciclos-evidências v2.0, protocolos e templates para sessões futuras, e plano de fortalecimento metodológico em 6 etapas.
+
+**Documentação completa:** `cronologia-real-repositorios.md`, `framework-v6-mvp.md`, `ANALISE-TRANSVERSAL-REPOSITORIOS.md` e `MATRIZ-PRODUTO-TESE.md` no repositório doutorado.
 
 Esta versão também incorpora **nova oportunidade de pesquisa**: audiências públicas sobre inteligência territorial na Comissão de Desenvolvimento Regional (CDR) do Senado Federal, possibilitando ampliar escopo para desenvolvimento regional, coletar dados primários sobre percepções de IT no Brasil, e conectar pesquisa acadêmica com formulação de políticas nacionais.
+
+**Nota de atualização (12 de Fevereiro de 2026):** Esta versão 2.1 incorpora atualizações decorrentes do Ciclo 3.5 (Reflexão e Organização Metodológica), incluindo: conclusão dos 9 volumes do caderno, análise transversal dos 5 repositórios, criação da MATRIZ-PRODUTO-TESE, mapeamento retroativo ciclos-evidências v2.0, e redescobrimento de evidências extensivas nos Ciclos 0-2 (21 diários PA, artigo rascunho, 5 ADRs, piloto Palmas).
 
 ### 1.3 Relevância e Justificativa
 
@@ -165,22 +172,22 @@ Desenvolver, implementar e avaliar, através de pesquisa-ação, um sistema de i
 **OE1. Pesquisa-Ação e Desenvolvimento de Sistemas de IA**
 Adaptar e aplicar o framework de pesquisa-ação ao desenvolvimento colaborativo de sistemas de inteligência territorial baseados em IA, documentando princípios, processos e desafios dessa abordagem metodológica.
 
-*Status: 🔄 EM ANDAMENTO | Evidências: Repositórios ia-collab-os, tocantins-integrado*
+*Status: 🔄 AVANÇADO | Evidências: ia-collab-os v1.0; 23+ diários PA (Ciclos 0-3.5); 5 ADRs; sistema de continuidade (precursor); governança (METHODOLOGY+ROLES); mapeamento ciclos-evidências v2.0 | Lacuna: métricas operacionais; validação externa; diálogo com Sein et al. (ADR)*
 
 **OE2. Fundamentação Teórica de Inteligência Territorial**
 Revisar, sistematizar e aprofundar a literatura sobre inteligência territorial, conectando-a com IA em governança, colaboração humano-IA e desenvolvimento regional, estabelecendo framework teórico-conceitual para análise do sistema Tocantins Integrado.
 
-*Status: 🔄 EM ANDAMENTO (Prioridade 2026.1) | Justificativa: Lacuna identificada; necessário para audiências públicas*
+*Status: 🔄 EM ANDAMENTO (Prioridade 2026.1) | Evidências parciais: 4 análises dimensionais (~345 KB); revisão incipiente neste projeto; artigo rascunho "The Mediator Effect" | Lacuna: revisão sistemática (15-20 refs); fichar Girardot, Bertacchini, Masselot*
 
 **OE3. Transformações na Gestão Pública e Desenvolvimento Regional**
 Identificar, descrever e analisar as transformações produzidas pela introdução do sistema de inteligência territorial nos processos de análise territorial, tomada de decisão e formulação de políticas públicas voltadas ao desenvolvimento regional do Tocantins.
 
-*Status: 🟡 EVIDÊNCIAS SENDO COLETADAS | Evidências: Repositório caderno-tocantins-2026*
+*Status: 🟡 ARTEFATO SEM USO | Evidências: 9 volumes do Caderno Tocantins (~1.150 pág.); piloto Palmas (12 KB, primeiro dado empírico); sistema tocantins-integrado (Camada 1: 90%) | Lacuna: nenhum ator territorial usou os cadernos; piloto sem análise formal; entrevistas pendentes*
 
 **OE4. Padrões de Colaboração Humano-IA**
 Caracterizar os padrões de colaboração que emergem entre gestores públicos, técnicos e sistemas de IA no processo de análise territorial e formulação de políticas, propondo um framework de colaboração humano-IA para gestão pública.
 
-*Status: 🔄 EM ANDAMENTO | Evidências: Repositório ia-collab-os, análises de interação*
+*Status: 🔄 RICO MAS NÃO SISTEMATIZADO | Evidências: ia-collab-os (roles CEO/CTO/DEV); 11+ prompts de sessão (evolução H-IA); split strategy (213 agentes); relato de orquestração; 8+ handoffs CEO↔CTO↔DEV | Lacuna: framework teórico não sistematizado; sem diálogo com Dellermann, Jarrahi, Seeber; sem tipologia formal*
 
 **OE5. Desafios Éticos, de Governança e Participação Democrática**
 Identificar e analisar os desafios éticos, de governança, accountability e participação democrática que emergem da utilização de inteligência territorial baseada em IA na gestão pública, incluindo análise de audiências públicas como espaço de debate e legitimação, propondo princípios e salvaguardas para seu uso responsável.
@@ -196,13 +203,13 @@ Analisar condições, facilitadores e barreiras para a transferência e escalabi
 
 | Pergunta de Pesquisa | Objetivo Específico | Trabalho Realizado | Próximas Ações |
 |----------------------|---------------------|-------------------|----------------|
-| **PC:** Como IT baseada em IA pode transformar gestão pública? | OG | Desenvolvimento do sistema | Análise integrada, audiências |
-| **PS1:** Como PA viabiliza desenvolvimento? | OE1 | Framework ia-collab-os | Documentar, publicar |
-| **PS2:** Fundamentos de IT | OE2 | [Iniciando] | Revisão literatura |
-| **PS3:** Transformações na gestão | OE3 | Análises do caderno | Entrevistas, observação |
-| **PS4:** Padrões de colaboração H-IA | OE4 | Padrões identificados | Sistematizar framework |
-| **PS5:** Desafios éticos e governança | OE5 | [Planejado] | Audiências, entrevistas |
-| **PS6:** Escalabilidade | OE6 | [Planejado] | Audiências, análise comparativa |
+| **PC:** Como IT baseada em IA pode transformar gestão pública? | OG | Sistema (90%); 9 volumes; framework ia-collab-os | Análise integrada, audiências |
+| **PS1:** Como PA viabiliza desenvolvimento? | OE1 | ia-collab-os v1.0; 23+ diários PA; 5 ADRs; mapeamento ciclos-evidências; governança formalizada | Métricas operacionais; validação externa; Artigo 1 |
+| **PS2:** Fundamentos de IT | OE2 | 4 análises dimensionais (~345 KB); revisão incipiente; artigo rascunho "The Mediator Effect" | Revisão sistemática (15-20 refs) |
+| **PS3:** Transformações na gestão | OE3 | 9 volumes (~1.150 pág.); piloto Palmas; fichas municipais | Validação territorial; entrevistas; observação |
+| **PS4:** Padrões de colaboração H-IA | OE4 | Split strategy; 213 agentes; 11+ prompts; roles CEO/CTO/DEV; handoffs formalizados | Sistematizar framework teórico; diálogo com literatura |
+| **PS5:** Desafios éticos e governança | OE5 | Reflexões em diários | Audiências, entrevistas, CEP |
+| **PS6:** Escalabilidade | OE6 | Arquitetura modular; ia-collab-os transferível; produção em escala demonstrada | Teste em outro contexto; audiências |
 
 ---
 
@@ -390,14 +397,14 @@ Esta pesquisa adota **pesquisa-ação** (Action Research - AR) como metodologia 
 
 **Baseado em:** Heikkinen et al. (2007), Sein et al. (2011 - ADR), Baskerville & Wood-Harper (1996)
 
-**Estrutura:** Cinco ciclos iterativos de pesquisa-ação, cada ciclo contendo:
+**Estrutura:** Seis ciclos iterativos de pesquisa-ação (incluindo o Ciclo 3.5 de reflexão intermediária), cada ciclo contendo:
 1. **Diagnóstico/Planejamento:** Identificar problema, planejar intervenção
 2. **Ação:** Implementar intervenção (desenvolvimento de sistema, análises, audiências)
 3. **Avaliação:** Coletar dados, avaliar resultados
 4. **Reflexão:** Interpretar resultados, extrair aprendizados
 5. **Aprendizagem:** Documentar conhecimento, ajustar teoria
 
-### 5.3 Os Cinco Ciclos de Pesquisa-Ação
+### 5.3 Os Ciclos de Pesquisa-Ação (0 a 5, incluindo 3.5)
 
 **IMPORTANTE:** A cronologia real dos ciclos difere da sequência de commits no GitHub. Ver documentação completa em `cronologia-real-repositorios.md`.
 
@@ -441,11 +448,11 @@ Após Ciclo 0, decidiu-se estruturar formalmente projeto, integrando metodologia
 
 **Ação:**
 - Desenvolvimento do framework-v6-mvp (tudo junto: metodologia + código)
-- 183 commits documentando evolução
-- Tentativa de estruturação completa
+- 183 commits documentando evolução (571 arquivos)
+- Tentativa de estruturação completa (React+TS, Node, PostgreSQL, pgvector, RAG, N8N, 19 agentes)
 
 **Avaliação:**
-Sistema ficou confuso: metodologia misturada com artefatos técnicos. Difícil manter, replicar e transferir conhecimento.
+Sistema ficou confuso: metodologia misturada com artefatos técnicos. Difícil manter, replicar e transferir conhecimento. Porém, a análise transversal dos repositórios (fev 2026) revelou que este ciclo é o **mais rico em evidências primárias** de todo o projeto.
 
 **Problema identificado (CRÍTICO):**
 Confundir PROCESSO (metodologia de colaboração) com PRODUTO (sistema técnico) em único repositório.
@@ -460,7 +467,13 @@ Separação de preocupações é fundamental. Metodologia deve ser independente 
 4. ✅ Valor de diários de pesquisa-ação para reflexão
 
 **Evidências:**
-- Repositório framework-v6-mvp (183 commits)
+- Repositório framework-v6-mvp (183 commits, 571 arquivos)
+- **21 diários de pesquisa-ação** (~550 KB) cobrindo 15 sessões — registro reflexivo mais extenso do projeto
+- **Artigo rascunho "The Mediator Effect"** (~165 KB, ~40 páginas) com cover letter para ACM TOCHI
+- **4 análises dimensionais** do Tocantins (~345 KB): Ambiental, Econômica, Social, Territorial
+- **11+ prompts de sessão** — evidência direta da evolução da capacidade de orquestração H-IA
+- **Sistema de continuidade** (~52 KB) — precursor direto do ia-collab-os
+- Conceitos teóricos emergentes (sessão 5) sobre colaboração H-IA
 - Documento framework-v6-mvp.md (análise detalhada)
 - Aprendizados documentados
 
@@ -482,14 +495,20 @@ Usar aprendizados do Ciclo 1 para reiniciar com separação clara:
 - Produto final → cadernos (retomado depois)
 
 **Ação:**
-- Desenvolvimento do tocantins-integrado (113 commits em jan/2026)
+- Desenvolvimento do tocantins-integrado (113 commits, 278 arquivos, 24 PRs em jan/2026)
 - Arquitetura de dupla camada definida
 - Camada 1 (Dashboard): 90% implementada
-- Extração da metodologia em ia-collab-os (9 commits)
+- Extração da metodologia em ia-collab-os (9 commits, 39 arquivos)
+- **5 Architecture Decision Records (ADRs)** formais documentando decisões-chave
+- **Governança formalizada**: METHODOLOGY.md (11 KB) e ROLES.md (9 KB) com papéis CEO/CTO/DEV
+- **Piloto Palmas realizado**: primeiro teste empírico com dados reais (89 registros, 49.4% oficiais)
+- 4 diários de pesquisa-ação originais (sessões 16-19)
 
 **Avaliação:**
 - ✅ Separação metodologia/artefato funcionou
 - ✅ ia-collab-os emergiu da prática como contribuição metodológica
+- ✅ Disciplina de ADRs e governança formalizada como prática emergente
+- ✅ Piloto Palmas forneceu primeiro dado empírico real (motivou ADR-002: dados apenas oficiais)
 - ⚠️ Sistema não ficou pronto a tempo para gerar cadernos
 - ⚠️ Complexidade técnica maior que previsto
 
@@ -497,17 +516,24 @@ Usar aprendizados do Ciclo 1 para reiniciar com separação clara:
 Deadline de entrega dos cadernos se aproxima, sistema ainda incompleto.
 
 **Reflexão:**
-Necessidade de PIVOT: pausar sistema, retomar produção manual usando ia-collab-os.
+Necessidade de PIVOT: pausar sistema, retomar produção manual usando ia-collab-os. O piloto Palmas revelou que 50.6% dos dados eram estimados, motivando decisão de usar apenas dados oficiais.
 
 **Aprendizados:**
 1. ✅ Separação metodologia/artefato é eficaz
 2. ✅ Framework ia-collab-os é aplicável independente do sistema
 3. ⚠️ Equilíbrio entre inovação técnica e prazos práticos
 4. ✅ Metodologia emergiu DA PRÁTICA (não planejada a priori)
+5. ✅ ADRs como prática de registro de decisões arquiteturais
+6. ✅ Governança formal (roles, handoffs) facilita continuidade entre sessões
 
 **Evidências:**
-- tocantins-integrado (113 commits, Camada 1: 90%)
-- ia-collab-os (9 commits, framework publicado)
+- tocantins-integrado (113 commits, 278 arquivos, Camada 1: 90%)
+- ia-collab-os (9 commits, 39 arquivos, framework publicado)
+- **5 ADRs** (~46 KB): metodologia distribuída, dados oficiais, workflow IBGE, coleta por metadados, granularidade territorial
+- **Governança** (~20 KB): METHODOLOGY.md + ROLES.md com RACI e limites de autoridade
+- **Piloto Palmas** (12 KB): 89 registros, 6/8 coletores com sucesso
+- **8+ handoffs** CEO↔CTO↔DEV documentando transições
+- 4 diários de PA e meta-análise metodológica (9 KB)
 - Issues documentando decisões e complicações
 
 **Transição para Ciclo 3:**
@@ -515,7 +541,7 @@ Decisão de PIVOT EMERGENCIAL.
 
 ---
 
-#### **Ciclo 3: Pivot Emergencial - Produção Manual (Jan 2026 - 2ª quinzena)**
+#### **Ciclo 3: Pivot Emergencial e Produção em Escala (Jan-Fev 2026)**
 
 **Status:** ✅ CONCLUÍDO
 
@@ -528,30 +554,93 @@ Sistema não ficou pronto. Cadernos precisam ser entregues. Solução: produzir 
 - PAUSOU implementação do tocantins-integrado
 - RETOMOU produção dos cadernos manualmente
 - APLICOU framework ia-collab-os sistematicamente
-- Produção intensiva: 82 commits em 12 dias (20-31 jan/2026)
+- Produção intensiva: ~177 commits (20 jan - fev 2026)
+- **213 agentes IA orquestrados** em sessão única de 8 horas (8 fev 2026)
+- **9 volumes produzidos**: Volume 1 estadual (v2.0, 579 KB, 12.572 linhas) + Volumes 2-9 regionais (~905 páginas)
+- **Split strategy** descoberta: separação entre produção analítica (IA) e mecânica (scripts)
 
 **Avaliação:**
-- ✅ Volume 1 concluído: 139 municípios, 8 microrregiões, ~6.965 linhas
-- ✅ Demonstração prática de que ia-collab-os funciona
+- ✅ 9 volumes concluídos: 139 municípios, 8 microrregiões, ~1.150 páginas totais
+- ✅ Demonstração prática em escala de que ia-collab-os funciona
 - ✅ Produto entregue no prazo
+- ✅ Split strategy como conhecimento transferível sobre orquestração H-IA
 - ⚠️ Processo manual é trabalhoso (justifica retomada do sistema futuro)
+- ⚠️ Produção "de gabinete" — sem validação territorial ou participação local
 
 **Reflexão:**
-Pivot foi necessário e bem-sucedido. Framework metodológico (ia-collab-os) mostrou-se robusto e independente do sistema técnico. Cadernos gerados manualmente servirão como benchmark de qualidade para sistema automatizado futuro.
+Pivot foi necessário e bem-sucedido. Framework metodológico (ia-collab-os) mostrou-se robusto e independente do sistema técnico em escala industrial (213 agentes). A descoberta da split strategy — separar tarefas analíticas (melhor feitas por IA com contexto) de mecânicas (melhor feitas por scripts reproduzíveis) — é contribuição transferível. Cadernos gerados manualmente servirão como benchmark de qualidade para sistema automatizado futuro.
 
 **Aprendizados:**
-1. ✅ ia-collab-os é metodologia transferível e eficaz
+1. ✅ ia-collab-os é metodologia transferível e eficaz em escala
 2. ✅ Flexibilidade e adaptação são essenciais em PA
 3. ✅ Cadernos manuais têm valor como dados para pesquisa
 4. ✅ Colaboração humano-IA-IA (múltiplos modelos) é produtiva
+5. ✅ Split strategy: separar produção analítica de mecânica aumenta eficiência
+6. ✅ Orquestração como competência-chave do pesquisador
+7. ⚠️ Tensão entre produção e reflexão exige disciplina explícita
 
 **Evidências:**
-- caderno-tocantins-2026 (82 commits, Volume 1 completo)
-- 139 municípios analisados em 9 dimensões
+- caderno-tocantins-2026 (~177 commits, 9 volumes completos)
+- 139 municípios analisados em 9 dimensões (~1.150 páginas)
+- Relato de orquestração de 213 agentes (dado único sobre H-IA em escala)
+- Split strategy formalizada (produção analítica vs. mecânica)
+- 4 diários de PA + 7 handoffs centralizados no repositório doutorado
+- Script assemble-volumes.py (reproduzível)
 - Aplicação documentada do ia-collab-os
 
+**Transição para Ciclo 3.5:**
+A produção em escala revelou tensão entre quantidade de artefatos produzidos e qualidade da base de evidências acadêmicas. Uma autoavaliação crítica identificou 6 lacunas, motivando um ciclo intermediário de reflexão e organização antes de avançar.
+
+---
+
+#### **Ciclo 3.5: Reflexão e Organização Metodológica (Fev 2026)**
+
+**Status:** ✅ CONCLUÍDO
+
+**Repositório:** doutorado
+
+**Diagnóstico/Planejamento:**
+Após a produção em escala do Ciclo 3 (9 volumes, 213 agentes), uma autoavaliação crítica identificou **6 lacunas** na base de evidências acadêmicas: (1) ausência de reflexão em primeira pessoa do pesquisador nos diários; (2) diários escritos com assistência de IA (risco de circularidade); (3) produção orientada pela ferramenta, não pelas questões de pesquisa; (4) nenhum ator territorial consultado; (5) tensão entre produto prático e dado de pesquisa não explicitada; (6) evidências dos Ciclos 0-2 desconhecidas ou subestimadas.
+
+**Ação:**
+- Análise transversal dos 5 repositórios (inventário completo de todos os artefatos)
+- Criação da Matriz de Dupla Leitura Produto-Tese (MATRIZ-PRODUTO-TESE.md)
+- Mapeamento retroativo ciclos-evidências v2.0 (MAPEAMENTO-CICLOS-EVIDENCIAS.md)
+- Centralização documental: diários, handoffs, ADRs, relatórios, governança
+- Formalização dos ciclos PA: planos para Ciclos 4 e 5 com hipóteses testáveis
+- Criação de protocolos e templates para sessões futuras
+- Plano de Fortalecimento Metodológico em 6 etapas
+- Instrução de sessão autocontida para Etapa 4 (ia-collab-os)
+
+**Avaliação:**
+- ✅ Redescobrimento de evidências extensivas nos Ciclos 0-2 (21 diários PA, artigo rascunho, 4 análises dimensionais, 5 ADRs, piloto Palmas)
+- ✅ Explicitação da tensão produto-tese como princípio orientador (regra 70/30)
+- ✅ Base de evidências mapeada: 23+ diários, 15+ handoffs, 5 ADRs, 4 análises dimensionais, relato de orquestração
+- ✅ Lacunas acadêmicas identificadas por OE com clareza
+- ✅ Plano de Fortalecimento com 4 de 6 etapas concluídas
+
+**Reflexão:**
+O Ciclo 3.5 validou o princípio "desacelerar para acelerar" — pausar a produção para organizar retroativamente fortaleceu significativamente a base de evidências. A análise transversal revelou que o projeto era muito mais rico em evidências do que se supunha, mas essas evidências estavam dispersas e desconectadas das questões de pesquisa. O princípio da PA (reflexão sobre a ação) operou aqui de forma exemplar.
+
+**Aprendizados:**
+1. ✅ Organização retroativa é tão valiosa quanto produção nova
+2. ✅ A tensão produto-tese precisa ser gerida explicitamente (MATRIZ)
+3. ✅ Evidências existentes subestimadas por falta de inventário sistemático
+4. ✅ Protocolos e templates aumentam consistência entre sessões
+5. ✅ Handoffs autocontidos permitem transferência de contexto entre repositórios
+
+**Evidências:**
+- ANALISE-TRANSVERSAL-REPOSITORIOS.md (inventário dos 5 repos)
+- MATRIZ-PRODUTO-TESE.md (dupla leitura produto-tese)
+- MAPEAMENTO-CICLOS-EVIDENCIAS.md v2.0 (mapeamento retroativo completo)
+- CICLO-04-PLANO.md e CICLO-05-PLANO.md (com hipóteses testáveis)
+- PROTOCOLO-REGISTRO-SESSAO.md e TEMPLATE-DIARIO.md
+- INSTRUCAO-SESSAO-ETAPA4-IA-COLLAB-OS.md (~800 linhas, autocontido)
+- CLAUDE.md (instruções para agentes IA)
+- 10+ diários de sessão centralizados (Ciclos 3 e 3.5)
+
 **Transição para Ciclo 4:**
-Com cadernos em produção contínua e metodologia validada, próximo ciclo focará em: retomada do sistema, audiências públicas, análise integrada.
+Com base de evidências organizada, lacunas mapeadas e plano de fortalecimento parcialmente executado, Ciclo 4 pode focar em coleta de dados novos (campo, audiências, entrevistas) com fundamentação mais sólida.
 
 ---
 
@@ -605,10 +694,10 @@ Com cadernos concluídos, metodologia validada, e oportunidade de audiências p�
 **Status:** ⏳ PLANEJADO
 
 **Diagnóstico/Planejamento:**
-Ciclo final foca em consolidação de aprendizados, análise integrada dos 4 ciclos anteriores, qualificação e defesa da tese.
+Ciclo final foca em consolidação de aprendizados, análise integrada dos ciclos anteriores (0, 1, 2, 3, 3.5, 4), qualificação e defesa da tese.
 
 **Ações Planejadas:**
-- Análise transversal dos 5 ciclos
+- Análise transversal dos 6 ciclos (0-5, incluindo 3.5)
 - Sistematização de aprendizados cumulativos
 - Validação de qualidade (comparar cadernos manual vs. sistema)
 - Análise de escalabilidade (condições para transferência)
@@ -759,8 +848,8 @@ Dados de múltiplas fontes serão triangulados para aumentar validade:
 
 | Período | Fase Principal | Ciclo PA | Atividades-Chave | Entregas |
 |---------|---------------|----------|------------------|----------|
-| **2025.2** | Início | Ciclo 0-1 | Framework incipiente; framework-v6-mvp | Aprendizados documentados |
-| **2026.1** | Consolidação | Ciclos 2-3 | Reinício; Pivot; Cadernos; Revisão IT | Projeto v2.0; Capítulo teórico |
+| **2025.2** | Início | Ciclo 0-1 | Framework incipiente; framework-v6-mvp (21 diários, artigo rascunho) | Aprendizados documentados; evidências extensivas |
+| **2026.1** | Consolidação | Ciclos 2-3-3.5 | Reinício; Pivot; 9 volumes; Reflexão e organização | Projeto v2.1; MATRIZ; MAPEAMENTO v2.0; Capítulo teórico |
 | **2026.2** | Audiências | Ciclo 4 início | Audiências públicas; Retomada sistema | Artigo 1; Relatório Senado |
 | **2027.1** | Análise | Ciclo 4 cont. | Análise integrada; Escrita | Artigo 2; Rascunho tese |
 | **2027.2** | Qualificação | Ciclo 5 início | Qualificação; Ajustes | Defesa qualificação |
@@ -773,9 +862,13 @@ Dados de múltiplas fontes serão triangulados para aumentar validade:
 
 **Mês 1-2 (Jan-Fev):**
 - ✅ Organizar repositório doutorado (CONCLUÍDO)
-- ✅ Ciclo 2 e 3 de PA (CONCLUÍDOS)
+- ✅ Ciclos 2, 3 e 3.5 de PA (CONCLUÍDOS)
+- ✅ Produção de 9 volumes do Caderno Tocantins (CONCLUÍDO)
+- ✅ Análise transversal dos 5 repositórios (CONCLUÍDO)
+- ✅ MATRIZ-PRODUTO-TESE e MAPEAMENTO-CICLOS-EVIDENCIAS v2.0 (CONCLUÍDOS)
+- ✅ Plano de Fortalecimento Metodológico: 4/6 etapas concluídas
+- ✅ Redigir e revisar projeto v2.0→v2.1 (CONCLUÍDO)
 - 🔄 Revisar literatura sobre IT (15-20 refs)
-- 🔄 Redigir projeto v2.0 (em andamento)
 
 **Mês 3-4 (Mar-Abr):**
 - Aprofundar revisão teórica (fichar 10 textos IT)
@@ -905,9 +998,11 @@ Dados de múltiplas fontes serão triangulados para aumentar validade:
 
 | Data | Marco | Descrição |
 |------|-------|-----------|
-| Jan 2026 | ✅ Ciclos 2-3 concluídos | Repositórios criados, cadernos produzidos |
-| Fev 2026 | Projeto v2.0 aprovado | Orientador valida atualizações |
-| Jun 2026 | Artigo 1 submetido | Metodologia ia-collab-os |
+| Jan 2026 | ✅ Ciclos 2-3 concluídos | Repositórios criados; 9 volumes produzidos; 213 agentes orquestrados |
+| Fev 2026 | ✅ Ciclo 3.5 concluído | Análise transversal; MATRIZ; MAPEAMENTO v2.0; Plano de Fortalecimento |
+| Fev 2026 | ✅ Projeto v2.1 revisado | Incorpora descobertas do Ciclo 3.5 |
+| Fev-Mar 2026 | Projeto aprovado pelo orientador | Orientador valida atualizações |
+| Jun 2026 | Artigo 1 submetido | Metodologia ia-collab-os (depende de Etapa 4) |
 | Ago 2026 | Audiência(s) realizada(s) | IT debatida no Senado |
 | Dez 2026 | Sistema Camada 1 completa | Dashboard funcional |
 | Jun 2027 | Sistema completo | Camadas 1 e 2 funcionando |
@@ -949,9 +1044,10 @@ Dados de múltiplas fontes serão triangulados para aumentar validade:
 
 **4. Ciclos de Pesquisa-Ação** (50-60 páginas)
 - Ciclo 0: Demanda inicial
-- Ciclo 1: framework-v6-mvp
-- Ciclo 2: Reinício e separação
-- Ciclo 3: Pivot emergencial
+- Ciclo 1: framework-v6-mvp (21 diários, artigo rascunho, 4 análises dimensionais)
+- Ciclo 2: Reinício e separação (5 ADRs, governança, piloto Palmas)
+- Ciclo 3: Pivot emergencial e produção em escala (9 volumes, 213 agentes, split strategy)
+- Ciclo 3.5: Reflexão e organização metodológica (análise transversal, MATRIZ, MAPEAMENTO)
 - Ciclo 4: Audiências e retomada
 - Ciclo 5: Consolidação
 
@@ -1064,13 +1160,14 @@ Dados de múltiplas fontes serão triangulados para aumentar validade:
 **7.4.3 Caderno Tocantins 2026**
 
 - **Repositório:** github.com/henrique-m-ribeiro/caderno-tocantins-2026
-- **Versão final:** Volumes 1 e 2 completos
-- **Formato:** Notebooks Jupyter, Markdown
+- **Versão atual:** 9 volumes concluídos (Volume 1 v2.0 + Volumes 2-9 regionais)
+- **Formato:** Markdown
 - **Conteúdo:**
-  - 139 municípios analisados
+  - 139 municípios analisados em 9 dimensões
   - 8 microrregiões documentadas
-  - 9 dimensões de análise
-  - Visualizações de dados
+  - Volume 1 estadual: 579 KB, 12.572 linhas
+  - Volumes 2-9 regionais: ~905 páginas
+  - Fichas municipais V2
   - Insights territoriais
 
 ### 7.5 Produtos para Políticas Públicas
@@ -1332,18 +1429,21 @@ A originalidade desta pesquisa reside em:
 
 ### 10.4 Próximos Passos Imediatos
 
-**Alta Prioridade (Fevereiro 2026):**
-1. ✅ Finalizar projeto v2.0 (este documento)
-2. Reunir com orientador para validar atualizações
-3. Aprofundar revisão sobre IT (15-20 referências-chave)
-4. Submeter projeto ao CEP
-5. Preparar proposta formal de audiência pública
+**Alta Prioridade (Fevereiro-Março 2026):**
+1. ✅ Finalizar projeto v2.0 → v2.1 (este documento)
+2. ✅ Análise transversal dos 5 repositórios (CONCLUÍDO — Ciclo 3.5)
+3. ✅ Mapear ciclos-evidências retroativamente (CONCLUÍDO — MAPEAMENTO v2.0)
+4. ✅ Criar MATRIZ-PRODUTO-TESE (CONCLUÍDO — Ciclo 3.5)
+5. Executar Etapa 4 do Plano de Fortalecimento (ia-collab-os v2.0: métricas, modos de falha, fundamentação teórica)
+6. Reunir com orientador para validar atualizações
+7. Aprofundar revisão sobre IT (15-20 referências-chave)
+8. Submeter projeto ao CEP
 
-**Média Prioridade (Março-Abril 2026):**
+**Média Prioridade (Março-Maio 2026):**
 1. Escrever rascunho Cap. 2 (Fundamentação Teórica)
-2. Documentar sistematicamente trabalho dos 4 repositórios
-3. Mapear commits e issues por ciclo de PA
-4. Escrever artigo 1 sobre ia-collab-os
+2. Escrever artigo 1 sobre ia-collab-os (depende de Etapa 4)
+3. Preparar proposta formal de audiência pública
+4. Iniciar validação territorial (3 municípios) — Etapa 3
 
 **Baixa Prioridade (Maio-Junho 2026):**
 1. Apresentar em evento acadêmico local
@@ -1364,40 +1464,58 @@ A originalidade desta pesquisa reside em:
 
 ### Anexo B: Documentação Complementar no Repositório Doutorado
 
-- `cronologia-real-repositorios.md` - Cronologia completa dos 5 ciclos
+- `cronologia-real-repositorios.md` - Cronologia completa dos 5 repositórios e ciclos
 - `framework-v6-mvp.md` - Análise detalhada do Ciclo 1
-- `plano-atualizacao-projeto-v2.md` - Este plano de atualização
 - `objetivos-questoes.md` - Detalhamento de objetivos e questões
 - `bibliografia.bib` - Bibliografia em formato BibTeX
+- `ANALISE-TRANSVERSAL-REPOSITORIOS.md` - Inventário completo dos 5 repositórios (Ciclo 3.5)
+- `MATRIZ-PRODUTO-TESE.md` - Dupla leitura produto-tese por OE (Ciclo 3.5)
+- `MAPEAMENTO-CICLOS-EVIDENCIAS.md` - Mapeamento retroativo ciclos-evidências v2.0 (Ciclo 3.5)
+- `CICLO-04-PLANO.md` e `CICLO-05-PLANO.md` - Planos com hipóteses testáveis
+- `PROTOCOLO-REGISTRO-SESSAO.md` - Checklist pré-sessão para agentes IA
+- `TEMPLATE-DIARIO.md` - Template padronizado de diário de PA
 
-### Anexo C: Estatísticas Preliminares dos Repositórios (Jan 2026)
+### Anexo C: Estatísticas dos Repositórios (Atualizado Fev 2026)
 
 **framework-v6-mvp:**
-- Commits: 183
+- Commits: 183 | Arquivos: 571
 - Período: Nov-Dez 2025
-- Status: Supersedido
+- Evidências: 21 diários PA, artigo rascunho (~165 KB), 4 análises dimensionais (~345 KB), 11+ prompts, sistema de continuidade (~52 KB)
+- Status: Histórico (superado, mas mais rico em evidências do que se supunha)
 
 **tocantins-integrado:**
-- Commits: 113
+- Commits: 113 | Arquivos: 278 | PRs: 24
 - Período: Jan 2026
+- Evidências: 5 ADRs (~46 KB), governança (~20 KB), piloto Palmas (12 KB), 4 diários, 8+ handoffs
 - Status: Pausado (Camada 1: 90%)
 
 **ia-collab-os:**
-- Commits: 9
+- Commits: 9 | Arquivos: 39
 - Período: Jan 2026
-- Status: Ativo e publicado
+- Status: Ativo e publicado (fortalecimento Etapa 4 planejado)
 
 **caderno-tocantins-2026:**
-- Commits: 82
-- Período: 20-31 Jan 2026
-- Linhas de código/análise: ~6.965
-- Status: Volume 1 concluído
+- Commits: ~177
+- Período: 20 Jan - Fev 2026
+- Volumes: 9 (Volume 1 estadual: 579 KB, 12.572 linhas + Volumes 2-9 regionais: ~905 páginas)
+- Agentes orquestrados: 213
+- Status: 9 volumes concluídos
+
+**doutorado:**
+- Período: Fev 2026 (Ciclo 3.5)
+- Conteúdo: 23+ diários centralizados, ANALISE-TRANSVERSAL, MATRIZ-PRODUTO-TESE, MAPEAMENTO v2.0, planos Ciclos 4-5
+- Status: Ativo (repositório acadêmico central)
 
 ---
 
-**VERSÃO:** 2.0
-**DATA:** 31 de Janeiro de 2026
-**STATUS:** ✅ COMPLETO - Aguardando validação do orientador
+**VERSÃO:** 2.1
+**DATA:** 12 de Fevereiro de 2026
+**STATUS:** ✅ COMPLETO - Incorpora descobertas do Ciclo 3.5. Aguardando validação do orientador.
+
+**HISTÓRICO DE VERSÕES:**
+- v1.0 (30 Jan 2026): Versão inicial
+- v2.0 (31 Jan 2026): Incorporação de trabalho realizado e oportunidade de audiências
+- v2.1 (12 Fev 2026): Atualização pós-Ciclo 3.5 — inclusão do Ciclo 3.5, atualização de Ciclos 1-3 com evidências redescobertas (21 diários, artigo, ADRs, piloto Palmas), incorporação da MATRIZ-PRODUTO-TESE e MAPEAMENTO v2.0
 
 **REVISÕES FUTURAS:**
 - Após reunião de orientação: Incorporar feedback
