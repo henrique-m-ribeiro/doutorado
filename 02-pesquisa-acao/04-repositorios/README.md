@@ -1,6 +1,6 @@
 # 04 - Repositórios Relacionados
 
-Esta pasta documenta a integração entre o repositório de doutorado e os repositórios técnicos relacionados à pesquisa-ação: **3 repositórios ativos** que constituem os artefatos práticos atuais, e **1 repositório histórico** que documenta o contexto evolutivo do projeto.
+Esta pasta documenta a integração entre o repositório de doutorado e os 4 repositórios técnicos relacionados à pesquisa-ação. Para inventário completo, ver [ANALISE-TRANSVERSAL-REPOSITORIOS.md](./ANALISE-TRANSVERSAL-REPOSITORIOS.md).
 
 ---
 
@@ -79,7 +79,7 @@ Análises territoriais detalhadas do Estado do Tocantins para subsidiar estraté
 - **Validação prática** das metodologias de colaboração humano-IA
 - **Produto final** para entrega ao cliente (campanha eleitoral)
 
-**Status:** 🟢 ATIVO - Volume 1 concluído, trabalho contínuo em andamento
+**Status:** 🟢 ATIVO - 9 volumes concluídos (~1.150 páginas, 139 municípios, 213 agentes orquestrados)
 
 ---
 
@@ -140,10 +140,16 @@ Análises territoriais detalhadas do Estado do Tocantins para subsidiar estraté
    - Validação prática da metodologia
    - Produto final para entrega
 
-4. **Consolidação Acadêmica** → `doutorado` (Jan 31, 2026)
-   - Interpretação teórica dos 4 repositórios
-   - Sistematização de aprendizados dos 5 ciclos
-   - Produção de conhecimento científico
+4. **Produção em Escala** → `caderno-tocantins-2026` continuação (Fev 2026)
+   - 213 agentes orquestrados em sessão única (8 fev 2026)
+   - 9 volumes produzidos (~1.150 páginas)
+   - Descoberta da split strategy (analítica vs. mecânica)
+
+5. **Reflexão e Organização (Ciclo 3.5)** → `doutorado` (Fev 2026)
+   - Análise transversal dos 5 repositórios
+   - MATRIZ-PRODUTO-TESE e MAPEAMENTO-CICLOS-EVIDENCIAS v2.0
+   - Plano de Fortalecimento Metodológico (4/6 etapas concluídas)
+   - Redescobrimento de evidências extensivas nos Ciclos 0-2
 
 ---
 
@@ -267,14 +273,12 @@ evidenciou a necessidade de...
 
 ### Documentos de Integração
 
-- [x] **framework-v6-mvp.md** - Contexto histórico e análise do Ciclo 1 (supersedido)
+- [x] **ANALISE-TRANSVERSAL-REPOSITORIOS.md** - Inventário completo dos 5 repos (Ciclo 3.5)
 - [x] **cronologia-real-repositorios.md** - Cronologia real vs. commits GitHub
-- [ ] **tocantins-integrado.md** - Descrição detalhada do sistema principal
+- [x] **framework-v6-mvp.md** - Contexto histórico e análise do Ciclo 1
+- [x] **tocantins-integrado.md** - Descrição detalhada do sistema principal
 - [ ] **ia-collab-os.md** - Documentação do framework metodológico
 - [ ] **caderno-tocantins.md** - Descrição das análises territoriais
-- [ ] **mapeamento-commits-ciclos.md** - Mapeamento de commits para os 5 ciclos de pesquisa-ação
-- [ ] **analise-colaboracao.md** - Análise quantitativa da colaboração humano-IA-IA
-- [ ] **metricas-sistema.md** - Métricas de evolução do sistema
 
 ### Diagramas e Visualizações
 
@@ -310,11 +314,12 @@ evidenciou a necessidade de...
 - Casos de uso: [X]
 
 **Caderno Tocantins 2026:**
-- Status: 🟢 Ativo (Volume 1 concluído)
-- Análises territoriais realizadas: [X]
-- Municípios analisados: 139
-- Microrregiões analisadas: 8
-- Dimensões integradas: [X]
+- Status: 🟢 9 volumes concluídos
+- Commits: ~177
+- Análises territoriais: 139 municípios, 8 microrregiões
+- Volume 1 estadual: 579 KB, 12.572 linhas
+- Volumes 2-9 regionais: ~905 páginas
+- Agentes orquestrados: 213 (sessão de 8 fev 2026)
 
 ### Métricas Qualitativas
 
@@ -412,8 +417,8 @@ evidenciou a necessidade de...
 ---
 
 **Responsável pela integração:** Henrique M. Ribeiro
-**Última atualização:** 2026-01-31
-**Próxima revisão:** [Data da próxima revisão dos repositórios]
+**Última atualização:** 2026-02-12
+**Próxima revisão:** Início do Ciclo 4
 
 ---
 
