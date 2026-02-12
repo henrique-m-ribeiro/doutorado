@@ -345,10 +345,10 @@ FASE 5: Consolidação Acadêmica (31 Jan 2026)
 | Repositório | Status | Papel | Commits GitHub | Início Real |
 |-------------|--------|-------|----------------|-------------|
 | **framework-v6-mvp** | 🟠 Histórico | Sistema+Metodologia misturados | 183 (nov-dez 2025) | Pré-nov 2025 |
-| **tocantins-integrado** | 🟡 Em desenvolvimento | Sistema técnico (parte 1) | 113 (jan 2026) | Jan 2026 |
+| **tocantins-integrado** | 🟡 Pausado | Sistema técnico (parte 1) | 113 (jan 2026) | Jan 2026 |
 | **ia-collab-os** | 🟢 Publicado | Metodologia (parte 2) | 9 (jan 2026) | Jan 2026 |
-| **caderno-tocantins-2026** | 🟢 Vol 1 concluído | Artefato produzido | 82 (jan 2026) | **Pré-GitHub** |
-| **doutorado** | 🆕 Criado hoje | Registro acadêmico | 10 (31 jan 2026) | 31 jan 2026 |
+| **caderno-tocantins-2026** | 🟢 9 volumes concluídos | Artefato produzido | ~170+ (jan-fev 2026) | **Pré-GitHub** |
+| **doutorado** | 🔄 Em fortalecimento | Registro acadêmico | ~15+ (jan-fev 2026) | 31 jan 2026 |
 
 ### Legendas:
 - 🟠 Histórico: Versão superada, valor como contexto
@@ -494,14 +494,36 @@ FASE 5: Consolidação Acadêmica (31 Jan 2026)
 - **Reflexão:** Sistema não ficou pronto a tempo
 - **Aprendizado:** Necessidade de flexibilidade (pivot)
 
-### **Ciclo 3: Pivot Emergencial** (Jan 2026 - segunda quinzena)
+### **Ciclo 3: Pivot Emergencial e Produção em Escala** (Jan-Fev 2026)
 - **Ação:** Produzir cadernos manualmente com ia-collab-os
 - **Problema:** Prazo não espera conclusão do sistema
 - **Reflexão:** Framework funciona para produção manual
 - **Aprendizado:** Cadernos manuais podem alimentar sistema futuro
 
-### **Ciclo 4 (Futuro): Retomada do Sistema** (2026.2+ planejado)
-- **Ação:** Retomar tocantins-integrado com dados dos cadernos
+**Marcos do Ciclo 3:**
+- 20-31 Jan 2026: Volume 1 (139 municípios, 8 microrregiões, ~6.965 linhas) — 82 commits
+- 07 Fev 2026: Volume 1 v2.0 (579 KB, 12.572 linhas, ~200-220 páginas) — Fichas 07-08 + Panorama consolidado
+- 07-08 Fev 2026: Volumes 2-9 (8 volumes regionais, ~905 páginas, 139/139 municípios)
+  - 213 agentes IA orquestrados em uma sessão
+  - Descoberta da "split strategy" (produção analítico-mecânica)
+  - Script `assemble-volumes.py` para montagem determinística
+- 08 Fev 2026: Avaliação crítica — 6 lacunas identificadas
+
+### **Ciclo 3.5: Reflexão e Organização Metodológica** (Fev 2026)
+- **Ação:** Parar produção para organizar base metodológica
+- **Problema:** Ferramenta conduzindo pesquisa; ciclos PA não formalizados; diários dispersos
+- **Reflexão:** "Desacelerar para acelerar" — investir em rigor para que produção futura seja dado de pesquisa
+- **Aprendizado:** Plano de Fortalecimento Metodológico em 6 etapas
+- **Documento:** `caderno-tocantins-2026/docs/PLANO-FORTALECIMENTO-METODOLOGICO-2026-02-08.md`
+
+### **Ciclo 4 (Futuro): Retomada do Sistema + Validação Territorial** (2026.2+ planejado)
+- **Ação:** Retomar tocantins-integrado com dados dos cadernos; validar com atores territoriais
+- **Problema:** [A descobrir]
+- **Reflexão:** [A realizar]
+- **Aprendizado:** [A documentar]
+
+### **Ciclo 5 (Futuro): Análise Integrada e Defesa** (2027.2+ planejado)
+- **Ação:** Análise cruzada dos ciclos, triangulação, qualificação, defesa
 - **Problema:** [A descobrir]
 - **Reflexão:** [A realizar]
 - **Aprendizado:** [A documentar]
@@ -510,25 +532,21 @@ FASE 5: Consolidação Acadêmica (31 Jan 2026)
 
 ## 📋 Diários de Pesquisa-Ação
 
-### **Situação Atual:**
-- ✅ Existem registros ao longo do processo
-- ⚠️ Estão **ESPARSOS** em diferentes repositórios
-- 📁 Alguns salvos apenas **localmente**
-- 🔄 Precisam ser **organizados** futuramente
+### **Situação Atual (atualizado 2026-02-12):**
+- ✅ 4 diários centralizados em `doutorado/02-pesquisa-acao/03-dados/diarios-sessoes/`
+- ✅ Template padronizado criado (`TEMPLATE-DIARIO.md`)
+- ✅ 7 handoffs centralizados em `doutorado/02-pesquisa-acao/03-dados/handoffs/`
+- ✅ 1 relatório de orquestração em `doutorado/02-pesquisa-acao/03-dados/relatorios-orquestracao/`
+- ✅ Originais preservados nos repositórios de origem
 
-### **Localização Atual (Parcial):**
-- framework-v6-mvp: Issues, commits, alguns arquivos
-- tocantins-integrado: Issues, PRs, documentação
-- ia-collab-os: Case study, documentação
-- caderno-tocantins-2026: Alguns registros inline
-- **Local:** Arquivos não commitados
+### **Diários Centralizados:**
 
-### **Plano Futuro:**
-- 📦 Centralizar no repositório `doutorado`
-- 📂 Pasta: `02-pesquisa-acao/03-dados/diarios-sessoes/`
-- 🗂️ Organizar por ciclo e data
-- 📝 Padronizar formato (template de diário)
-- 🔗 Referenciar commits e issues relevantes
+| # | Data | Arquivo | Ciclo PA |
+|---|------|---------|----------|
+| 001 | 2026-01-23 | `2026-01-23-sessao-001.md` | Ciclo 3 |
+| 002 | 2026-01-27 | `2026-01-27-sessao-002.md` | Ciclo 3 |
+| 003 | 2026-02-08 | `2026-02-08-sessao-003.md` | Ciclo 3 |
+| 003c | 2026-02-08 | `2026-02-08-sessao-003-continuacao.md` | Ciclo 3→3.5 |
 
 ### **Importância:**
 - Evidências do processo de pesquisa-ação
@@ -572,27 +590,27 @@ FASE 5: Consolidação Acadêmica (31 Jan 2026)
 
 ## 🎯 Próximas Ações
 
-### **Imediato (Esta semana):**
-1. ✅ Este documento (cronologia corrigida)
-2. ⏭️ Criar documento framework-v6-mvp.md (contexto histórico)
-3. ⏭️ Atualizar README dos repositórios
-4. ⏭️ Atualizar plano v2.0 com cronologia correta
+### **Concluído (Etapa 1 do Plano de Fortalecimento):**
+1. ✅ Este documento (cronologia corrigida) — 31 Jan 2026
+2. ✅ Diários centralizados em `doutorado/` — 12 Fev 2026
+3. ✅ Template de diário criado — 12 Fev 2026
+4. ✅ Handoffs e relatórios centralizados — 12 Fev 2026
+5. ✅ Índice cronológico atualizado — 12 Fev 2026
 
-### **Curto Prazo (Próximas semanas):**
-1. Mapear todos os diários de PA existentes
-2. Criar template de diário de PA
-3. Começar migração de diários para doutorado/
-4. Atualizar documentação dos ciclos de PA
+### **Em Andamento (Etapas 2-6 do Plano):**
+1. Formalizar ciclos PA retroativamente (Ciclos 0-3) — Etapa 2
+2. Formalizar Ciclos 4-5 com hipóteses e critérios — Etapa 2
+3. Planejar integração de vozes territoriais — Etapa 3
+4. Fortalecer framework IA-Collab-OS — Etapa 4
+5. Resolver tensão produto-tese — Etapa 5
+6. Preparar retomada de produção — Etapa 6
 
-### **Médio Prazo (Próximo mês):**
-1. Consolidar diários de PA no repositório doutorado
-2. Finalizar documentação de contexto histórico
-3. Redigir versão 2.0 do projeto com cronologia correta
-4. Reunir com orientador para validar entendimento
+### **Referência:**
+- Plano completo: `caderno-tocantins-2026/docs/PLANO-FORTALECIMENTO-METODOLOGICO-2026-02-08.md`
 
 ---
 
-**Versão:** 1.0 (Cronologia Corrigida)
-**Data:** 31 de Janeiro de 2026
-**Status:** ✅ Validada com o pesquisador
-**Próxima revisão:** Após criação dos documentos corretivos
+**Versão:** 2.0 (Cronologia Corrigida + Diários Centralizados)
+**Data:** 12 de Fevereiro de 2026
+**Status:** ✅ Etapa 1 do Plano de Fortalecimento concluída
+**Próxima revisão:** Após conclusão da Etapa 2 (Formalização dos Ciclos PA)
