@@ -63,6 +63,7 @@ Nao foram duplicados aqui para evitar bloat, mas sao dados primarios da pesquisa
 | 022 | 2026-02-07 | [2026-02-07-sessao-020-reflexao.md](./2026-02-07-sessao-020-reflexao.md) | Ciclo 3 | Reflexao sobre Vol 1 v2.0 | caderno-tocantins-2026 |
 | 023 | 2026-02-08 | [2026-02-08-sessao-003.md](./2026-02-08-sessao-003.md) | Ciclo 3 | Producao em escala: 8 volumes, split strategy | caderno-tocantins-2026 |
 | 023c | 2026-02-08 | [2026-02-08-sessao-003-continuacao.md](./2026-02-08-sessao-003-continuacao.md) | Ciclo 3→3.5 | Avaliacao critica, 6 lacunas, plano de fortalecimento | caderno-tocantins-2026 |
+| 024 | 2026-02-12 | [2026-02-12-sessao-024.md](./2026-02-12-sessao-024.md) | Ciclo 3.5 | Planejamento meticuloso da Etapa 4 (ia-collab-os) | doutorado |
 
 ---
 
@@ -72,8 +73,8 @@ Nao foram duplicados aqui para evitar bloat, mas sao dados primarios da pesquisa
 |---------|-------|---------|---------------------|
 | Nov-Dez 2025 | Ciclos 0-1 | 14 | Referenciados (em tocantins-integrado) |
 | Jan 2026 | Ciclo 2 | 4 | ✅ Sim |
-| Jan-Fev 2026 | Ciclos 3-3.5 | 5 | ✅ Sim |
-| **Total** | **0 — 3.5** | **23** | **9 aqui + 14 referenciados** |
+| Jan-Fev 2026 | Ciclos 3-3.5 | 6 | ✅ Sim |
+| **Total** | **0 — 3.5** | **24** | **10 aqui + 14 referenciados** |
 
 ---
 
