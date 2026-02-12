@@ -1,8 +1,11 @@
 # Matriz de Dupla Leitura: Produto Pratico x Dado de Pesquisa
 
 **Data:** 12 de Fevereiro de 2026
+**Ultima atualizacao:** 12 de Fevereiro de 2026 (v2.0 — pos-analise transversal dos 5 repositorios)
 **Objetivo:** Explicitar a relacao entre cada artefato produzido e sua dupla funcao — como produto pratico (para o senador/equipe) e como dado de pesquisa (para a tese de doutorado).
 **Referencia:** Plano de Fortalecimento Metodologico, Etapa 5
+
+> **Nota v2.0:** Esta versao incorpora artefatos descobertos na analise transversal dos 5 repositorios (ver `04-repositorios/ANALISE-TRANSVERSAL-REPOSITORIOS.md`), incluindo o artigo "The Mediator Effect", analises dimensionais, ADRs, piloto Palmas, e prompts de sessao.
 
 ---
 
@@ -44,14 +47,36 @@
 | **Camada 2 (Multiagentes)** | Analises sob demanda; atualizacao automatica | Dado central para comparacao manual vs. automatizado (OE3) | 0% implementado; placeholder no projeto |
 | **Arquitetura tecnica** | Modelo replicavel para outros estados | Evidencia de design de sistema de IT (OE6) | Sem validacao tecnica por pares |
 
-### 2.4 Documentacao de Processo
+### 2.4 Acervo do framework-v6-mvp (Ciclos 0-1) — NOVO v2.0
 
 | Dimensao | Valor como Produto Pratico | Valor como Dado de Pesquisa | Lacuna Academica |
 |----------|---------------------------|----------------------------|-----------------|
-| **Diarios de PA (4)** | Memoria institucional; onboarding de novos agentes | Dados primarios sobre reflexividade e aprendizagem (OE1) | Escritos com IA (circularidade); falta voz do pesquisador em 1a pessoa |
-| **Handoffs (7)** | Continuidade entre sessoes de trabalho | Registro contemporaneo de decisoes e estado (OE1, OE4) | Foco em "o que foi feito", pouco "por que" e "o que significa" |
+| **Artigo "The Mediator Effect"** (~165 KB, ~40 pag) | Base para publicacao futura; demonstra capacidade analitica | Rascunho cientifico completo com metodos, resultados e discussao (OE1, OE4); pode ser base para Artigo 1 do Ciclo 5 | Nao submetido; nao revisado por pares; escrito com IA (circularidade) |
+| **4 analises dimensionais** (~345 KB) | Fundamentacao para cadernos territoriais; subsidio tecnico | Base empirica para fundamentacao de IT (OE2); analises Ambiental, Economica, Social e Territorial do Tocantins | Sem revisao sistematica; analises proprias, nao dialogam com literatura |
+| **11+ prompts de sessao** | Tutorial sobre como instruir agentes IA | Evidencia direta de evolucao da capacidade de orquestracao H-IA (PS4, OE4); unica fonte deste tipo | Nao analisados sistematicamente; nao categorizados |
+| **Sistema de continuidade** (~52 KB) | Modelo para manter contexto entre sessoes | Precursor do ia-collab-os; evidencia da genese do framework (OE1) | Superado pelo ia-collab-os; valor e historico |
+| **21 diarios PA (Ciclos 0-1)** (~550 KB) | Memoria completa do periodo formativo | Dados primarios insubstituiveis da genese do projeto (OE1); 15 sessoes documentadas | Escritos com IA; falta voz do pesquisador; nao centralizados (referenciados) |
+
+### 2.5 ADRs e Governanca (Ciclo 2) — NOVO v2.0
+
+| Dimensao | Valor como Produto Pratico | Valor como Dado de Pesquisa | Lacuna Academica |
+|----------|---------------------------|----------------------------|-----------------|
+| **5 ADRs** (~46 KB) | Registro de decisoes tecnicas para continuidade | Evidencia de processo decisorio formal (OE1, OE4); alternativas consideradas documentadas | Sem dialogo com literatura de ADR; focados em decisoes tecnicas, nao metodologicas |
+| **Governanca (METHODOLOGY + ROLES)** (~20 KB) | Modelo de governanca para equipes H-IA | Formalizacao de roles CEO/CTO/DEV (OE4); governanca emergente da pratica | Sem fundamentacao teorica; sem validacao externa |
+| **Piloto Palmas** (~12 KB) | Primeiro teste empirico do sistema | Unico resultado empirico com dados reais (OE3); evidencia de viabilidade | Sem analise formal publicada; um unico caso; sem generalizacao |
+| **Handoffs CEO↔CTO↔DEV** (8+ documentos) | Continuidade entre sessoes e agentes | Registro de padroes de handoff (OE4); evidencia de pratica de governanca | Sem categorizacao sistematica |
+
+### 2.6 Documentacao de Processo
+
+| Dimensao | Valor como Produto Pratico | Valor como Dado de Pesquisa | Lacuna Academica |
+|----------|---------------------------|----------------------------|-----------------|
+| **Diarios de PA (23 unicos)** | Memoria institucional; onboarding de novos agentes | Dados primarios sobre reflexividade e aprendizagem (OE1); cobrem Ciclos 0-3.5 inteiros | Escritos com IA (circularidade); falta voz do pesquisador em 1a pessoa |
+| **Handoffs (15+)** | Continuidade entre sessoes de trabalho | Registro contemporaneo de decisoes e estado (OE1, OE4) | Foco em "o que foi feito", pouco "por que" e "o que significa" |
 | **Relato de orquestracao** | Tutorial para orquestracao de agentes | Dado unico sobre 213 lancamentos de agentes (OE4) | Baseado em um unico transcript; sem triangulacao |
+| **Caminhos percorridos** (3 docs, ~43 KB) | Narrativa de processo para equipe | Dados para capitulo metodologico da tese (OE1) | Sem distanciamento critico |
+| **Relatorio de revisao de decisoes** (~54 KB) | Revisao critica de todas as decisoes | Meta-reflexao sobre o processo decisorio (OE1, OE4) | Documento unico; sem comparacao |
 | **Cronologia dos repos** | Referencia para entender relacoes entre artefatos | Narrativa historico-continuativa da pesquisa (validacao Heikkinen) | Falta distanciamento critico; muito descritivo |
+| **Analise transversal dos 5 repos** | Mapa completo do ecossistema | Inventario de evidencias; base para triangulacao (OE1) | Produzida com IA; dados quantitativos nao verificados manualmente |
 
 ---
 
@@ -59,12 +84,12 @@
 
 | OE | Evidencias que JA existem | O que FALTA para sustentar na tese |
 |----|--------------------------|-----------------------------------|
-| **OE1** (Framework PA para IA) | ia-collab-os v1.0; 4 diarios PA; protocolo de registro; mapeamento ciclos-evidencias | Metricas operacionais para os 5 principios; validacao externa; dialogo com literatura de ADR (Sein et al.) |
-| **OE2** (Fundamentacao IT) | Revisao incipiente no projeto v2.0; secao 4.1 do projeto | Revisao sistematica (15-20 refs); fichar Girardot, Bertacchini, Masselot; adaptar ao Brasil |
-| **OE3** (Transformacoes gestao) | 9 volumes produzidos; fichas V2; 139 municipios analisados | Nenhum ator territorial usou os cadernos; nenhuma observacao de transformacao; entrevistas pendentes |
-| **OE4** (Padroes H-IA) | Split strategy documentada; padroes de orquestracao; relato de 213 agentes | Framework teorico nao sistematizado; sem dialogo com Dellermann, Jarrahi, Seeber; sem tipologia formal |
+| **OE1** (Framework PA para IA) | ia-collab-os v1.0; **23 diarios PA** (Ciclos 0-3.5); **5 ADRs**; sistema de continuidade (precursor, ~52 KB); governanca (METHODOLOGY+ROLES, 20 KB); protocolo de registro; mapeamento ciclos-evidencias; artigo "The Mediator Effect" (rascunho) | Metricas operacionais para os 5 principios; validacao externa; dialogo com literatura de ADR (Sein et al.) |
+| **OE2** (Fundamentacao IT) | **4 analises dimensionais** (~345 KB: Ambiental, Economica, Social, Territorial); revisao incipiente no projeto v2.0; secao 4.1 do projeto | Revisao sistematica (15-20 refs); fichar Girardot, Bertacchini, Masselot; adaptar ao Brasil; as analises dimensionais sao base empirica mas nao dialogam com literatura |
+| **OE3** (Transformacoes gestao) | 9 volumes produzidos; fichas V2; 139 municipios analisados; **piloto Palmas** (12 KB — primeiro dado empirico); sistema tocantins-integrado (Camada 1: 90%) | Nenhum ator territorial usou os cadernos sistematicamente; piloto Palmas sem analise formal; entrevistas pendentes |
+| **OE4** (Padroes H-IA) | Split strategy documentada; padroes de orquestracao; relato de 213 agentes; **11+ prompts de sessao** (evolucao H-IA); **handoffs CEO↔CTO↔DEV** (8+); roles formalizados; conceitos teoricos emergentes (sessao 5) | Framework teorico nao sistematizado; sem dialogo com Dellermann, Jarrahi, Seeber; sem tipologia formal; prompts nao categorizados |
 | **OE5** (Etica/governanca) | Reflexoes nos diarios sobre vieses, completude, validacao | Nenhuma audiencia publica realizada; nenhuma entrevista; nenhum grupo focal; CEP pendente |
-| **OE6** (Escalabilidade) | Arquitetura modular do sistema; ia-collab-os como framework transferivel | Sem teste em outro contexto; sem analise de barreiras; sem entrevistas com gestores de outros estados |
+| **OE6** (Escalabilidade) | Arquitetura modular do sistema; ia-collab-os como framework transferivel; **producao em escala** (213 agentes, 9 volumes, 139 municipios em 4 meses) | Sem teste em outro contexto; sem analise de barreiras; sem entrevistas com gestores de outros estados |
 
 ---
 
@@ -139,6 +164,9 @@ PRODUTO PRATICO                          DADO DE PESQUISA
 
 ---
 
-**Versao:** 1.0
+**Versao:** 2.0
 **Data:** 12 de Fevereiro de 2026
+**Historico:**
+- v1.0 (12 Fev 2026): Matriz inicial com artefatos conhecidos
+- v2.0 (12 Fev 2026): Incorporacao de artefatos descobertos na analise transversal (artigo "The Mediator Effect", analises dimensionais, ADRs, piloto Palmas, prompts de sessao, governanca). Novas secoes 2.4 e 2.5. Secao 2.6 expandida. OEs atualizados.
 **Proxima revisao:** Apos inicio da coleta de dados no Ciclo 4
