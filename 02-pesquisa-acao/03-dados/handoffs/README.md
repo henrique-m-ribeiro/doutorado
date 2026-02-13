@@ -23,6 +23,19 @@ Handoffs sao documentos estruturados que registram:
 | 6 | 2026-02-08 | [HANDOFF-SESSION-2026-02-08-CONT.md](./HANDOFF-SESSION-2026-02-08-CONT.md) | caderno-tocantins | Continuacao: reflexao e plano |
 | 7 | — | [HANDOFF-SESSAO-VALIDACAO-V9-FINAL.md](./HANDOFF-SESSAO-VALIDACAO-V9-FINAL.md) | caderno-tocantins | Validacao final v9 |
 
+## Instrucoes de Sessao (Handoffs para Outros Repositorios)
+
+| Arquivo | Destino | Descricao |
+|---------|---------|-----------|
+| [INSTRUCAO-SESSAO-ETAPA4-IA-COLLAB-OS.md](./INSTRUCAO-SESSAO-ETAPA4-IA-COLLAB-OS.md) | ia-collab-os | Instrucao autocontida (~800 linhas) para Etapa 4 do Plano de Fortalecimento |
+
+## Session Logs (Registros de Sessao)
+
+| Arquivo | Descricao |
+|---------|-----------|
+| [SESSION-LOG-2026-01-23.md](./SESSION-LOG-2026-01-23.md) | Log da sessao de 23/01 |
+| [SESSION-LOG-0e16a195.md](./SESSION-LOG-0e16a195.md) | Log da sessao 0e16a195 |
+
 ## Sobre os Originais
 
 Handoffs migrados do repositorio `caderno-tocantins-2026/docs/` e `docs/handoffs/`.
