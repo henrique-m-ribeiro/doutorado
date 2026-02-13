@@ -499,6 +499,19 @@ CICLO 3.5 (Fev 2026): Reflexao e organizacao metodologica
 - Buscar: "AI governance public sector" decision making
 - **Objetivo:** Contextualizar ia-collab-os no dominio de gestao publica
 
+**4.6 Context Engineering, Skills Architecture e Agent-Ready Codebases:**
+- **Referencia pratica:** JohnCrickett/ai-assisted-engineering (GitHub, 2025-2026) — guia curado de engenharia assistida por IA com 28 ferramentas, 12 tecnicas de prompt, arquitetura de Skills
+- Buscar: "context engineering" LLM agents 2025 2026
+- Buscar: "AGENTS.md" coding agents standard format
+- Buscar: "modular skills AI agents" architecture Anthropic 2025
+- Buscar: "agent-ready codebase" software architecture AI
+- **Objetivos especificos:**
+  - (a) **Context engineering como disciplina:** O ia-collab-os ja pratica context engineering via handoffs estruturados, mas nao nomeia essa pratica. Posicionar o protocolo de handoff como implementacao de context engineering — a gestao deliberada de que informacao o agente IA recebe, como ela e estruturada, e como os budgets de tokens sao alocados.
+  - (b) **Arquitetura de Skills para decomposicao modular:** O conceito de Skills (capacidades modulares que agentes invocam conforme contexto, em vez de agentes monoliticos) e complementar ao ia-collab-os. Avaliar se a decomposicao do papel DEV em skills modulares (ex: `analise-saude`, `ficha-municipal`, `comparacao-regional`) fortalece o framework.
+  - (c) **AGENTS.md como padrao de "codebase readiness":** O padrao AGENTS.md (um README para agentes de IA que orienta como operar no codebase) pode ser integrado como pratica recomendada no METHODOLOGY.md para repositorios que adotam ia-collab-os.
+  - (d) **Taxonomia de prompt engineering para categorizar os 11+ prompts:** A taxonomia de 12 tecnicas nomeadas (Zero Shot, Chain of Thought, Role Prompting, ReAct, etc.) oferece vocabulario para classificar os 11+ prompts de sessao do framework-v6-mvp, enderecando a lacuna de OE4 ("prompts nao categorizados").
+- **NOTA IMPORTANTE:** O ai-assisted-engineering e curadoria pratica, nao producao academica. Nao citar como fonte academica. Usar como referencia para identificar conceitos emergentes da comunidade praticante, e entao buscar fundamentacao academica correspondente (ex: buscar papers sobre "context engineering" ou "modular agent architecture" para fundamentar o que a comunidade pratica nomeia informalmente).
+
 **Para cada fonte encontrada, documentar:**
 1. Referencia bibliografica completa
 2. Conceitos-chave relevantes para ia-collab-os
