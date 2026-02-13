@@ -337,6 +337,23 @@ Total: ~3.000 linhas de documentação sobre indicadores, fontes, APIs e metodol
 
 ---
 
+---
+
+## Lente de Delegação Inteligente (adicionada v2.2)
+
+> Anotação retroativa à luz de Tomašev, N., Franklin, M., & Osindero, S. (2025). "Intelligent AI Delegation." arXiv:2602.11865.
+
+| Conceito de Delegação | Manifestação neste ADR |
+|----------------------|------------------------|
+| **Structural Transparency** | Indicator Dictionary como mecanismo de transparência estrutural: metadados centralizados tornam explícito o que, quando e como é coletado |
+| **Contract-First Decomposition** | Schema do dictionary é um "contrato" com fontes de dados — API endpoints, parâmetros, periodicidade, tudo documentado antes da coleta |
+| **Scalable Market** | Arquitetura orquestrador + especialistas é equivalente ao conceito de mercado escalável de agentes |
+| **Dynamic Assessment** | Orquestrador avalia dinamicamente quais indicadores estão vencidos e prioriza coleta |
+
+**Interpretação:** Este ADR é talvez o melhor exemplo de Structural Transparency no projeto. O indicator dictionary implementa, com mecanismos processuais (tabela SQL + metadados), o que Tomašev et al. propõem com mecanismos programáticos (smart contracts). A diferença de implementação é contribuição da tese: delegação inteligente pode ser operacionalizada sem infraestrutura tecnológica pesada.
+
+---
+
 **Aprovado por**: Henrique (CEO)
 **Implementado por**: Claude (CTO)
 **Data de Implementação**: 2026-01-15

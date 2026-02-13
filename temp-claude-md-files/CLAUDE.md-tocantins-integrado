@@ -82,7 +82,7 @@ Este repositorio e parte do projeto de doutorado em Ciencia Politica de Henrique
 | Repositorio | Ciclo | Relacao |
 |-------------|-------|---------|
 | **doutorado** | Hub | Organizacao academica e governanca |
-| **ia-collab-os** | Ciclos 2-3 | Framework metodologico aplicado neste sistema |
+| **ia-collab-os** | Ciclos 2-3 | Framework metodologico v2.2 aplicado neste sistema; 5 ADRs deste repo tem lente de delegacao |
 | **caderno-tocantins-2026** | Ciclo 3 | Artefato pratico produzido COM este sistema |
 | **framework-v6-mvp** | Ciclo 1 | Sistema monolitico predecessor (superado) |
 
@@ -90,7 +90,7 @@ Este repositorio e parte do projeto de doutorado em Ciencia Politica de Henrique
 
 Este repositorio contem:
 
-- **5 ADRs formais** (evidencia de processo decisorio documentado — OE1, OE4)
+- **5 ADRs formais** com lente de delegacao inteligente (evidencia de processo decisorio documentado — OE1, OE4; cada ADR anotado com conceitos de Tomasev et al., 2025)
 - **Piloto Palmas** (~12 KB) — unico resultado empirico com dados reais (OE3)
 - **Arquitetura tecnica** — modelo replicavel para outros estados (OE5)
 - **113 commits** documentando evolucao do sistema (Jan 2026)
@@ -130,4 +130,4 @@ Este repositorio foi pausado em Jan 2026 apos Camada 1 atingir 90% e decisao est
 ---
 
 **Ultima atualizacao:** 2026-02-13
-**Versao:** 1.0
+**Versao:** 1.1 (atualizado com referencia a ia-collab-os v2.2 e lente de delegacao nos ADRs)

@@ -3,6 +3,7 @@
 **Data:** 2026-02-13
 **Criado por:** Claude Code Opus 4.6
 **Contexto:** Implementacao de governanca de pesquisa-acao em todos os repositorios do projeto
+**Atualizado:** Reflete ia-collab-os v2.2 com fundamentacao em delegacao inteligente (Tomasev et al., 2025)
 
 ---
 

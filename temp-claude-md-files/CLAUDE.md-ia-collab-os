@@ -5,9 +5,10 @@
 **Framework metodologico de colaboracao humano-IA para pesquisa-acao.**
 
 - **Repositorio:** ia-collab-os
+- **Versao:** v2.2 (12 fontes academicas, referencia primordial: Tomasev et al., 2025)
 - **Ciclo PA:** Ciclos 2-3 (Jan-Fev 2026)
 - **Status:** Ativo
-- **Funcao:** Framework metodologico H-IA (CEO/CTO/DEV)
+- **Funcao:** Framework metodologico H-IA (CEO/CTO/DEV) com fundamentacao em delegacao inteligente
 - **Repositorio Hub:** [doutorado](https://github.com/henrique-m-ribeiro/doutorado)
 
 ## Contexto da Pesquisa
@@ -18,12 +19,32 @@ Este repositorio e parte do projeto de doutorado em Ciencia Politica de Henrique
 
 - **OE1:** Adaptar e aplicar framework de pesquisa-acao ao desenvolvimento colaborativo de sistemas de IA
 - **OE3:** Caracterizar padroes de colaboracao humano-IA em gestao publica
+- **OE4:** Analisar desafios eticos e de governanca (via vocabulario de delegacao)
 - **OE5:** Analisar escalabilidade e transferibilidade da experiencia
 
 ### Questoes de Pesquisa
 
 - **PS1:** Como a pesquisa-acao viabiliza o desenvolvimento de sistemas de IT-IA?
 - **PS3:** Como se configura a colaboracao humano-IA na gestao publica?
+- **PS4:** Quais padroes de colaboracao humano-IA emergem e como podem ser sistematizados?
+
+## Referencia Teorica Primordial
+
+**Tomasev, N., Franklin, M., & Osindero, S. (2025). Intelligent AI Delegation. arXiv:2602.11865. Google DeepMind.**
+
+O ia-collab-os (bottom-up, empirico) convergiu independentemente com este artigo (top-down, teorico):
+- **21 conceitos formais** mapeados 1:1 para artefatos do framework
+- **5 pilares** (Dynamic Assessment, Adaptive Execution, Structural Transparency, Scalable Market, Systemic Resilience)
+- **Argumento central:** Convergencia independente valida que os principios sao generalistas
+
+Vocabulario de delegacao integrado nos documentos v2.2:
+- Authority Gradient ↔ Hierarquia CEO→CTO→Dev
+- Delegation State Transfer ↔ Protocolo de Handoff
+- Delegation Accountability ↔ Protocolo de ADR
+- Delegation Capacity Threshold ↔ ~5.000 linhas por agente (MF-001)
+- Meaningful Human Control ↔ P4: CEO como Orquestrador
+
+**Importante:** Vocabulario de delegacao e adicao, nao substituicao. Termos do ia-collab-os (handoff, ADR, CEO/CTO/Dev) continuam sendo linguagem primaria.
 
 ## Instrucoes para Agentes IA
 
@@ -36,46 +57,62 @@ Este repositorio e parte do projeto de doutorado em Ciencia Politica de Henrique
    - Dado de pesquisa (evidencia sobre colaboracao H-IA)
 4. **Registrar decisoes explicitas** com alternativas consideradas e justificativa
 5. **Manter coerencia com principios do framework** (ver `PRINCIPLES.md`)
+6. **Usar vocabulario de delegacao** quando apropriado (ver `THEORETICAL-GROUNDING.md` secao 9)
 
 ### Documentos de referencia local:
 
-**Framework:**
-- Metodologia: `METHODOLOGY.md`
-- Principios (5): `PRINCIPLES.md`
+**Framework (nucleo):**
+- Metodologia: `METHODOLOGY.md` (inclui Delegation Lifecycle)
+- Principios (5 com lente de delegacao): `PRINCIPLES.md`
 - Padroes de colaboracao: `PATTERNS.md`
-- Roles (CEO/CTO/DEV): `roles/`
-- Metricas: `METRICS.md`
-- Modos de falha: `FAILURE-MODES.md`
+- Roles (CEO/CTO/DEV com Cascading Delegation): `roles/`
+
+**Framework (v2.2):**
+- Metricas operacionais (13): `METRICS.md`
+- Modos de falha (12): `FAILURE-MODES.md`
+- Fundamentacao teorica (12 fontes): `THEORETICAL-GROUNDING.md`
+- Revisao de literatura: `docs/LITERATURE_REVIEW.md`
+- Skeleton Artigo 1: `ARTICLE-1-SKELETON.md`
+
+**Protocolos:**
+- Handoff (reframed como Delegation State Transfer): `protocols/01_HANDOFF_PROTOCOL.md`
+- ADR (reframed como Delegation Accountability): `protocols/02_ADR_PROTOCOL.md`
 
 **Documentacao externa (repositorio hub):**
 - Protocolo de sessao PA: `doutorado/02-pesquisa-acao/01-ciclos/PROTOCOLO-REGISTRO-SESSAO.md`
 - Matriz produto-tese: `doutorado/02-pesquisa-acao/00-projeto/MATRIZ-PRODUTO-TESE.md`
 - Template de diario PA: `doutorado/02-pesquisa-acao/03-dados/diarios-sessoes/TEMPLATE-DIARIO.md`
+- ADRs com lente de delegacao: `doutorado/02-pesquisa-acao/03-dados/adrs/`
 
 ### Repositorios relacionados:
 
 | Repositorio | Ciclo | Relacao |
 |-------------|-------|---------|
 | **doutorado** | Hub | Organizacao academica e governanca |
-| **tocantins-integrado** | Ciclo 2 | Sistema tecnico onde o framework foi aplicado |
-| **caderno-tocantins-2026** | Ciclo 3 | Artefato pratico produzido com o framework |
-| **framework-v6-mvp** | Ciclo 1 | Contexto historico (superado) |
+| **tocantins-integrado** | Ciclo 2 | Sistema tecnico onde o framework foi aplicado; 5 ADRs com lente de delegacao |
+| **caderno-tocantins-2026** | Ciclo 3 | Artefato pratico produzido com o framework; 213 agentes |
+| **framework-v6-mvp** | Ciclo 1 | Contexto historico; precursor do ia-collab-os (sistema de continuidade) |
 
 ## Valor como Dado de Pesquisa
 
 Este repositorio contem:
 
-- **Framework metodologico** extraido da pratica (contribuicao central para OE1 e OE3)
-- **Templates de handoff** CEO↔CTO↔DEV (evidencia de padroes de colaboracao)
-- **Principios de governanca** emergentes da pratica (OE4)
+- **Framework metodologico v2.2** extraido da pratica e fundamentado teoricamente (OE1, OE3)
+- **13 metricas operacionais** com baselines empiricos de 4 ciclos PA (OE1)
+- **12 modos de falha** catalogados com evidencia empirica e mapeados para conceitos de delegacao (OE4)
+- **12 fontes academicas** integradas incluindo Tomasev et al. (2025) como ref. primordial (OE1)
+- **21 conceitos de delegacao** mapeados 1:1 para artefatos empiricos (OE4)
+- **5 Design Principles** (DP1-DP5) enriquecidos com conceitos de delegacao (OE1)
+- **Skeleton Artigo 1** com placeholders substantivos (publicacao prevista Jun 2026)
+- **Templates de handoff** CEO↔CTO↔DEV reframed como Delegation State Transfer (OE4)
 - **Casos de estudo** em `case-studies/` (validacao empirica)
 
 ### Lacunas Academicas Conhecidas:
 
-- Sem metricas operacionais quantificaveis (ver MATRIZ-PRODUTO-TESE)
 - Sem validacao externa ao contexto Tocantins
-- Sem fundamentacao teorica explicita dialogo com literatura HCI
-- Sem artigo cientifico publicado (planejado para Ciclo 5)
+- Artigo nao submetido (planejado para Jun 2026)
+- Baselines de metricas de um unico projeto
+- Modos de falha catalogados por um unico pesquisador
 
 ## Convencoes
 
@@ -90,12 +127,15 @@ Este repositorio contem:
 - Reflexao academica profunda deve ser registrada no repositorio `doutorado`
 - Diarios de sessao que modificam o framework devem ser criados no `doutorado`
 
-## Proximos Passos (Etapa 4 do Plano de Fortalecimento)
+## Historico de Versoes
 
-Ver instrucao de sessao detalhada em:
-`doutorado/02-pesquisa-acao/03-dados/handoffs/INSTRUCAO-SESSAO-ETAPA4-IA-COLLAB-OS.md`
+| Versao | Data | Conteudo |
+|--------|------|----------|
+| v1.0 | Jan 2026 | Framework empirico: 5 principios, 3 roles, 2 protocolos, 5 padroes |
+| v2.0 | Fev 2026 | Metricas operacionais (13), modos de falha (12), fundamentacao teorica (10 fontes) |
+| v2.2 | Fev 2026 | Integracao Tomasev et al. (2025): 21 conceitos, 5 pilares, vocabulario de delegacao em todos os docs |
 
 ---
 
 **Ultima atualizacao:** 2026-02-13
-**Versao:** 1.0
+**Versao:** 2.0 (alinhado com ia-collab-os v2.2)

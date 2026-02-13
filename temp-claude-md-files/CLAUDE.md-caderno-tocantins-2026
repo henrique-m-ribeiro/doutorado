@@ -92,7 +92,7 @@ Este repositorio e parte do projeto de doutorado em Ciencia Politica de Henrique
 | Repositorio | Ciclo | Relacao |
 |-------------|-------|---------|
 | **doutorado** | Hub | Organizacao academica e governanca |
-| **ia-collab-os** | Ciclos 2-3 | Framework metodologico aplicado na producao |
+| **ia-collab-os** | Ciclos 2-3 | Framework metodologico v2.2 aplicado na producao; 213 agentes como evidencia de Scalable Market |
 | **tocantins-integrado** | Ciclo 2 | Sistema tecnico (pausado; forneceu dados/metodos) |
 | **framework-v6-mvp** | Ciclo 1 | Analises dimensionais predecessoras |
 
@@ -147,4 +147,4 @@ Proxima fase (planejada para Ciclo 4 ou pos-qualificacao):
 ---
 
 **Ultima atualizacao:** 2026-02-13
-**Versao:** 1.0
+**Versao:** 1.1 (atualizado com referencia a ia-collab-os v2.2)

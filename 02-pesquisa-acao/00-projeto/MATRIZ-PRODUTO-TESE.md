@@ -1,11 +1,13 @@
 # Matriz de Dupla Leitura: Produto Pratico x Dado de Pesquisa
 
 **Data:** 12 de Fevereiro de 2026
-**Ultima atualizacao:** 12 de Fevereiro de 2026 (v2.0 — pos-analise transversal dos 5 repositorios)
+**Ultima atualizacao:** 13 de Fevereiro de 2026 (v2.1 — pos-fortalecimento ia-collab-os v2.2)
 **Objetivo:** Explicitar a relacao entre cada artefato produzido e sua dupla funcao — como produto pratico (para o senador/equipe) e como dado de pesquisa (para a tese de doutorado).
-**Referencia:** Plano de Fortalecimento Metodologico, Etapa 5
+**Referencia:** Plano de Fortalecimento Metodologico, Etapas 4 e 5
 
 > **Nota v2.0:** Esta versao incorpora artefatos descobertos na analise transversal dos 5 repositorios (ver `04-repositorios/ANALISE-TRANSVERSAL-REPOSITORIOS.md`), incluindo o artigo "The Mediator Effect", analises dimensionais, ADRs, piloto Palmas, e prompts de sessao.
+
+> **Nota v2.1:** Secao 2.2 (ia-collab-os) atualizada para refletir fortalecimento v2.2: metricas operacionais, modos de falha, fundamentacao teorica com 12 fontes academicas, integracao de Tomasev et al. (2025) "Intelligent AI Delegation" como referencia primordial, e argumento de convergencia independente.
 
 ---
 
@@ -31,13 +33,18 @@
 | **Volumes 2-9 (Regionais)** | 8 cadernos por microrregiao para uso em campo; fichas municipais para visitas | Evidencia de producao em escala (213 agentes); base para teste de compreensibilidade com gestores | Producao "de gabinete"; sem validacao territorial; dados nao conferidos contra fontes primarias |
 | **Fichas municipais V2** | Perfil de cada municipio (139) para consulta rapida | Padrao replicavel de analise territorial; base para comparacao manual vs. automatizado | Sem voz dos municipios; estrutura definida pelo pesquisador/IA, nao por usuarios |
 
-### 2.2 Framework ia-collab-os
+### 2.2 Framework ia-collab-os — ATUALIZADO v2.2
 
 | Dimensao | Valor como Produto Pratico | Valor como Dado de Pesquisa | Lacuna Academica |
 |----------|---------------------------|----------------------------|-----------------|
-| **Framework v1.0** | Guia para equipes que trabalham com IA; principios de handoff e orquestracao | Contribuicao metodologica central (OE1, OE4); framework de colaboracao H-IA extraido da pratica | Sem metricas operacionais; sem validacao externa; sem criterios quantificaveis |
-| **Templates (handoff, etc.)** | Ferramentas reutilizaveis para qualquer projeto H-IA | Evidencia de como padronizar colaboracao H-IA (OE4) | Ainda nao testados fora do contexto Tocantins |
-| **Principios (5)** | Diretrizes praticas para equipes | Categorias analiticas para estudar colaboracao H-IA | Sem fundamentacao teorica explicita; sem dialogo com literatura de HCI |
+| **Framework v2.2** | Guia para equipes que trabalham com IA; principios de handoff e orquestracao; vocabulario de delegacao inteligente | Contribuicao metodologica central (OE1, OE4); framework de colaboracao H-IA extraido da pratica e fundamentado teoricamente; 12 fontes academicas; convergencia independente com Tomasev et al. (2025) | Sem validacao externa ao contexto Tocantins; artigo nao submetido |
+| **13 metricas operacionais** (NOVO v2.2) | KPIs para equipes medirem qualidade da colaboracao H-IA | Baselines empiricos de 4 ciclos PA; criterios quantificaveis para avaliacao (OE1) | Baselines de um unico projeto; sem benchmarks externos |
+| **12 modos de falha** (NOVO v2.2) | Taxonomia para prevenir e mitigar falhas em colaboracao H-IA | Evidencia empirica catalogada; cada modo mapeado para conceito de delegacao (OE4) | Sem frequencia estatistica; catalogados por um unico pesquisador |
+| **Fundamentacao teorica** (NOVO v2.2) | Conexao com 12 fontes academicas; posicionamento na literatura | Dialogo com Sein et al. (ADR), Dellermann (Hybrid Intelligence), Jarrahi (Symbiosis), Seeber (Machines as Teammates), Tomasev et al. (Delegacao Inteligente) — OE1, OE4 | Revisao de literatura nao exaustiva; falta HCI mais amplo |
+| **Convergencia independente** (NOVO v2.2) | Argumento para credibilidade do framework | Pratica bottom-up (ia-collab-os) converge com teoria top-down (Tomasev et al., 2025, Google DeepMind): 21 conceitos mapeados 1:1, 5 pilares validados empiricamente — argumento central para a tese | Convergencia demonstrada, nao testada estatisticamente |
+| **Templates (handoff, etc.)** | Ferramentas reutilizaveis para qualquer projeto H-IA | Evidencia de como padronizar colaboracao H-IA (OE4); reframed como Delegation State Transfer | Ainda nao testados fora do contexto Tocantins |
+| **Principios (5)** | Diretrizes praticas para equipes; cada principio com "lente de delegacao" | Categorias analiticas com fundamentacao teorica (OE4); cada principio mapeado para conceito de delegacao (Authority Gradient, Boundary Violation, etc.) | Sem validacao por praticantes externos |
+| **Skeleton Artigo 1** (NOVO v2.2) | Base para publicacao academica (Jun 2026) | Estrutura completa com 7 secoes, 5 Design Principles, 2 case studies, placeholders substantivos | Rascunho; requer expansao e revisao |
 
 ### 2.3 Sistema tocantins-integrado
 

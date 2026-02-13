@@ -77,7 +77,7 @@ doutorado/
 | Repositorio | Ciclo PA | Status | Descricao |
 |------------|----------|--------|-----------|
 | **caderno-tocantins-2026** | Ciclo 3 | Ativo | 9 volumes, 139 municipios, 213 agentes |
-| **ia-collab-os** | Ciclos 2-3 | Ativo | Framework metodologico H-IA (CEO/CTO/DEV) |
+| **ia-collab-os** | Ciclos 2-3 | Ativo | Framework metodologico H-IA v2.2 (CEO/CTO/DEV); 12 fontes academicas; ref. primordial: Tomasev et al. (2025) |
 | **tocantins-integrado** | Ciclo 2 | Pausado | Sistema tecnico; Camada 1: 90%, 5 ADRs |
 | **framework-v6-mvp** | Ciclo 1 | Historico | Framework monolitico; 183 commits, 21 diarios |
 
@@ -90,9 +90,25 @@ Status das 6 etapas (atualizado 2026-02-13):
 | 1. Centralizacao documental | ✅ Concluida |
 | 2. Formalizacao ciclos PA | ✅ Concluida |
 | 3. Vozes territoriais | ⏳ Requer trabalho de campo do pesquisador |
-| 4. Fortalecimento IA-Collab-OS | 📋 Sessao planejada (ver `02-pesquisa-acao/03-dados/handoffs/INSTRUCAO-SESSAO-ETAPA4-IA-COLLAB-OS.md`) |
+| 4. Fortalecimento IA-Collab-OS | ✅ Concluida (v2.2: metricas, modos de falha, 12 fontes academicas, delegacao inteligente) |
 | 5. Tensao produto-tese | ✅ Concluida (matriz criada) |
 | 6. Retomada de producao | ✅ CLAUDE.md e checklist criados |
+
+## Referencia Teorica Primordial
+
+**Tomasev, N., Franklin, M., & Osindero, S. (2025). Intelligent AI Delegation. arXiv:2602.11865. Google DeepMind.**
+
+O ia-collab-os (bottom-up, empirico) convergiu independentemente com este artigo (top-down, teorico):
+- **21 conceitos formais** mapeados 1:1 para artefatos do ia-collab-os
+- **5 pilares** (Dynamic Assessment, Adaptive Execution, Structural Transparency, Scalable Market, Systemic Resilience)
+- **Argumento central para a tese:** Convergencia independente valida que os principios identificados sao generalistas
+
+Vocabulario de delegacao integrado nos documentos do ia-collab-os v2.2:
+- Authority Gradient ↔ Hierarquia CEO→CTO→Dev
+- Delegation State Transfer ↔ Protocolo de Handoff
+- Delegation Accountability ↔ Protocolo de ADR
+- Delegation Capacity Threshold ↔ ~5.000 linhas por agente (MF-001)
+- Meaningful Human Control ↔ P4: CEO como Orquestrador
 
 ## Convencoes
 
