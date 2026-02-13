@@ -1,0 +1,101 @@
+# CLAUDE.md — ia-collab-os
+
+## Sobre este Repositorio
+
+**Framework metodologico de colaboracao humano-IA para pesquisa-acao.**
+
+- **Repositorio:** ia-collab-os
+- **Ciclo PA:** Ciclos 2-3 (Jan-Fev 2026)
+- **Status:** Ativo
+- **Funcao:** Framework metodologico H-IA (CEO/CTO/DEV)
+- **Repositorio Hub:** [doutorado](https://github.com/henrique-m-ribeiro/doutorado)
+
+## Contexto da Pesquisa
+
+Este repositorio e parte do projeto de doutorado em Ciencia Politica de Henrique Marques Ribeiro (orientador: Prof. Fernando Filgueiras), que investiga **Inteligencia Territorial e IA na Gestao Publica** atraves de pesquisa-acao.
+
+### Objetivos Especificos Endereçados
+
+- **OE1:** Adaptar e aplicar framework de pesquisa-acao ao desenvolvimento colaborativo de sistemas de IA
+- **OE3:** Caracterizar padroes de colaboracao humano-IA em gestao publica
+- **OE5:** Analisar escalabilidade e transferibilidade da experiencia
+
+### Questoes de Pesquisa
+
+- **PS1:** Como a pesquisa-acao viabiliza o desenvolvimento de sistemas de IT-IA?
+- **PS3:** Como se configura a colaboracao humano-IA na gestao publica?
+
+## Instrucoes para Agentes IA
+
+### Obrigatorio em TODA sessao:
+
+1. **Declarar ciclo PA e questao de pesquisa** antes de iniciar trabalho substantivo
+2. **Consultar repositorio hub** `doutorado` para contexto completo e protocolo PA
+3. **Dupla leitura obrigatoria:** Todo artefato e simultaneamente:
+   - Produto pratico (framework metodologico reutilizavel)
+   - Dado de pesquisa (evidencia sobre colaboracao H-IA)
+4. **Registrar decisoes explicitas** com alternativas consideradas e justificativa
+5. **Manter coerencia com principios do framework** (ver `PRINCIPLES.md`)
+
+### Documentos de referencia local:
+
+**Framework:**
+- Metodologia: `METHODOLOGY.md`
+- Principios (5): `PRINCIPLES.md`
+- Padroes de colaboracao: `PATTERNS.md`
+- Roles (CEO/CTO/DEV): `roles/`
+- Metricas: `METRICS.md`
+- Modos de falha: `FAILURE-MODES.md`
+
+**Documentacao externa (repositorio hub):**
+- Protocolo de sessao PA: `doutorado/02-pesquisa-acao/01-ciclos/PROTOCOLO-REGISTRO-SESSAO.md`
+- Matriz produto-tese: `doutorado/02-pesquisa-acao/00-projeto/MATRIZ-PRODUTO-TESE.md`
+- Template de diario PA: `doutorado/02-pesquisa-acao/03-dados/diarios-sessoes/TEMPLATE-DIARIO.md`
+
+### Repositorios relacionados:
+
+| Repositorio | Ciclo | Relacao |
+|-------------|-------|---------|
+| **doutorado** | Hub | Organizacao academica e governanca |
+| **tocantins-integrado** | Ciclo 2 | Sistema tecnico onde o framework foi aplicado |
+| **caderno-tocantins-2026** | Ciclo 3 | Artefato pratico produzido com o framework |
+| **framework-v6-mvp** | Ciclo 1 | Contexto historico (superado) |
+
+## Valor como Dado de Pesquisa
+
+Este repositorio contem:
+
+- **Framework metodologico** extraido da pratica (contribuicao central para OE1 e OE3)
+- **Templates de handoff** CEO↔CTO↔DEV (evidencia de padroes de colaboracao)
+- **Principios de governanca** emergentes da pratica (OE4)
+- **Casos de estudo** em `case-studies/` (validacao empirica)
+
+### Lacunas Academicas Conhecidas:
+
+- Sem metricas operacionais quantificaveis (ver MATRIZ-PRODUTO-TESE)
+- Sem validacao externa ao contexto Tocantins
+- Sem fundamentacao teorica explicita dialogo com literatura HCI
+- Sem artigo cientifico publicado (planejado para Ciclo 5)
+
+## Convencoes
+
+- Nomes de arquivo: UPPER-CASE.md para documentos principais, snake_case para scripts
+- Idioma: Ingles para framework (transferibilidade internacional), Portugues para contexto PA
+- Commits: mensagens descritivas em portugues
+- PRs: obrigatorio para mudancas em METHODOLOGY.md, PRINCIPLES.md, PATTERNS.md
+
+## Producao vs. Reflexao
+
+- **Proporcao 80/20** (producao/reflexao) — este repositorio e mais operacional
+- Reflexao academica profunda deve ser registrada no repositorio `doutorado`
+- Diarios de sessao que modificam o framework devem ser criados no `doutorado`
+
+## Proximos Passos (Etapa 4 do Plano de Fortalecimento)
+
+Ver instrucao de sessao detalhada em:
+`doutorado/02-pesquisa-acao/03-dados/handoffs/INSTRUCAO-SESSAO-ETAPA4-IA-COLLAB-OS.md`
+
+---
+
+**Ultima atualizacao:** 2026-02-13
+**Versao:** 1.0
