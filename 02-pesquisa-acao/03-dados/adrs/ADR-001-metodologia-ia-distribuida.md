@@ -158,3 +158,21 @@ A metodologia pode ser abandonada a qualquer momento, voltando ao modelo ad-hoc.
 ---
 
 *Primeira decisão documentada do projeto*
+
+---
+
+## Lente de Delegação Inteligente (adicionada v2.2)
+
+> Anotação retroativa à luz de Tomašev, N., Franklin, M., & Osindero, S. (2025). "Intelligent AI Delegation." arXiv:2602.11865.
+
+| Conceito de Delegação | Manifestação neste ADR |
+|----------------------|------------------------|
+| **Cascading Delegation** | Estrutura CEO→CTO→Dev é delegação em cascata com atenuação de privilégio (bounded autonomy) |
+| **Authority Gradient** | Hierarquia formal de autoridade definida entre os 3 papéis |
+| **Privilege Attenuation** | Cada nível abaixo tem menos autoridade que o anterior (Dev não altera escopo, CTO não decide negócio) |
+| **Delegation State Transfer** | Handoffs estruturados resolvem o problema de transferência de estado entre delegatários |
+| **Delegation Accountability** | ADRs como mecanismo de rastreabilidade de decisões delegadas |
+| **Stateless Delegatee Problem** | Motivação central: LLMs sem memória persistente entre sessões |
+| **Meaningful Human Control** | CEO humano mantém controle estratégico significativo |
+
+**Interpretação:** Esta ADR documenta a decisão que criou, empiricamente, uma estrutura de delegação em cascata que Tomašev et al. formalizariam teoricamente um mês depois. A convergência é independente — este ADR foi escrito em 08/01/2026, o artigo publicado em 17/02/2025 (arXiv), sem conhecimento mútuo.

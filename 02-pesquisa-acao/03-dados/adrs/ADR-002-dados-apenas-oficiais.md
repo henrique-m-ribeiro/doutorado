@@ -133,3 +133,18 @@ Reativar estimativas requer modificar coletores e decisão do CEO. Não é trivi
 | 2026-01-08 | Criação | Dev Team |
 | 2026-01-08 | Aprovação | CEO |
 
+---
+
+## Lente de Delegação Inteligente (adicionada v2.2)
+
+> Anotação retroativa à luz de Tomašev, N., Franklin, M., & Osindero, S. (2025). "Intelligent AI Delegation." arXiv:2602.11865.
+
+| Conceito de Delegação | Manifestação neste ADR |
+|----------------------|------------------------|
+| **Contract-First Decomposition** | Dados precisam de "contrato" (fonte oficial, metodologia citada) antes de serem aceitos — verificação antes da delegação |
+| **Structural Transparency** | Classificação tripartite (official/calculated/unavailable) torna transparente o que o sistema sabe e não sabe |
+| **Delegation Opacity** | O anti-padrão resolvido: dados estimados sem validação eram decisões opacas do agente |
+| **Liability Firebreaks** | "Indisponível" é um firebreak: prefere-se lacuna visível a dado não confiável |
+
+**Interpretação:** Esta ADR implementa Contract-First Decomposition para dados — o mesmo princípio que Tomašev et al. propõem para tarefas. A decisão de classificar dados em 3 categorias é um mecanismo processual de Structural Transparency.
+

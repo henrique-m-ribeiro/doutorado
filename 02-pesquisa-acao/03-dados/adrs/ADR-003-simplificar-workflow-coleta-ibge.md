@@ -186,5 +186,19 @@ Durante a implementação dos workflows de coleta de dados do n8n, identificamos
 
 ---
 
+## Lente de Delegação Inteligente (adicionada v2.2)
+
+> Anotação retroativa à luz de Tomašev, N., Franklin, M., & Osindero, S. (2025). "Intelligent AI Delegation." arXiv:2602.11865.
+
+| Conceito de Delegação | Manifestação neste ADR |
+|----------------------|------------------------|
+| **Delegation Boundary Violation** | Workflow original ultrapassava os limites do schema disponível — tentava acessar tabelas inexistentes |
+| **Delegation Capacity Threshold** | Simplificação de 12→10 nós reconhece limites operacionais; alinhado com "Limited Scope" do ia-collab-os |
+| **Adaptive Execution** | Decisão de adaptar workflow ao ambiente real (schema de produção) em vez de forçar o ambiente a se adaptar |
+
+**Interpretação:** Esta ADR exemplifica Adaptive Execution — quando o contexto real diverge do planejado, o agente (CTO) adapta a tarefa em vez de tentar forçar o ambiente. O princípio "Limited Scope" do ia-collab-os é equivalente funcional do Delegation Capacity Threshold.
+
+---
+
 **Aprovado por**: Henrique (CEO)
 **Implementado por**: Claude (CTO)

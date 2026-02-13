@@ -610,6 +610,23 @@ Ver seção "Arquitetura Proposta".
 
 ---
 
+---
+
+## Lente de Delegação Inteligente (adicionada v2.2)
+
+> Anotação retroativa à luz de Tomašev, N., Franklin, M., & Osindero, S. (2025). "Intelligent AI Delegation." arXiv:2602.11865.
+
+| Conceito de Delegação | Manifestação neste ADR |
+|----------------------|------------------------|
+| **Contract-First Decomposition** | Schema de territórios genérico é um "contrato" que define como qualquer tipo de território pode ser representado — decomposição formal antes da implementação |
+| **Structural Transparency** | Views de compatibilidade tornam transparente a relação entre schema antigo e novo |
+| **Delegation Boundary Violation** | Schema rígido (municipality_id) é uma violação de fronteira: impedia análise multi-escala porque o "contrato" original era estreito demais |
+| **Systemic Resilience** | Versionamento temporal (valid_from, valid_until) e suporte a múltiplas hierarquias simultâneas aumentam resiliência sistêmica |
+
+**Interpretação:** Este ADR propõe resolver uma Delegation Boundary Violation estrutural: o schema original limitava o sistema a apenas um tipo de território, impedindo escalabilidade. A solução (schema genérico) é um exemplo de como Contract-First Decomposition pode ser aplicada a infraestrutura de dados, não apenas a tarefas.
+
+---
+
 **Aprovado por**: Henrique (CEO)
 **Proposto por**: Claude (Arquiteto de Dados)
 **Data da Proposta**: 2026-01-16

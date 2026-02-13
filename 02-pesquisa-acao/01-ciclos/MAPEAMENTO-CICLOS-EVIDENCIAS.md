@@ -271,7 +271,7 @@ O aprendizado central ("separar metodologia de artefatos") emerge ao longo dos d
 | 1. Centralizacao documental | ✅ Concluida | Diarios, handoffs, relatorios, ADRs, governanca centralizados |
 | 2. Formalizacao ciclos PA | ✅ Concluida | Este documento + CICLO-04-PLANO + CICLO-05-PLANO + PROTOCOLO |
 | 3. Vozes territoriais | ⏳ Planejamento | Requer trabalho de campo do pesquisador |
-| 4. Fortalecimento IA-Collab-OS | ⏳ Pendente | Metricas, modos de falha |
+| 4. Fortalecimento IA-Collab-OS | ✅ Concluida | ia-collab-os v2.2: 13 metricas operacionais, 12 modos de falha, 12 fontes academicas, integracao de Tomasev et al. (2025) como ref. primordial (delegacao inteligente), skeleton Artigo 1 |
 | 5. Tensao produto-tese | ✅ Concluida | MATRIZ-PRODUTO-TESE.md criada |
 | 6. Retomada de producao | ✅ Concluida | CLAUDE.md + checklist criados |
 
@@ -290,6 +290,9 @@ O aprendizado central ("separar metodologia de artefatos") emerge ao longo dos d
 | Indice | README com indice completo de 23 diarios | 03-dados/diarios-sessoes/README.md | ✅ |
 | Indice | Cronologia atualizada (v2.0) | 04-repositorios/cronologia-real-repositorios.md | ✅ |
 | Config | CLAUDE.md com instrucoes para agentes | /CLAUDE.md | ✅ |
+| Framework | ia-collab-os v2.2: metricas (METRICS.md), modos de falha (FAILURE-MODES.md), fundamentacao teorica (THEORETICAL-GROUNDING.md, LITERATURE_REVIEW.md), skeleton artigo (ARTICLE-1-SKELETON.md) | ia-collab-os repo | ✅ |
+| Referencia | Tomasev et al. (2025) "Intelligent AI Delegation" — ref. primordial com 21 conceitos mapeados | 03-referencias/bibliografia.bib | ✅ |
+| Governanca | CLAUDE.md criados para 3 repositorios satelites (ia-collab-os, tocantins-integrado, caderno-tocantins-2026) | temp-claude-md-files/ | ✅ |
 
 ---
 
@@ -300,7 +303,7 @@ O aprendizado central ("separar metodologia de artefatos") emerge ao longo dos d
 | **PS1** (PA viabiliza?) | ⚠️ | ✅ | ✅ | ✅ | ✅ |
 | **PS2** (Fundamentacao IT) | 🔲 | ⚠️ | 🔲 | 🔲 | 🔲 |
 | **PS3** (Transformacoes) | ⚠️ | ⚠️ | ⚠️ | ✅ | 🔲 |
-| **PS4** (Padroes H-IA) | ⚠️ | ✅ | ✅ | ✅ | ⚠️ |
+| **PS4** (Padroes H-IA) | ⚠️ | ✅ | ✅ | ✅ | ✅ |
 | **PS5** (Etica/governanca) | 🔲 | 🔲 | 🔲 | 🔲 | 🔲 |
 | **PS6** (Escalabilidade) | 🔲 | 🔲 | 🔲 | 🔲 | 🔲 |
 
@@ -318,10 +321,10 @@ O aprendizado central ("separar metodologia de artefatos") emerge ao longo dos d
 
 | OE | Status Geral | Evidencias Existentes | Lacuna Principal |
 |----|-------------|----------------------|------------------|
-| **OE1** (Framework PA para IA) | 🔄 Avancado | ia-collab-os v1.0; sistema de continuidade (precursor, ~52 KB); 5 ADRs; governanca (METHODOLOGY+ROLES, 20 KB); 23+ diarios PA; ciclos formalizados | Sem metricas operacionais; sem validacao externa; sem dialogo com literatura ADR (Sein et al.) |
+| **OE1** (Framework PA para IA) | ✅ Substancial | ia-collab-os v2.2 com 13 metricas operacionais, 12 modos de falha com evidencia empirica, 12 fontes academicas (incl. Tomasev et al. 2025 — ref. primordial), skeleton Artigo 1; sistema de continuidade (precursor, ~52 KB); 5 ADRs; governanca (METHODOLOGY+ROLES, 20 KB); 23+ diarios PA; ciclos formalizados | Sem validacao externa ao contexto Tocantins; artigo nao submetido |
 | **OE2** (Fundamentacao IT) | ⚠️ Base empirica existente | 4 analises dimensionais (~345 KB); revisao incipiente no projeto v2.0; artigo "The Mediator Effect" (rascunho, ~165 KB) | Revisao sistematica pendente (15-20 refs); Girardot, Bertacchini, Masselot por fichar |
 | **OE3** (Transformacoes gestao) | ⚠️ Artefato sem uso | 9 volumes do Caderno Tocantins; piloto Palmas (12 KB de resultados); sistema tocantins-integrado (Camada 1: 90%) | Nenhum ator territorial usou os cadernos; piloto Palmas sem analise formal publicada |
-| **OE4** (Padroes H-IA) | ⚠️ Rico mas nao sistematizado | 11+ prompts de sessao (Ciclo 1); split strategy (Ciclo 3); roles CEO/CTO/DEV; 213 agentes orquestrados; evolucao visivel nos diarios | Sem framework teorico; sem dialogo com Dellermann, Jarrahi, Seeber; sem tipologia formal |
+| **OE4** (Padroes H-IA) | 🔄 Avancado | 11+ prompts de sessao (Ciclo 1); split strategy (Ciclo 3); roles CEO/CTO/DEV; 213 agentes orquestrados; evolucao visivel nos diarios; **NOVO v2.2:** 21 conceitos de delegacao inteligente mapeados 1:1 (Tomasev et al.), 5 pilares integrados, vocabulario de delegacao nos principios/protocolos/modos de falha, dialogo com Dellermann, Jarrahi, Seeber estabelecido | Tipologia formal pendente; sem validacao externa |
 | **OE5** (Etica/governanca) | ❌ Nao iniciado | Reflexoes nos diarios sobre vieses, completude, validacao | Depende de campo, audiencias e CEP |
 | **OE6** (Escalabilidade) | ⚠️ Indicios | Arquitetura modular do sistema; ia-collab-os como framework transferivel; producao em escala (213 agentes, 9 volumes, 139 municipios) | Sem teste em outro contexto; sem entrevistas com gestores |
 
@@ -334,7 +337,7 @@ O aprendizado central ("separar metodologia de artefatos") emerge ao longo dos d
 2. **Enderacar PS3:** Validar cadernos com atores territoriais (observar se/como transforma praticas)
 3. **Enderacar PS5:** Audiencias publicas como espaco de debate etico e de governanca
 4. **Coletar dados para OE3:** Entrevistas com gestores que usarem os cadernos
-5. **Formalizar OE1:** Elevar ia-collab-os de pratica documentada a metodologia com metricas
+5. **Validar OE1:** ia-collab-os v2.2 ja possui metricas e fundamentacao teorica; foco agora em validacao externa e submissao do Artigo 1
 
 ### Para o Ciclo 5 (a formalizar):
 1. **Enderacar PS6:** Analise de escalabilidade baseada na experiencia do Tocantins
@@ -344,10 +347,11 @@ O aprendizado central ("separar metodologia de artefatos") emerge ao longo dos d
 
 ---
 
-**Versao:** 2.0
-**Data:** 12 de Fevereiro de 2026
+**Versao:** 2.1
+**Data:** 13 de Fevereiro de 2026
 **Historico:**
 - v1.0 (12 Fev 2026): Mapeamento retroativo inicial
 - v2.0 (12 Fev 2026): Incorporacao das descobertas da analise transversal dos 5 repositorios. Correcoes substanciais nos Ciclos 0-2 (21 diarios PA descobertos no Ciclo 1, 4 diarios + 5 ADRs + piloto Palmas no Ciclo 2). Atualizacao das sinteses transversais.
-**Status:** Completo (mapeamento retroativo atualizado)
+- v2.1 (13 Fev 2026): Incorporacao do fortalecimento ia-collab-os v2.2 (Etapa 4 concluida). Atualizacao de OE1 (substancial) e OE4 (avancado) pos-integracao de Tomasev et al. (2025) e 12 fontes academicas. Registro de CLAUDE.md para repos satelites. PS4 no Ciclo 3.5 promovido de ⚠️ para ✅.
+**Status:** Completo (mapeamento atualizado pos-Etapa 4)
 **Proxima revisao:** Inicio do Ciclo 4 (coleta de dados em campo)
