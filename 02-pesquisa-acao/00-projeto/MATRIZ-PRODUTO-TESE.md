@@ -1,7 +1,7 @@
 # Matriz de Dupla Leitura: Produto Pratico x Dado de Pesquisa
 
 **Data:** 12 de Fevereiro de 2026
-**Ultima atualizacao:** 13 de Fevereiro de 2026 (v2.1 — pos-fortalecimento ia-collab-os v2.2)
+**Ultima atualizacao:** 14 de Fevereiro de 2026 (v2.2 — pos-pivot MVP tocantins-integrado)
 **Objetivo:** Explicitar a relacao entre cada artefato produzido e sua dupla funcao — como produto pratico (para o senador/equipe) e como dado de pesquisa (para a tese de doutorado).
 **Referencia:** Plano de Fortalecimento Metodologico, Etapas 4 e 5
 
@@ -46,13 +46,16 @@
 | **Principios (5)** | Diretrizes praticas para equipes; cada principio com "lente de delegacao" | Categorias analiticas com fundamentacao teorica (OE4); cada principio mapeado para conceito de delegacao (Authority Gradient, Boundary Violation, etc.) | Sem validacao por praticantes externos |
 | **Skeleton Artigo 1** (NOVO v2.2) | Base para publicacao academica (Jun 2026) | Estrutura completa com 7 secoes, 5 Design Principles, 2 case studies, placeholders substantivos | Rascunho; requer expansao e revisao |
 
-### 2.3 Sistema tocantins-integrado
+### 2.3 Sistema tocantins-integrado — ATUALIZADO v2.2 (pos-pivot MVP)
 
 | Dimensao | Valor como Produto Pratico | Valor como Dado de Pesquisa | Lacuna Academica |
 |----------|---------------------------|----------------------------|-----------------|
-| **Camada 1 (Dashboard)** | Interface visual para equipe explorar dados | Demonstracao de como IT baseada em IA pode ser entregue (OE3) | 90% completo; nao usado por ninguem alem do pesquisador |
-| **Camada 2 (Multiagentes)** | Analises sob demanda; atualizacao automatica | Dado central para comparacao manual vs. automatizado (OE3) | 0% implementado; placeholder no projeto |
-| **Arquitetura tecnica** | Modelo replicavel para outros estados | Evidencia de design de sistema de IT (OE6) | Sem validacao tecnica por pares |
+| **MVP Dashboard (Camada 1)** | Dashboard funcional com dados reais de 139 municipios; 6 tabs tematicas; pronto para deploy | Demonstracao de como IT baseada em IA pode ser entregue (OE2, OE3); H4.4 parcialmente validada | ✅ Funcional — mas ainda sem usuarios externos; metricas de uso pendentes |
+| **Parser parse-caderno.cjs** (NOVO) | Extracao automatica de dados estruturados de fichas markdown | Evidencia de integracao caderno→sistema (H4.4); 139/139 municipios, alta fidelidade | Sem auditoria formal de qualidade; cobertura limitada a indicadores das fichas |
+| **ADR-006** (NOVO) | Documentacao da decisao de pivot com alternativas | Dado de PA: resposta adaptativa a demandas do contexto (OE1); lente de delegacao aplicada | Um unico caso; sem comparacao com outras decisoes de pivot |
+| **Camada 2 (Multiagentes)** | Analises sob demanda; atualizacao automatica | Dado central para comparacao manual vs. automatizado (OE3) | 0% implementado; adiado para fase posterior |
+| **Backend legado** | Codigo preservado (coletores, API, Supabase, n8n) para uso futuro | Registro de arquitetura tecnica completa vs. MVP simplificado (OE6) | Inativo no MVP; transicao incremental planejada |
+| **Arquitetura tecnica** | Modelo replicavel para outros estados | Evidencia de design de sistema de IT (OE6); duas estrategias documentadas (dinamica vs. estatica) | Sem validacao tecnica por pares |
 
 ### 2.4 Acervo do framework-v6-mvp (Ciclos 0-1) — NOVO v2.0
 
@@ -93,7 +96,7 @@
 |----|--------------------------|-----------------------------------|
 | **OE1** (Framework PA para IA) | ia-collab-os v1.0; **23 diarios PA** (Ciclos 0-3.5); **5 ADRs**; sistema de continuidade (precursor, ~52 KB); governanca (METHODOLOGY+ROLES, 20 KB); protocolo de registro; mapeamento ciclos-evidencias; artigo "The Mediator Effect" (rascunho) | Metricas operacionais para os 5 principios; validacao externa; dialogo com literatura de ADR (Sein et al.) |
 | **OE2** (Fundamentacao IT) | **4 analises dimensionais** (~345 KB: Ambiental, Economica, Social, Territorial); revisao incipiente no projeto v2.0; secao 4.1 do projeto | Revisao sistematica (15-20 refs); fichar Girardot, Bertacchini, Masselot; adaptar ao Brasil; as analises dimensionais sao base empirica mas nao dialogam com literatura |
-| **OE3** (Transformacoes gestao) | 9 volumes produzidos; fichas V2; 139 municipios analisados; **piloto Palmas** (12 KB — primeiro dado empirico); sistema tocantins-integrado (Camada 1: 90%) | Nenhum ator territorial usou os cadernos sistematicamente; piloto Palmas sem analise formal; entrevistas pendentes |
+| **OE3** (Transformacoes gestao) | 9 volumes produzidos; fichas V2; 139 municipios analisados; **piloto Palmas** (12 KB — primeiro dado empirico); **MVP dashboard funcional** (139 municipios, dados reais, 6 tabs); ADR-006 | Dashboard pronto mas sem usuarios externos; piloto Palmas sem analise formal; entrevistas pendentes |
 | **OE4** (Padroes H-IA) | Split strategy documentada; padroes de orquestracao; relato de 213 agentes; **11+ prompts de sessao** (evolucao H-IA); **handoffs CEO↔CTO↔DEV** (8+); roles formalizados; conceitos teoricos emergentes (sessao 5) | Framework teorico nao sistematizado; sem dialogo com Dellermann, Jarrahi, Seeber; sem tipologia formal; prompts nao categorizados |
 | **OE5** (Etica/governanca) | Reflexoes nos diarios sobre vieses, completude, validacao | Nenhuma audiencia publica realizada; nenhuma entrevista; nenhum grupo focal; CEP pendente |
 | **OE6** (Escalabilidade) | Arquitetura modular do sistema; ia-collab-os como framework transferivel; **producao em escala** (213 agentes, 9 volumes, 139 municipios em 4 meses) | Sem teste em outro contexto; sem analise de barreiras; sem entrevistas com gestores de outros estados |
@@ -158,8 +161,8 @@ PRODUTO PRATICO                          DADO DE PESQUISA
   ia-collab-os        ←——→  Framework metodologico (OE1, OE4)
                              MAS: sem metricas, sem validacao
 
-  tocantins-integrado ←——→  Sistema demonstravel (OE3, OE6)
-                             MAS: incompleto, sem usuarios
+  tocantins-integrado ←——→  MVP funcional com dados reais (OE2, OE3, OE6)
+                             MAS: sem usuarios externos ainda
 
   Audiencias CDR      ←——→  Dados qualitativos (OE5)
                              MAS: nao realizadas ainda
@@ -171,9 +174,11 @@ PRODUTO PRATICO                          DADO DE PESQUISA
 
 ---
 
-**Versao:** 2.0
-**Data:** 12 de Fevereiro de 2026
+**Versao:** 2.2
+**Data:** 14 de Fevereiro de 2026
 **Historico:**
 - v1.0 (12 Fev 2026): Matriz inicial com artefatos conhecidos
 - v2.0 (12 Fev 2026): Incorporacao de artefatos descobertos na analise transversal (artigo "The Mediator Effect", analises dimensionais, ADRs, piloto Palmas, prompts de sessao, governanca). Novas secoes 2.4 e 2.5. Secao 2.6 expandida. OEs atualizados.
-**Proxima revisao:** Apos inicio da coleta de dados no Ciclo 4
+- v2.1 (13 Fev 2026): Secao 2.2 (ia-collab-os) expandida com v2.2 do framework.
+- v2.2 (14 Fev 2026): Secao 2.3 (tocantins-integrado) atualizada pos-pivot MVP. Dashboard de "90% incompleto" para "MVP funcional". Parser, ADR-006, backend legado adicionados. OE3 e diagrama atualizados.
+**Proxima revisao:** Apos deploy e primeiros dados de uso do dashboard

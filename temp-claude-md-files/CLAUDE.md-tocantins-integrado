@@ -5,9 +5,9 @@
 **Sistema tecnico de inteligencia territorial para o Estado do Tocantins.**
 
 - **Repositorio:** tocantins-integrado
-- **Ciclo PA:** Ciclo 2 (Jan 2026)
-- **Status:** Pausado (Camada 1: 90%, Camada 2: 0%)
-- **Funcao:** Sistema tecnico de IT-IA (dashboard + multiagentes)
+- **Ciclo PA:** Ciclos 2 e 4 (Jan 2026 → Fev 2026)
+- **Status:** Ativo (MVP com dados estaticos — ADR-006)
+- **Funcao:** Sistema tecnico de IT-IA (dashboard MVP + multiagentes futuro)
 - **Repositorio Hub:** [doutorado](https://github.com/henrique-m-ribeiro/doutorado)
 
 ## Contexto da Pesquisa
@@ -44,26 +44,35 @@ Este repositorio e parte do projeto de doutorado em Ciencia Politica de Henrique
 
 ### Estado Atual do Sistema:
 
-**Camada 1 (Dashboard):** 90% completo
-- Frontend React/TypeScript
-- Backend Node.js + PostgreSQL + pgvector
-- Dashboard com mapas e graficos
-- **Status:** Funcional mas nao usado por usuarios reais
+**MVP Dashboard:** Ativo e funcional
+- Frontend Next.js / React / TypeScript
+- Dados via JSON estatico (`public/data/municipalities.json`, ~1.9 MB)
+- Parser `scripts/parse-caderno.cjs` extrai dados de 139 fichas municipais
+- Camada de dados: `lib/caderno-data.ts` + `hooks/useCadernoData.ts`
+- 6 tabs tematicas com dados reais
+- **Status:** Funcional, pronto para deploy (Replit/Vercel)
+
+**Backend legado:** Inativo (preservado)
+- API Express, coletores, agentes dimensionais
+- PostgreSQL + pgvector + Supabase
+- n8n workflows
+- **Status:** Codigo intacto, nao utilizado pelo MVP
 
 **Camada 2 (Multiagentes):** 0% implementado
 - Analises sob demanda
 - Atualizacao automatica
-- **Status:** Placeholder no projeto
+- **Status:** Adiado para fase posterior
 
 ### Documentos de referencia local:
 
 **Governanca e decisoes:**
-- ADRs (5): `docs/adrs/` ou raiz `.governance/`
+- ADRs (6): `docs/adr/` ou raiz `.governance/`
   - ADR-001: Metodologia IA distribuida
   - ADR-002: Dados apenas oficiais
   - ADR-003: Simplificar workflow coleta IBGE
   - ADR-004: Sistema orientado a metadados
   - ADR-005: Granularidade territorial-temporal
+  - ADR-006: MVP com dados estaticos do caderno (pivot estrategico)
 - Piloto Palmas: `docs/PILOTO-PALMAS-RESULTADOS.md` (unico teste empirico)
 
 **Tecnica:**
@@ -82,26 +91,28 @@ Este repositorio e parte do projeto de doutorado em Ciencia Politica de Henrique
 | Repositorio | Ciclo | Relacao |
 |-------------|-------|---------|
 | **doutorado** | Hub | Organizacao academica e governanca |
-| **ia-collab-os** | Ciclos 2-3 | Framework metodologico v2.2 aplicado neste sistema; 5 ADRs deste repo tem lente de delegacao |
-| **caderno-tocantins-2026** | Ciclo 3 | Artefato pratico produzido COM este sistema |
+| **ia-collab-os** | Ciclos 2-3 | Framework metodologico v2.2 aplicado neste sistema; 6 ADRs deste repo tem lente de delegacao |
+| **caderno-tocantins-2026** | Ciclo 3 | Artefato pratico; **fonte de dados do MVP** (fichas municipais parseadas) |
 | **framework-v6-mvp** | Ciclo 1 | Sistema monolitico predecessor (superado) |
 
 ## Valor como Dado de Pesquisa
 
 Este repositorio contem:
 
-- **5 ADRs formais** com lente de delegacao inteligente (evidencia de processo decisorio documentado — OE1, OE4; cada ADR anotado com conceitos de Tomasev et al., 2025)
-- **Piloto Palmas** (~12 KB) — unico resultado empirico com dados reais (OE3)
-- **Arquitetura tecnica** — modelo replicavel para outros estados (OE5)
-- **113 commits** documentando evolucao do sistema (Jan 2026)
-- **24 pull requests** (processo de desenvolvimento rastreavel)
+- **6 ADRs formais** com lente de delegacao inteligente (evidencia de processo decisorio documentado — OE1, OE4; cada ADR anotado com conceitos de Tomasev et al., 2025)
+- **MVP dashboard funcional** com dados reais de 139 municipios (OE2, OE3)
+- **Parser parse-caderno.cjs** — validacao empirica de H4.4 (dados do caderno alimentam sistema)
+- **Piloto Palmas** (~12 KB) — resultado empirico com dados reais (OE3)
+- **Arquitetura tecnica** — modelo replicavel para outros estados (OE5); duas estrategias documentadas (dinamica vs. estatica)
+- **113+ commits** documentando evolucao do sistema
+- **24+ pull requests** (processo de desenvolvimento rastreavel)
 
 ### Lacunas Academicas Conhecidas:
 
-- 90% completo, mas **nao usado por ninguem** alem do pesquisador (OE2 nao validado)
+- MVP funcional, mas **ainda sem usuarios externos** (deploy pendente — OE2 nao plenamente validado)
 - Camada 2 (multiagentes) nao implementada (0%)
 - Sem validacao tecnica por pares
-- Sem feedback de usuarios finais (gestores publicos)
+- Sem feedback de usuarios finais (gestores publicos) — **deploy abrira esta possibilidade**
 - Piloto Palmas: um unico caso, sem generalizacao
 
 ## Convencoes
@@ -117,17 +128,18 @@ Este repositorio contem:
 - Reflexao academica profunda deve ser registrada no repositorio `doutorado`
 - Diarios de sessao com implementacao significativa devem ser criados no `doutorado`
 
-## Contexto de Pausa
+## Historico: Pausa e Retomada
 
-Este repositorio foi pausado em Jan 2026 apos Camada 1 atingir 90% e decisao estrategica de priorizar producao do Caderno Tocantins (Ciclo 3). A retomada esta planejada para Ciclo 4 ou apos qualificacao (Ago 2027).
+**Pausa (Jan 2026):** Repositorio pausado apos Camada 1 atingir 90% e decisao estrategica de priorizar producao do Caderno Tocantins (Ciclo 3).
 
-**Motivo da pausa (ADR implicito):**
-- Camada 1 funcional para demonstracao
-- Falta de usuarios reais para validar utilidade
-- Prioridade: produzir artefato pratico (caderno) antes de refinar sistema
-- Valor academico: demonstrar viabilidade tecnica (completo), nao sistema final
+**Retomada — Pivot MVP (14 Fev 2026, ADR-006):** Urgencia da campanha eleitoral motivou retomada antecipada. Decisao de alimentar dashboard com dados parseados das fichas do caderno (dados estaticos), eliminando dependencias de backend/Supabase. MVP funcional implementado em ~4 horas.
+
+**Proximos passos:**
+- Deploy do MVP (Replit/Vercel)
+- Coleta de feedback de usuarios da campanha
+- Transicao incremental para dados dinamicos (quando pertinente)
 
 ---
 
-**Ultima atualizacao:** 2026-02-13
-**Versao:** 1.1 (atualizado com referencia a ia-collab-os v2.2 e lente de delegacao nos ADRs)
+**Ultima atualizacao:** 2026-02-14
+**Versao:** 2.0 (atualizado pos-pivot MVP — ADR-006, status ativo, arquitetura MVP documentada)

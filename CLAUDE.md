@@ -8,10 +8,10 @@ Tema: Inteligencia Territorial e IA na Gestao Publica.
 
 ## Sessao Ativa
 
-**Ciclo PA:** Ciclo 3.5 — Reflexao e Organizacao Metodologica
-**Questao de pesquisa:** PS1 (Como a PA viabiliza o desenvolvimento de sistemas de IT-IA?)
-**Hipotese em teste:** A organizacao metodologica retroativa fortalece a base de evidencias da pesquisa
-**Objetivo especifico:** OE1 (Adaptar e aplicar framework de pesquisa-acao)
+**Ciclo PA:** Ciclo 4 (iniciado) — Pivot MVP + Validacao Territorial
+**Questao de pesquisa:** PS1 (Como a PA viabiliza o desenvolvimento de sistemas de IT-IA?) + PS2 (Transformacoes na gestao)
+**Hipotese em teste:** H4.4 (Dados dos cadernos alimentam Camada 1 com perda < 10%) — validada pelo parser
+**Objetivo especifico:** OE1, OE2, OE3
 
 ## Estrutura do Repositorio
 
@@ -58,12 +58,12 @@ doutorado/
 **Ciclos de pesquisa-acao:**
 - Mapeamento ciclos-evidencias: `02-pesquisa-acao/01-ciclos/MAPEAMENTO-CICLOS-EVIDENCIAS.md`
 - Protocolo de registro de sessao: `02-pesquisa-acao/01-ciclos/PROTOCOLO-REGISTRO-SESSAO.md`
-- Ciclo 4 (planejado): `02-pesquisa-acao/01-ciclos/CICLO-04-PLANO.md`
+- Ciclo 4 (em andamento — pivot MVP): `02-pesquisa-acao/01-ciclos/CICLO-04-PLANO.md`
 - Ciclo 5 (planejado): `02-pesquisa-acao/01-ciclos/CICLO-05-PLANO.md`
 
 **Dados e registros:**
 - Template de diario PA: `02-pesquisa-acao/03-dados/diarios-sessoes/TEMPLATE-DIARIO.md`
-- ADRs (001-005): `02-pesquisa-acao/03-dados/adrs/`
+- ADRs (001-006): `02-pesquisa-acao/03-dados/adrs/`
 - Governanca Tocantins (METHODOLOGY, ROLES, Piloto Palmas): `02-pesquisa-acao/03-dados/governanca-tocantins/`
 - Relatorio de revisao de decisoes: `02-pesquisa-acao/03-dados/relatorios-orquestracao/RELATORIO-REVISAO-DECISOES-PLANEJAMENTO.md`
 - Instrucao sessao Etapa 4: `02-pesquisa-acao/03-dados/handoffs/INSTRUCAO-SESSAO-ETAPA4-IA-COLLAB-OS.md`
@@ -78,12 +78,12 @@ doutorado/
 |------------|----------|--------|-----------|
 | **caderno-tocantins-2026** | Ciclo 3 | Ativo | 9 volumes, 139 municipios, 213 agentes |
 | **ia-collab-os** | Ciclos 2-3 | Ativo | Framework metodologico H-IA v2.2 (CEO/CTO/DEV); 12 fontes academicas; ref. primordial: Tomasev et al. (2025) |
-| **tocantins-integrado** | Ciclo 2 | Pausado | Sistema tecnico; Camada 1: 90%, 5 ADRs |
+| **tocantins-integrado** | Ciclos 2, 4 | Ativo (MVP) | Dashboard funcional com dados estaticos (139 municipios); 6 ADRs; backend legado preservado |
 | **framework-v6-mvp** | Ciclo 1 | Historico | Framework monolitico; 183 commits, 21 diarios |
 
 ## Plano de Fortalecimento Metodologico
 
-Status das 6 etapas (atualizado 2026-02-13):
+Status das 6 etapas (atualizado 2026-02-14):
 
 | Etapa | Status |
 |-------|--------|
