@@ -256,7 +256,7 @@ O aprendizado central ("separar metodologia de artefatos") emerge ao longo dos d
 
 ---
 
-## Ciclo 3.5: Reflexao e Organizacao Metodologica (Fev 2026 — em andamento)
+## Ciclo 3.5: Reflexao e Organizacao Metodologica (Fev 2026 — concluido)
 
 ### Questoes de pesquisa enderecadas
 | Questao | Status | Observacao |
@@ -293,26 +293,52 @@ O aprendizado central ("separar metodologia de artefatos") emerge ao longo dos d
 | Framework | ia-collab-os v2.2: metricas (METRICS.md), modos de falha (FAILURE-MODES.md), fundamentacao teorica (THEORETICAL-GROUNDING.md, LITERATURE_REVIEW.md), skeleton artigo (ARTICLE-1-SKELETON.md) | ia-collab-os repo | ✅ |
 | Referencia | Tomasev et al. (2025) "Intelligent AI Delegation" — ref. primordial com 21 conceitos mapeados | 03-referencias/bibliografia.bib | ✅ |
 | Governanca | CLAUDE.md criados para 3 repositorios satelites (ia-collab-os, tocantins-integrado, caderno-tocantins-2026) | temp-claude-md-files/ | ✅ |
+| Diagnostico | Diagnostico consolidado do projeto por Manus (avaliacao cross-repo) | temp-claude-md-files/ | ✅ |
+
+---
+
+## Ciclo 4: Pivot MVP + Validacao Territorial (Fev 2026 — em andamento)
+
+> **Nota v2.2:** O Ciclo 4 iniciou antecipadamente (Fev 2026, antes do periodo previsto de Jul-Dez 2026) com a Fase 4A' (Conclusao do MVP), motivada pela urgencia da campanha eleitoral. Ver CICLO-04-PLANO.md v2.0 e ADR-006.
+
+### Questoes de pesquisa enderecadas (ate o momento)
+| Questao | Status | Observacao |
+|---------|--------|------------|
+| PS1 (PA viabiliza desenvolvimento?) | ✅ Ativo | O pivot e dado de pesquisa: PA responde adaptativamente a demandas do contexto |
+| PS2 (Transformacoes na gestao) | ⚠️ Incipiente | Dashboard funcional, mas ainda sem usuarios reais |
+| OE1 (Framework PA para IA) | ✅ Em fortalecimento | ADR-006 documenta pivot; decisao formal com alternativas |
+| OE2 (Transformacoes gestao) | ⚠️ Artefato pronto | Dashboard com dados reais de 139 municipios; aguarda usuarios |
+| OE3 (Padroes H-IA) | ⚠️ Em andamento | Delegacao tecnica completa (parser + integracao pela IA) documentada no ADR-006 |
+
+### Evidencias produzidas neste ciclo (ate o momento)
+| Tipo | Descricao | Localizacao | Status |
+|------|-----------|-------------|--------|
+| ADR | ADR-006: MVP com dados estaticos do caderno | 03-dados/adrs/ADR-006-mvp-dados-caderno-estatico.md | ✅ |
+| Codigo | Parser parse-caderno.cjs (1000+ linhas) | tocantins-integrado/scripts/ | ✅ |
+| Dados | municipalities.json (~1.9 MB, 139 municipios) | tocantins-integrado/public/data/ | ✅ |
+| Artefato | Dashboard MVP funcional (Next.js, dados estaticos) | tocantins-integrado/src/dashboard/ | ✅ |
+| Hipotese | H4.4 parcialmente validada (139/139 municipios parseados) | ADR-006 | ✅ |
+| Diagnostico | Avaliacao cross-repo por Manus | temp-claude-md-files/ | ✅ |
 
 ---
 
 ## Sintese Transversal: Status por Questao de Pesquisa
 
-| Questao | Ciclo 0 | Ciclo 1 | Ciclo 2 | Ciclo 3 | Ciclo 3.5 |
-|---------|---------|---------|---------|---------|-----------|
-| **PS1** (PA viabiliza?) | ⚠️ | ✅ | ✅ | ✅ | ✅ |
-| **PS2** (Fundamentacao IT) | 🔲 | ⚠️ | 🔲 | 🔲 | 🔲 |
-| **PS3** (Transformacoes) | ⚠️ | ⚠️ | ⚠️ | ✅ | 🔲 |
-| **PS4** (Padroes H-IA) | ⚠️ | ✅ | ✅ | ✅ | ✅ |
-| **PS5** (Etica/governanca) | 🔲 | 🔲 | 🔲 | 🔲 | 🔲 |
-| **PS6** (Escalabilidade) | 🔲 | 🔲 | 🔲 | 🔲 | 🔲 |
+| Questao | Ciclo 0 | Ciclo 1 | Ciclo 2 | Ciclo 3 | Ciclo 3.5 | Ciclo 4 |
+|---------|---------|---------|---------|---------|-----------|---------|
+| **PS1** (PA viabiliza?) | ⚠️ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| **PS2** (Fundamentacao IT) | 🔲 | ⚠️ | 🔲 | 🔲 | 🔲 | ⚠️ |
+| **PS3** (Transformacoes) | ⚠️ | ⚠️ | ⚠️ | ✅ | 🔲 | ⚠️ |
+| **PS4** (Padroes H-IA) | ⚠️ | ✅ | ✅ | ✅ | ✅ | ⚠️ |
+| **PS5** (Etica/governanca) | 🔲 | 🔲 | 🔲 | 🔲 | 🔲 | 🔲 |
+| **PS6** (Escalabilidade) | 🔲 | 🔲 | 🔲 | 🔲 | 🔲 | 🔲 |
 
 ### Observacoes criticas
 
 1. **PS5 e PS6 nao foram enderecadas em nenhum ciclo.** Sao questoes que dependem de campo (audiencias, entrevistas, revisao teorica).
 2. **PS1 e PS4 sao as mais bem servidas** — naturalmente, pois sao sobre o proprio processo de pesquisa-acao e colaboracao H-IA, que ocorre em cada sessao. Com a descoberta dos 21 diarios do Ciclo 1, PS1 tem cobertura desde o inicio do projeto.
 3. **PS2 tem base incipiente no Ciclo 1** — as 4 analises dimensionais (~345 KB) do framework-v6-mvp sao fundamentacao empirica para IT, embora nao constituam revisao teorica sistematica.
-4. **PS3 tem artefatos mas nao tem observacao de transformacao** — os cadernos existem, mas ninguem ainda os usou para tomar decisoes. A "transformacao" e potencial, nao realizada. Porem, o piloto Palmas (Ciclo 2) e o primeiro dado empirico nesta direcao.
+4. **PS3 tem artefatos mas nao tem observacao de transformacao** — os cadernos e o dashboard MVP existem, mas ninguem alem do pesquisador os usou para tomar decisoes. O deploy do dashboard abre a possibilidade de observacao empirica real. O piloto Palmas (Ciclo 2) e o primeiro dado empirico nesta direcao.
 5. **PS4 no Ciclo 1 e mais rica que o previsto** — 11+ prompts de sessao documentam a evolucao da capacidade de orquestracao do pesquisador, e o sistema de continuidade e precursor do ia-collab-os.
 
 ---
@@ -321,9 +347,9 @@ O aprendizado central ("separar metodologia de artefatos") emerge ao longo dos d
 
 | OE | Status Geral | Evidencias Existentes | Lacuna Principal |
 |----|-------------|----------------------|------------------|
-| **OE1** (Framework PA para IA) | ✅ Substancial | ia-collab-os v2.2 com 13 metricas operacionais, 12 modos de falha com evidencia empirica, 12 fontes academicas (incl. Tomasev et al. 2025 — ref. primordial), skeleton Artigo 1; sistema de continuidade (precursor, ~52 KB); 5 ADRs; governanca (METHODOLOGY+ROLES, 20 KB); 23+ diarios PA; ciclos formalizados | Sem validacao externa ao contexto Tocantins; artigo nao submetido |
+| **OE1** (Framework PA para IA) | ✅ Substancial | ia-collab-os v2.2 com 13 metricas operacionais, 12 modos de falha com evidencia empirica, 12 fontes academicas (incl. Tomasev et al. 2025 — ref. primordial), skeleton Artigo 1; sistema de continuidade (precursor, ~52 KB); **6 ADRs** (incl. ADR-006 pivot MVP); governanca (METHODOLOGY+ROLES, 20 KB); 23+ diarios PA; ciclos formalizados; pivot como dado PA | Sem validacao externa ao contexto Tocantins; artigo nao submetido |
 | **OE2** (Fundamentacao IT) | ⚠️ Base empirica existente | 4 analises dimensionais (~345 KB); revisao incipiente no projeto v2.0; artigo "The Mediator Effect" (rascunho, ~165 KB) | Revisao sistematica pendente (15-20 refs); Girardot, Bertacchini, Masselot por fichar |
-| **OE3** (Transformacoes gestao) | ⚠️ Artefato sem uso | 9 volumes do Caderno Tocantins; piloto Palmas (12 KB de resultados); sistema tocantins-integrado (Camada 1: 90%) | Nenhum ator territorial usou os cadernos; piloto Palmas sem analise formal publicada |
+| **OE3** (Transformacoes gestao) | ⚠️ Artefato pronto, sem uso externo | 9 volumes do Caderno Tocantins; piloto Palmas (12 KB de resultados); **MVP dashboard funcional** (139 municipios, dados reais, 6 tabs); ADR-006 | Dashboard disponivel mas ainda sem usuarios externos; piloto Palmas sem analise formal publicada |
 | **OE4** (Padroes H-IA) | 🔄 Avancado | 11+ prompts de sessao (Ciclo 1); split strategy (Ciclo 3); roles CEO/CTO/DEV; 213 agentes orquestrados; evolucao visivel nos diarios; **NOVO v2.2:** 21 conceitos de delegacao inteligente mapeados 1:1 (Tomasev et al.), 5 pilares integrados, vocabulario de delegacao nos principios/protocolos/modos de falha, dialogo com Dellermann, Jarrahi, Seeber estabelecido | Tipologia formal pendente; sem validacao externa |
 | **OE5** (Etica/governanca) | ❌ Nao iniciado | Reflexoes nos diarios sobre vieses, completude, validacao | Depende de campo, audiencias e CEP |
 | **OE6** (Escalabilidade) | ⚠️ Indicios | Arquitetura modular do sistema; ia-collab-os como framework transferivel; producao em escala (213 agentes, 9 volumes, 139 municipios) | Sem teste em outro contexto; sem entrevistas com gestores |
@@ -332,12 +358,13 @@ O aprendizado central ("separar metodologia de artefatos") emerge ao longo dos d
 
 ## Recomendacoes para Proximos Ciclos
 
-### Para o Ciclo 4 (a formalizar):
-1. **Iniciar com PS2:** Revisao teorica sobre IT e precondição para audiencias publicas
-2. **Enderacar PS3:** Validar cadernos com atores territoriais (observar se/como transforma praticas)
-3. **Enderacar PS5:** Audiencias publicas como espaco de debate etico e de governanca
-4. **Coletar dados para OE3:** Entrevistas com gestores que usarem os cadernos
-5. **Validar OE1:** ia-collab-os v2.2 ja possui metricas e fundamentacao teorica; foco agora em validacao externa e submissao do Artigo 1
+### Para o Ciclo 4 (em andamento — pivot MVP):
+1. ✅ **MVP concluido:** Dashboard funcional com dados reais de 139 municipios (Fase 4A')
+2. **Proximo: Deploy e coleta de feedback** — usuarios da campanha como primeiros testadores (OE2, OE3)
+3. **Enderacar PS3:** Validar cadernos E dashboard com atores territoriais
+4. **Enderacar PS5:** Audiencias publicas — agora com demo funcional
+5. **PS2 em paralelo:** Revisao teorica sobre IT quando possivel
+6. **Validar OE1:** Submissao do Artigo 1 sobre ia-collab-os
 
 ### Para o Ciclo 5 (a formalizar):
 1. **Enderacar PS6:** Analise de escalabilidade baseada na experiencia do Tocantins
@@ -347,11 +374,12 @@ O aprendizado central ("separar metodologia de artefatos") emerge ao longo dos d
 
 ---
 
-**Versao:** 2.1
-**Data:** 13 de Fevereiro de 2026
+**Versao:** 2.2
+**Data:** 14 de Fevereiro de 2026
 **Historico:**
 - v1.0 (12 Fev 2026): Mapeamento retroativo inicial
 - v2.0 (12 Fev 2026): Incorporacao das descobertas da analise transversal dos 5 repositorios. Correcoes substanciais nos Ciclos 0-2 (21 diarios PA descobertos no Ciclo 1, 4 diarios + 5 ADRs + piloto Palmas no Ciclo 2). Atualizacao das sinteses transversais.
 - v2.1 (13 Fev 2026): Incorporacao do fortalecimento ia-collab-os v2.2 (Etapa 4 concluida). Atualizacao de OE1 (substancial) e OE4 (avancado) pos-integracao de Tomasev et al. (2025) e 12 fontes academicas. Registro de CLAUDE.md para repos satelites. PS4 no Ciclo 3.5 promovido de ⚠️ para ✅.
-**Status:** Completo (mapeamento atualizado pos-Etapa 4)
-**Proxima revisao:** Inicio do Ciclo 4 (coleta de dados em campo)
+- v2.2 (14 Fev 2026): Pivot MVP tocantins-integrado. Ciclo 3.5 marcado como concluido. Secao Ciclo 4 adicionada com evidencias iniciais (ADR-006, MVP, H4.4 parcialmente validada). OE3 atualizado (dashboard funcional). Sintese transversal expandida com coluna Ciclo 4. Recomendacoes atualizadas pos-pivot.
+**Status:** Atualizado (Ciclo 4 em andamento)
+**Proxima revisao:** Apos deploy e primeiros dados de uso do dashboard

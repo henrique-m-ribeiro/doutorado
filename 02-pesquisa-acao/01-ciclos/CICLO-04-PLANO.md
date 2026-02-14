@@ -1,9 +1,20 @@
 # Ciclo 4: Retomada do Sistema, Audiencias Publicas e Validacao Territorial
 
-**Periodo previsto:** 2026.2 (Julho-Dezembro 2026)
-**Status:** Planejado
+**Periodo previsto:** Fevereiro — Dezembro 2026 (antecipado de Jul-Dez)
+**Status:** Em andamento (Fase 4A' concluida)
 **Data de formalizacao:** 12 de Fevereiro de 2026
+**Ultima atualizacao:** 14 de Fevereiro de 2026 (v2.0 — pivot MVP)
 **Autor:** Henrique M. Ribeiro
+
+---
+
+## NOTA DE VERSAO v2.0 — Pivot MVP (14 Fev 2026)
+
+> **Decisao estrategica (ADR-006):** A demanda urgente da campanha eleitoral motivou a antecipacao da Fase 4D (Retomada do Sistema) para o inicio do ciclo, antes da fundamentacao teorica (Fase 4A) e das audiencias (Fase 4B). O MVP do dashboard tocantins-integrado foi implementado com dados estaticos parseados das fichas do caderno-tocantins-2026, eliminando dependencias de backend/Supabase. A hipotese H4.4 foi parcialmente validada: 139/139 municipios parseados, 137/139 com populacao, 139/139 com IDHM.
+>
+> **Implicacao para PA:** O pivot e, em si, dado de pesquisa — demonstra que a pesquisa-acao responde adaptativamente a demandas do contexto (PS1). A reordenacao das fases preserva todos os objetivos e hipoteses, alterando apenas a sequencia.
+>
+> **Referencia:** `02-pesquisa-acao/03-dados/adrs/ADR-006-mvp-dados-caderno-estatico.md`
 
 ---
 
@@ -54,7 +65,7 @@
 
 **Metodo de coleta:** Survey pos-audiencia; transcricao e analise de conteudo das falas.
 
-### H4.4: Retomada tecnica viavel
+### H4.4: Retomada tecnica viavel — PARCIALMENTE VALIDADA (Fev 2026)
 **Enunciado:** Os dados dos cadernos manuais (139 municipios, 9 dimensoes) podem alimentar a Camada 1 do tocantins-integrado com perda de informacao < 10%.
 
 **Criterio de sucesso:** >= 90% dos dados presentes nas fichas sao capturados no sistema.
@@ -63,36 +74,47 @@
 
 **Metodo de coleta:** Log de processamento de dados; contagem de campos mapeados vs. nao mapeados.
 
+**Resultado parcial (14 Fev 2026):** Parser `parse-caderno.cjs` processou 139/139 fichas municipais. Metricas: 139/139 com codigo IBGE, 137/139 com populacao, 139/139 com IDHM, 138/139 com PIB per capita, 139/139 com alertas. Cobertura estimada de ~60-80 indicadores por municipio. Resultado sugere sucesso (perda < 10% para campos estruturados), mas validacao formal completa pendente. Ver ADR-006.
+
 ---
 
-## 3. Acoes Planejadas
+## 3. Acoes Planejadas (reordenadas apos pivot — v2.0)
 
-### Fase 4A: Fundamentacao Teorica (Jul-Ago 2026)
-1. Revisao sistematica de literatura sobre IT (15-20 referencias-chave)
-2. Fichar textos fundacionais (Girardot, Bertacchini, Masselot)
-3. Mapear adaptacoes de IT ao contexto brasileiro
-4. Redigir rascunho do Capitulo 2 (Fundamentacao Teorica)
+### Fase 4A': Conclusao do MVP e Deploy (Fev-Mar 2026) — ✅ MVP CONCLUIDO
 
-### Fase 4B: Preparacao e Realizacao de Audiencias (Ago-Set 2026)
+> **Nota v2.0:** Esta fase antecipa e substitui a antiga Fase 4D. Motivada pela urgencia da campanha (ADR-006).
+
+1. ~~Upload de dados dos cadernos para Camada 1~~ → ✅ Parser criado (`parse-caderno.cjs`), JSON estatico gerado
+2. ~~Testar pipeline de processamento (H4.4)~~ → ✅ 139/139 municipios parseados com sucesso
+3. Reescrita dos 6 componentes do dashboard com dados reais → ✅ Concluido
+4. Deploy do MVP (Replit/Next.js) → Em andamento
+5. Coleta de feedback de usuarios da campanha → Pendente
+6. Avaliar qualidade das analises automatizadas vs. manuais → Pendente (requer usuarios)
+7. Iniciar prototipo da Camada 2 (sistema multiagentes) → Adiado para fase posterior
+
+### Fase 4B: Preparacao e Realizacao de Audiencias (quando aprovadas)
 1. Preparar proposta formal de audiencia para CDR
-2. Elaborar material de apresentacao (slides + demo do sistema)
+2. Elaborar material de apresentacao (slides + **demo funcional do dashboard**)
 3. Realizar audiencia(s) publica(s)
 4. Transcrever e analisar audiencias
 5. Elaborar Relatorio para Senado Federal
 
-### Fase 4C: Validacao Territorial (Set-Nov 2026)
+### Fase 4C: Validacao Territorial (apos deploy e uso inicial)
 1. Selecionar 3 municipios-piloto (diferentes portes e microrregioes)
 2. Identificar interlocutores locais (prefeitos, secretarios, tecnicos)
-3. Apresentar volumes relevantes a atores locais
+3. Apresentar volumes relevantes **e dashboard** a atores locais
 4. Coletar dados via questionario + entrevista semi-estruturada
 5. Aplicar teste de compreensibilidade (H4.1)
 6. Documentar reacoes, criticas e sugestoes
 
-### Fase 4D: Retomada do Sistema (Out-Dez 2026)
-1. Upload de dados dos cadernos para Camada 1
-2. Testar pipeline de processamento (H4.4)
-3. Avaliar qualidade das analises automatizadas vs. manuais
-4. Iniciar prototipo da Camada 2 (sistema multiagentes)
+### Fase 4D: Fundamentacao Teorica (em paralelo)
+
+> **Nota v2.0:** Movida de primeira para quarta fase. Pode ocorrer em paralelo com as fases B e C.
+
+1. Revisao sistematica de literatura sobre IT (15-20 referencias-chave)
+2. Fichar textos fundacionais (Girardot, Bertacchini, Masselot)
+3. Mapear adaptacoes de IT ao contexto brasileiro
+4. Redigir rascunho do Capitulo 2 (Fundamentacao Teorica)
 
 ### Fase 4E: Entrevistas e Coleta de Dados (Continua)
 1. Realizar 5-8 entrevistas com gestores publicos
@@ -117,16 +139,18 @@
 
 ---
 
-## 5. Cronograma com Marcos
+## 5. Cronograma com Marcos (revisado v2.0)
 
-| Mes | Marco | Entrega |
-|-----|-------|---------|
-| Jul 2026 | Inicio revisao IT | 5 fichamentos concluidos |
-| Ago 2026 | Audiencia realizada | Transcricao disponivel |
-| Set 2026 | Piloto iniciado | 1o municipio visitado |
-| Out 2026 | Upload dados sistema | Camada 1 alimentada |
-| Nov 2026 | Entrevistas em andamento | 10+ entrevistas transcritas |
-| Dez 2026 | Encerramento Ciclo 4 | Relatorio do ciclo + reflexao PA |
+| Mes | Marco | Entrega | Status |
+|-----|-------|---------|--------|
+| Fev 2026 | MVP concluido (Fase 4A') | Dashboard com dados estaticos | ✅ |
+| Mar 2026 | Deploy e primeiros usuarios | Dashboard online, feedback inicial | Em andamento |
+| Abr-Jun 2026 | Uso na campanha + coleta de feedback | Metricas de uso, percepcoes iniciais | Pendente |
+| Jul-Ago 2026 | Fundamentacao teorica (Fase 4D) | 5 fichamentos concluidos | Pendente |
+| Ago-Set 2026 | Audiencia CDR (Fase 4B) | Transcricao disponivel | Pendente |
+| Set-Nov 2026 | Validacao territorial (Fase 4C) | 3 municipios visitados | Pendente |
+| Out-Dez 2026 | Entrevistas (Fase 4E) | 10+ entrevistas transcritas | Pendente |
+| Dez 2026 | Encerramento Ciclo 4 | Relatorio do ciclo + reflexao PA | Pendente |
 
 ---
 
@@ -137,7 +161,7 @@
 2. ✅ >= 10 entrevistas realizadas e transcritas
 3. ✅ >= 1 audiencia publica realizada
 4. ✅ >= 3 municipios-piloto visitados
-5. ✅ Camada 1 do sistema alimentada com dados dos cadernos
+5. ✅ Camada 1 do sistema alimentada com dados dos cadernos — **CONCLUIDO (Fev 2026, MVP)**
 6. ✅ Capitulo 2 (Fundamentacao) em rascunho avancado
 7. ✅ Artigo 1 sobre ia-collab-os submetido a periodico
 
@@ -154,7 +178,7 @@
 |-------|--------------|-----------|
 | Audiencia CDR nao aprovada | Media | Buscar audiencias alternativas (comissoes estaduais, eventos academicos) |
 | Gestores municipais indisponiveis | Media | Contatar via gabinete do senador; oferecer flexibilidade de horario |
-| Sistema tocantins-integrado com problemas tecnicos | Baixa-Media | Priorizar Camada 1 (mais simples); demo com dados estaticos se necessario |
+| ~~Sistema tocantins-integrado com problemas tecnicos~~ | ~~Baixa-Media~~ | ✅ Mitigado — MVP com dados estaticos implementado (ADR-006) |
 | CEP nao aprovado a tempo | Baixa | Iniciar submissao em Mai 2026; usar dados publicos enquanto aguarda |
 | Producao (Caderno Vol 2) priorizada sobre pesquisa | Media | Checklist pre-sessao; regra 70/30 producao/reflexao |
 
@@ -169,6 +193,9 @@
 
 ---
 
-**Versao:** 1.0
+**Versao:** 2.0
 **Data:** 12 de Fevereiro de 2026
-**Proxima revisao:** Apos conclusao das Etapas 3-5 do Plano de Fortalecimento
+**Historico:**
+- v1.0 (12 Fev 2026): Plano original com fases 4A-4E sequenciais (Jul-Dez 2026)
+- v2.0 (14 Fev 2026): Pivot MVP — Fase 4D antecipada para 4A' (Fev 2026); cronograma revisado; H4.4 parcialmente validada; ADR-006 referenciado
+**Proxima revisao:** Apos deploy do MVP e primeiros dados de uso
